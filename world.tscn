@@ -4,6 +4,8 @@
 
 [sub_resource type="TileSet" id="TileSet_f3sb7"]
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_f3sb7"]
+
 [node name="world" type="Node2D" unique_id=803981536]
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("1_f3sb7")]
@@ -11,3 +13,13 @@ position = Vector2(654, 367)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=704290214]
 tile_set = SubResource("TileSet_f3sb7")
+
+[node name="Placeholder" type="Sprite2D" parent="." unique_id=1139906116]
+position = Vector2(490.00003, 286)
+scale = Vector2(88.49999, 41.5)
+texture = SubResource("PlaceholderTexture2D_f3sb7")
+
+[node name="Placeholder2" type="Sprite2D" parent="." unique_id=219400991]
+position = Vector2(831, 423)
+scale = Vector2(88.49999, 41.5)
+texture = SubResource("PlaceholderTexture2D_f3sb7")
