@@ -4,4 +4,6 @@
 
 [resource]
 script = ExtResource("1_ps4nw")
+character_name = "widow"
+dialogue_path = "uid://bfe8gcwkmyh61"
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

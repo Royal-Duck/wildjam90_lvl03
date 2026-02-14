@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_rv5gc")
+character_name = "deserter"
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

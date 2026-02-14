@@ -1,1 +1,8 @@
-La guerre est finie, on a perdu, je rentre chez moi. Mon pays est en ruine. Je croise des survivants et je dois me battre pour survivre. Je mens à ceux qui me demandent comment j'ai pu m'en sortir ; certains me reconnaissent, j'étais un haut gradé. Je croyais à la raison de cette guerre. J'arrive chez moi, je retrouve ma mère. Je lui avoue. Après des années de guerre, j'ai compris que mon roi était un tyran. Il fallait que ça cesse. Je l'ai tué. Je rentre chez moi avec la honte, j'ai nourri cette guerre et finalement j'ai trahi ma nation.
+La guerre est finie, on a perdu, je rentre chez moi. Mon pays est en ruine. Je croise des survivants et je dois me battre pour survivre. Je mens à ceux qui me demandent comment j'ai pu m'en sortir ; certains me reconnaissent, j'étais un haut gradé. Je croyais à la raison de cette guerre. J'arrive chez moi, je retrouve ma mère. Je lui avoue. Après des années de guerre, j'ai compris que mon roi était un tyran. Il fallait que ça cesse. Je l'ai tué. Je rentre chez moi avec la honte, j'ai nourri cette guerre et finalement j'ai trahi ma nation. Je porte deux culpabilité : j'ai soutenu et j'ai trahis. J'ai aussi arrêté la guerre.
+
+Ordre des rencontres :
+    - wounded
+    - widow
+    - deserter
+    - mother
+    - king

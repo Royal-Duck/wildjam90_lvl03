@@ -1,7 +1,9 @@
 [gd_resource type="Resource" script_class="Character" format=3 uid="uid://bvr5apy0edges"]
 
-[ext_resource type="Script" uid="uid://d4esalw7fuwka" path="res://characters/character_resource.gd" id="1_exrlr"]
+[ext_resource type="Script" uid="uid://d4esalw7fuwka" path="res://characters/character_resource.gd" id="1_fylrt"]
 
 [resource]
-script = ExtResource("1_exrlr")
+script = ExtResource("1_fylrt")
+character_name = "wounded"
+dialogue_path = "uid://bffininu3kk40"
 metadata/_custom_type_script = "uid://d4esalw7fuwka"
