@@ -1,12 +1,18 @@
 ~ start
-Veuve: Vous... je vous ai deja vu avec les officiers.
-Player: C'etait avant.
-Veuve: Dites-moi, comment vous vous en etes sorti ?
-Player: Je... je suis passe par un chemin casse pres des tranchées. J'ai eu de la chance, je crois.
-Veuve: Vous doutez quand vous parlez.
-Player: Je suis juste fatigue.
-Veuve: Vous rejoignez votre famille ? Quelqu'un vous attend ?
-Player: Non. Et je ne compte pas rester ici.
-Veuve: Je comprends... prenez la route avant la nuit.
-Player: C'est ce que je vais faire. Adieu.
+Veuve: Vous étiez avec les officiers... je vous ai reconnu.
+Player: Peut-être.
+Veuve: Dites-moi la vérité. La guerre est finie ?
+Player: Oui. On a perdu.
+Veuve: Comment vous vous en êtes sorti ?
+Player: Je... la ligne s'est ouverte, j'ai trouvé un passage entre deux murs.
+Veuve: On dit qu'il n'y avait plus de passage.
+Player: Alors j'ai eu de la chance.
+Veuve: Vous n'y croyez pas vous-même.
+Player: Je crois surtout que je dois partir.
+Veuve: Vous rentrez dans votre famille ? Quelqu'un vous attend ?
+Player: Non.
+Veuve: Vous pouvez rester ici.
+Player: Je ne veux pas rester.
+Veuve: Alors partez avant la nuit.
+Player: Adieu.
 => END

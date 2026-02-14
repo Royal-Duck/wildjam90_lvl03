@@ -1,10 +1,14 @@
 ~ start
 Blessé: Mon commandant... c'est bien vous ?
-Player: Oui. Je reviens du front.
-Blessé: Comment vous avez fait pour vous échapper ?
-Player: Je... j'ai été séparé des autres dans la fumée. J'ai suivi un passage derrière les ruines.
+Player: Oui. Je rentre du front.
+Blessé: Alors... c'est vrai ?
+Player: Oui. C'est fini.
+Blessé: On a perdu.
+Player: Oui.
+Blessé: Comment vous avez réussi à vous en sortir ?
+Player: Je... il y avait de la fumée partout. J'ai suivi un boyau effondré.
 Blessé: On a failli les avoir...
-Player: Oui. La prochaine fois, on ne les ratera pas.
-Blessé: Reposez-vous un peu, mon commandant.
-Player: Toi aussi. On y va.
+Player: On a surtout failli y rester.
+Blessé: Et maintenant ?
+Player: Maintenant, chacun rentre comme il peut.
 => END
