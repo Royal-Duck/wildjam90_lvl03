@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://c17j50y3jhwau"]
 
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/npc.tscn" id="2_fj7yv"]
+[ext_resource type="Resource" uid="uid://bvr5apy0edges" path="res://npc/characters/wounded/wounded.tres" id="3_tlwt5"]
 
 [sub_resource type="TileSet" id="TileSet_f3sb7"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_f3sb7"]
 
 [node name="world" type="Node2D" unique_id=803981536]
 
@@ -14,12 +14,5 @@ position = Vector2(654, 367)
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=704290214]
 tile_set = SubResource("TileSet_f3sb7")
 
-[node name="Placeholder" type="Sprite2D" parent="." unique_id=1139906116]
-position = Vector2(490.00003, 286)
-scale = Vector2(88.49999, 41.5)
-texture = SubResource("PlaceholderTexture2D_f3sb7")
-
-[node name="Placeholder2" type="Sprite2D" parent="." unique_id=219400991]
-position = Vector2(831, 423)
-scale = Vector2(88.49999, 41.5)
-texture = SubResource("PlaceholderTexture2D_f3sb7")
+[node name="Npc" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
+data = ExtResource("3_tlwt5")

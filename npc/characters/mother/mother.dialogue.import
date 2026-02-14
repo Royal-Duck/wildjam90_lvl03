@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dnbvd3ee3rtde"
+path="res://.godot/imported/mother.dialogue-8d02eb0d3a78569a6312f423977e4d9f.tres"
+
+[deps]
+
+source_file="res://npc/characters/mother/mother.dialogue"
+dest_files=["res://.godot/imported/mother.dialogue-8d02eb0d3a78569a6312f423977e4d9f.tres"]
+
+[params]
+
+defaults=true

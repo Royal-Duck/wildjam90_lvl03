@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bffininu3kk40"
+path="res://.godot/imported/wounded.dialogue-8c1815952f45ede5f75b2577eb975bc4.tres"
+
+[deps]
+
+source_file="res://npc/characters/wounded/wounded.dialogue"
+dest_files=["res://.godot/imported/wounded.dialogue-8c1815952f45ede5f75b2577eb975bc4.tres"]
+
+[params]
+
+defaults=true
