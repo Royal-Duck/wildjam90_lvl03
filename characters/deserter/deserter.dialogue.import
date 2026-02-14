@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bkl701fklvx3g"
+path="res://.godot/imported/deserter.dialogue-c975095dea0c8c2471dbf5f92e74fc79.tres"
+
+[deps]
+
+source_file="res://characters/deserter/deserter.dialogue"
+dest_files=["res://.godot/imported/deserter.dialogue-c975095dea0c8c2471dbf5f92e74fc79.tres"]
+
+[params]
+
+defaults=true
