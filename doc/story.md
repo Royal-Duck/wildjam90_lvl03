@@ -1,6 +1,6 @@
-La guerre est finie, on a perdu, je rentre chez moi. Mon pays est en ruine. Je croise des survivants et je dois me battre pour survivre. Je mens à ceux qui me demandent comment j'ai pu m'en sortir ; certains me reconnaissent, j'étais un haut gradé. Je croyais à la raison de cette guerre. J'arrive chez moi, je retrouve ma mère. Je lui avoue. Après des années de guerre, j'ai compris que mon roi était un tyran. Il fallait que ça cesse. Je l'ai tué. Je rentre chez moi avec la honte, j'ai nourri cette guerre et finalement j'ai trahi ma nation. Je porte deux culpabilité : j'ai soutenu et j'ai trahis. J'ai aussi arrêté la guerre.
+The war is over, we lost, and I am going home. My country is in ruins. I meet survivors and I have to fight to stay alive. I lie to those who ask how I made it out; some recognize me, I used to be a high-ranking officer. I believed in the cause of this war. I arrive home and find my mother. I confess to her. After years of war, I understood that my king was a tyrant. It had to stop. I killed him. I return home in shame: I fed this war, and in the end I betrayed my nation. I carry two kinds of guilt: I supported it, and I betrayed it. I also ended the war.
 
-Ordre des rencontres :
+Order of encounters:
     - wounded
     - widow
     - deserter

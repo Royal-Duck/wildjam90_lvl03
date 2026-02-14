@@ -1,19 +1,18 @@
 ~ start
-Roi: Te voilà enfin. La ville est tombée ?
-Player: Oui, votre majesté. Mais ce n'était pas une ville ennemie.
-Roi: Toutes les villes sont ennemies tant qu'elles ne paient pas.
-Player: C'étaient des familles. Des fermiers. Des enfants.
-Roi: Et maintenant, ce sont des cendres utiles.
-Player: On nous a dit qu'on défendait le royaume.
-Roi: Tu défendais mon trône. Ce royaume commence là où mes cartes s'arrêtent.
-Player: Alors c'est nous qui avons envahi leurs terres.
-Roi: Enfin, tu comprends.
-Roi: La paix est un mensonge de pauvres. Un roi digne de ce nom fait la guerre jusqu'à ce qu'il n'y ait plus personne pour dire non.
+King: There you are at last. Has the city fallen?
 Player: ...
-Roi: Prépare une nouvelle levée. Au matin, nous brûlerons le reste.
-Roi: Maintenant, laisse-moi.
-Player: Oui... mon roi.
-Player: [#aside] Il me tourne le dos.
-Player: [#aside] Je pose la main sur la garde.
-Player: [#aside] Et je mets fin à la guerre.
+King: Every city is an enemy as long as it does not pay.
+Player: ...
+King: And now, they are useful ashes.
+Player: ...
+King: You were defending my throne. This kingdom begins where my maps end.
+Player: ...
+King: At last, you understand.
+King: Peace is a poor man's lie. A king worthy of the name wages war until no one is left to say no.
+Player: ...
+King: Prepare a new levy. At dawn, we burn what is left.
+King: Now leave me.
+[#aside] He turns his back to me.
+[#aside] I rest my hand on the hilt.
+[#aside] I end the war.
 => END

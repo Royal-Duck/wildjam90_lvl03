@@ -1,14 +1,15 @@
 ~ start
-Blessé: Mon commandant... c'est bien vous ?
-Player: Oui. Je rentre du front.
-Blessé: Alors... c'est vrai ?
-Player: Oui. C'est fini.
-Blessé: On a perdu.
-Player: Oui.
-Blessé: Comment vous avez réussi à vous en sortir ?
-Player: Je... il y avait de la fumée partout. J'ai suivi un boyau effondré.
-Blessé: On a failli les avoir...
-Player: On a surtout failli y rester.
-Blessé: Et maintenant ?
-Player: Maintenant, chacun rentre comme il peut.
+Wounded: My commander... is that really you?
+Player: ...
+Wounded: So... it's true?
+Player: ...
+Wounded: We lost.
+Wounded: I can see in your eyes that it's over.
+Wounded: How did you make it out?
+Player: ...
+Wounded: You're hesitating... smoke, a collapsed trench, is that it?
+Wounded: We almost had them...
+Wounded: And now?
+Player: ...
+Wounded: Alright. Everyone goes home however they can.
 => END

@@ -1,19 +1,20 @@
 ~ start
-Veuve: Vous étiez avec les officiers... je vous ai reconnu.
-Player: Peut-être.
-Veuve: Dites-moi la vérité. La guerre est finie ?
-Player: Oui. On a perdu.
-Veuve: Comment vous vous en êtes sorti ?
-Player: Je... la ligne s'est ouverte, j'ai trouvé un passage entre deux murs.
-Veuve: On dit qu'il n'y avait plus de passage.
-Player: Alors j'ai eu de la chance.
-Veuve: Vous n'y croyez pas vous-même.
-Player: Je crois surtout que je dois partir.
-Veuve: Après toutes ces années de guerre, personne ne sait vraiment rentrer.
-Veuve: Vous rentrez dans votre famille ? Quelqu'un vous attend ?
-Player: Non.
-Veuve: Vous pouvez rester ici.
-Player: Je ne veux pas rester.
-Veuve: Alors partez avant la nuit.
-Player: Adieu.
+Widow: You were with the officers... I recognized you.
+Widow: Tell me the truth. Is the war over?
+Player: ...
+Widow: Your silence is enough. We lost.
+Widow: How did you make it out?
+Player: ...
+Widow: The line broke? A passage between two walls?
+Widow: They say there was no way out anymore.
+Player: ...
+Widow: You do not even believe it yourself.
+Widow: After all these years of war, no one really knows how to come home.
+Widow: Are you going back to your family? Is someone waiting for you?
+Player: ...
+Widow: No one, then.
+Widow: You can stay here.
+Player: ...
+Widow: Then leave before nightfall.
+Widow: Goodbye.
 => END

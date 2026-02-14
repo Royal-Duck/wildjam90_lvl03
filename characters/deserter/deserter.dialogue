@@ -1,16 +1,15 @@
 ~ start
-Déserteur: Ne m'approchez pas.
-Déserteur: Si vous êtes là pour m'arrêter, je n'ai plus la force de courir.
-Player: Je ne suis pas là pour te livrer.
-Déserteur: Alors pourquoi un ancien haut gradé vient parler à un type comme moi ?
-Player: Dis-moi plutôt... comment tu t'en es sorti ?
-Déserteur: Moi ? Je...
-Déserteur: Vous posez cette question comme si vous cherchiez la bonne réponse.
-Player: Peut-être.
-Déserteur: On ne dira rien, vous et moi. Pas ce soir.
-Player: Pas ce soir.
-Déserteur: Il me reste mes mains, un peu de pain, et demain.
-Player: Il me reste la route.
-Déserteur: Alors marche. Et oublie mon visage.
-Player: Toi aussi.
+Deserter: Do not come any closer.
+Deserter: If you are here to arrest me, I no longer have the strength to run.
+Player: ...
+Deserter: Then why is a former high-ranking officer talking to someone like me?
+Deserter: You want to know how I made it out?
+Deserter: Me? I...
+Deserter: You ask that question like you are looking for the right answer.
+Player: ...
+Deserter: We will not say it, you and I. Not tonight.
+Deserter: I have my hands, a little bread, and tomorrow.
+Deserter: You, you still have the road.
+Deserter: Then walk. And forget my face.
+Player: ...
 => END
