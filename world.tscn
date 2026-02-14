@@ -2,6 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="1_f3sb7"]
 
+[sub_resource type="TileSet" id="TileSet_f3sb7"]
+
 [node name="world" type="Node2D" unique_id=803981536]
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("1_f3sb7")]
+position = Vector2(654, 367)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=704290214]
+tile_set = SubResource("TileSet_f3sb7")
