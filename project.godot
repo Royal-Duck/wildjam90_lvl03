@@ -14,6 +14,14 @@ config/name="wildjam90_lvl03"
 run/main_scene="uid://c17j50y3jhwau"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
+[autoload]
+
+DialogueManager="*uid://c3rodes2l3gxb"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
 [input]
 
 up={
@@ -40,6 +48,10 @@ down={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194322,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogs/wounded.dialogue")
 
 [physics]
 
