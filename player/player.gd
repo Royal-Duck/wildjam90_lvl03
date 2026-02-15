@@ -23,8 +23,6 @@ func _physics_process(_delta: float) -> void:
 		Input.get_axis("left", "right"),
 		Input.get_axis("up", "down")
 	)
-	if inverser_controles:
-		direction = -direction
 
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
