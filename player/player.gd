@@ -11,6 +11,11 @@ func _ready() -> void:
 	npc_interact_area.body_exited.connect(_on_npc_interact_area_body_exited)
 
 func _physics_process(_delta: float) -> void:
+	if DialogueController.is_dialogue_open:
+		velocity = Vector2.ZERO
+		move_and_slide()
+		return
+
 	var direction := Vector2(
 		Input.get_axis("left", "right"),
 		Input.get_axis("up", "down")
@@ -26,6 +31,9 @@ func _physics_process(_delta: float) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	if DialogueController.is_dialogue_open:
+		return
+
 	if event.is_action_pressed("interact"):
 		_try_interact_with_npc()
 
