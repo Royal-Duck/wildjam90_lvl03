@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cgss8b3frjjvs"]
 
 [ext_resource type="Script" uid="uid://m7d17ql86j8a" path="res://player/player.gd" id="1_ulp21"]
+[ext_resource type="Script" uid="uid://50gu2afw4l8h" path="res://hud.gd" id="2_3c3w1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ehsmr"]
 radius = 11.045361
@@ -28,3 +29,21 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NpcInteractArea" unique_id=286784661]
 shape = SubResource("CircleShape2D_ulp21")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=585995087]
+script = ExtResource("2_3c3w1")
+
+[node name="MarginContainer" type="MarginContainer" parent="HUD" unique_id=741601504]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="Label" type="Label" parent="HUD/MarginContainer" unique_id=1144447523]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Health : 100"

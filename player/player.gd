@@ -2,9 +2,11 @@ extends CharacterBody2D
 
 @export var speed: int = 300
 
+@onready var hud: CanvasLayer = $HUD
 @onready var npc_interact_area: Area2D = $NpcInteractArea
 
 var current_npc: Node2D = null
+var health: int = 100
 
 func _ready() -> void:
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
@@ -62,7 +64,10 @@ func _on_npc_interact_area_body_exited(body: Node2D) -> void:
 		body.hide_to_interact_press_e()
 
 func take_damage(amount: int) -> void:
-	print("Player took damage: ", amount)
-	# health = max(health - amount, 0)
-	# if health <= 0:
-		# die()
+	health -= amount
+	hud.updateHealth(health)
+	if health <= 0:
+		die()
+
+func die() -> void:
+	get_tree().reload_current_scene()
