@@ -5,8 +5,6 @@ const SPEED = 300.0
 @onready var npc_interact_area: Area2D = $NpcInteractArea
 var current_npc: Node2D = null
 
-@export var inverser_controles: bool = false
-
 func _ready() -> void:
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
 	npc_interact_area.body_entered.connect(_on_npc_interact_area_body_entered)
@@ -22,8 +20,6 @@ func _physics_process(_delta: float) -> void:
 		Input.get_axis("left", "right"),
 		Input.get_axis("up", "down")
 	)
-	if inverser_controles:
-		direction = -direction
 
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
