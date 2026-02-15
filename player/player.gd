@@ -1,11 +1,12 @@
 extends CharacterBody2D
 
+@export var inverser_controles: bool = false
+
+@onready var npc_interact_area: Area2D = $NpcInteractArea
 
 const SPEED = 300.0
-@onready var npc_interact_area: Area2D = $NpcInteractArea
-var current_npc: Node2D = null
 
-@export var inverser_controles: bool = false
+var current_npc: Node2D = null
 
 func _ready() -> void:
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
@@ -63,3 +64,9 @@ func _on_npc_interact_area_body_exited(body: Node2D) -> void:
 		if body == current_npc:
 			current_npc = null
 		body.hide_to_interact_press_e()
+
+func take_damage(amount: int) -> void:
+	print("Player took damage: ", amount)
+	# health = max(health - amount, 0)
+	# if health <= 0:
+		# die()

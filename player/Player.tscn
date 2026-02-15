@@ -11,7 +11,7 @@ size = Vector2(20, 20)
 [sub_resource type="CircleShape2D" id="CircleShape2D_ulp21"]
 radius = 43.289722
 
-[node name="Player" type="CharacterBody2D" unique_id=2075464257]
+[node name="Player" type="CharacterBody2D" unique_id=2075464257 groups=["player"]]
 collision_mask = 2
 script = ExtResource("1_ulp21")
 
