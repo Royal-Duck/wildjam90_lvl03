@@ -1,26 +1,27 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 90.0
+const STOP_DISTANCE = 8.0
 
 @export var enemy_resource: Enemy
+@onready var player: Node2D = get_tree().current_scene.get_node_or_null("Player")
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+func _ready() -> void:
+	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
+func _physics_process(_delta: float) -> void:
+	if player == null:
+		player = get_tree().current_scene.get_node_or_null("Player")
+		velocity = Vector2.ZERO
+		move_and_slide()
+		return
+
+	var to_player: Vector2 = player.global_position - global_position
+	if to_player.length() > STOP_DISTANCE:
+		velocity = to_player.normalized() * SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity = Vector2.ZERO
 
 	move_and_slide()

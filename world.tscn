@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="2_fj7yv"]
 [ext_resource type="Resource" uid="uid://bvr5apy0edges" path="res://npc/characters/wounded/wounded.tres" id="3_tlwt5"]
 [ext_resource type="Script" uid="uid://c6w163ewp2oix" path="res://globals/dialogue_controller.gd" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://b46u8ffg76fyp" path="res://npc/enemies/enemy.tscn" id="5_dwbse"]
+[ext_resource type="Resource" uid="uid://untxwx8vrg7m" path="res://npc/enemies/bandit/bandit.tres" id="6_pkg7o"]
 
 [sub_resource type="TileSet" id="TileSet_f3sb7"]
 
@@ -21,3 +23,7 @@ data = ExtResource("3_tlwt5")
 
 [node name="DialogueController" type="Node" parent="." unique_id=1820427701]
 script = ExtResource("4_aqk2v")
+
+[node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("5_dwbse")]
+position = Vector2(770, 191)
+enemy_resource = ExtResource("6_pkg7o")
