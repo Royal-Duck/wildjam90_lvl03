@@ -3,10 +3,12 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 @onready var npc_interact_area: Area2D = $NpcInteractArea
-
+var current_npc: Node2D = null
 
 func _ready() -> void:
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
+	npc_interact_area.body_entered.connect(_on_npc_interact_area_body_entered)
+	npc_interact_area.body_exited.connect(_on_npc_interact_area_body_exited)
 
 func _physics_process(_delta: float) -> void:
 	var direction := Vector2(
@@ -23,7 +25,29 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("interact"):
+		_try_interact_with_npc()
+
+
+func _try_interact_with_npc() -> void:
+	if current_npc == null:
+		return
+
+	if not current_npc.is_in_group("npc"):
+		return
+
+	current_npc.hide_to_interact_press_e()
+	DialogueController.start_dialogue(current_npc.data.dialogue_path)
+
 
 func _on_npc_interact_area_body_entered(body: Node2D) -> void:
 	if body.is_in_group("npc"):
-		print("NPC interacted with: ", body.name)
+		current_npc = body
+		body.show_to_interact_press_e()
+
+func _on_npc_interact_area_body_exited(body: Node2D) -> void:
+	if body.is_in_group("npc"):
+		if body == current_npc:
+			current_npc = null
+		body.hide_to_interact_press_e()

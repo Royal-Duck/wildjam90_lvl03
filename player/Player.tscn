@@ -12,6 +12,7 @@ size = Vector2(20, 20)
 radius = 43.289722
 
 [node name="Player" type="CharacterBody2D" unique_id=2075464257]
+collision_mask = 2
 script = ExtResource("1_ulp21")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=709111943]
@@ -23,8 +24,7 @@ texture = SubResource("PlaceholderTexture2D_ulp21")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=70856044]
 
 [node name="NpcInteractArea" type="Area2D" parent="." unique_id=1009602000]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NpcInteractArea" unique_id=286784661]
 shape = SubResource("CircleShape2D_ulp21")
-
-[connection signal="body_entered" from="NpcInteractArea" to="." method="_on_npc_interact_area_body_entered"]
