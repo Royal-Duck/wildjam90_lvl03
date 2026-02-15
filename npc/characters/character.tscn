@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cmaty8mp0psrf"]
 
-[ext_resource type="Script" uid="uid://deyw3v4ckyw52" path="res://npc/npc.gd" id="1_2xp5l"]
+[ext_resource type="Script" uid="uid://deyw3v4ckyw52" path="res://npc/characters/character.gd" id="1_2xp5l"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gfcum"]
 
