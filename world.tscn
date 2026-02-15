@@ -9,10 +9,11 @@
 [node name="world" type="Node2D" unique_id=803981536]
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("1_f3sb7")]
-position = Vector2(654, 367)
+position = Vector2(780, 360)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=704290214]
 tile_set = SubResource("TileSet_f3sb7")
 
 [node name="Npc" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
+position = Vector2(594, 328)
 data = ExtResource("3_tlwt5")
