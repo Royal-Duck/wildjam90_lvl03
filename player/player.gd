@@ -1,10 +1,8 @@
 extends CharacterBody2D
 
-@export var inverser_controles: bool = false
+@export var speed: int = 300
 
 @onready var npc_interact_area: Area2D = $NpcInteractArea
-
-const SPEED = 300.0
 
 var current_npc: Node2D = null
 
@@ -26,9 +24,9 @@ func _physics_process(_delta: float) -> void:
 
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
-		velocity = direction * SPEED
+		velocity = direction * speed
 	else:
-		velocity = velocity.move_toward(Vector2.ZERO, SPEED)
+		velocity = velocity.move_toward(Vector2.ZERO, speed)
 
 	move_and_slide()
 

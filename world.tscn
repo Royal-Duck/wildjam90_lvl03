@@ -27,3 +27,5 @@ script = ExtResource("4_aqk2v")
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("5_dwbse")]
 position = Vector2(770, 191)
 enemy_resource = ExtResource("6_pkg7o")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1497991941]

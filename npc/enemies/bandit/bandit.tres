@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_j4fq0")
+attack_interval = 1
 metadata/_custom_type_script = "uid://c8styheqfssdd"
