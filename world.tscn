@@ -1568,32 +1568,60 @@ enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
+visible = false
 script = ExtResource("15_hiqwa")
 
-[node name="Panel" type="Panel" parent="Menu" unique_id=452461602]
+[node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.25370002, 0.43, 0.32128167, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="Menu/Panel" unique_id=1815282860]
+[node name="CenterContainer" type="CenterContainer" parent="Menu/ColorRect" unique_id=1815282860]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Panel/CenterContainer" unique_id=1680073333]
+[node name="MarginContainer" type="MarginContainer" parent="Menu/ColorRect/CenterContainer" unique_id=726406750]
 layout_mode = 2
 
-[node name="NewGameBtn" type="Button" parent="Menu/Panel/CenterContainer/VBoxContainer" unique_id=1255548212]
+[node name="MainMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1680073333]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="NewGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1255548212]
+unique_name_in_owner = true
 layout_mode = 2
 text = "New Game"
+
+[node name="SettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1081657312]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="SettingsMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1111802906]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Volume" type="HBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=594131322]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=365601609]
+layout_mode = 2
+text = "Volume"
+
+[node name="HSlider" type="HSlider" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=1236423581]
+layout_mode = 2
+
+[node name="CloseSettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=412294111]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
