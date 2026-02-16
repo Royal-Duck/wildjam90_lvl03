@@ -1548,5 +1548,5 @@ data = ExtResource("3_tlwt5")
 script = ExtResource("4_aqk2v")
 
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("5_dwbse")]
-position = Vector2(770, 191)
+position = Vector2(1093, 180)
 enemy_resource = ExtResource("6_pkg7o")
