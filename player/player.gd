@@ -64,6 +64,7 @@ func _on_npc_interact_area_body_exited(body: Node2D) -> void:
 		body.hide_to_interact_press_e()
 
 func take_damage(amount: int) -> void:
+	print(take_damage)
 	health -= amount
 	hud.updateHealth(health)
 	if health <= 0:

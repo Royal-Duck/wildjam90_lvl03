@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://c17j50y3jhwau"]
 
+[ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_2u3nc"]
 [ext_resource type="Texture2D" uid="uid://b27fpj723lhk1" path="res://texture/TX Shadow Plant.png" id="1_70uel"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="2_fj7yv"]
@@ -14,6 +15,7 @@
 [ext_resource type="Resource" uid="uid://untxwx8vrg7m" path="res://npc/enemies/bandit/bandit.tres" id="6_pkg7o"]
 [ext_resource type="Texture2D" uid="uid://crccc5rc73ryx" path="res://texture/TX Plant.png" id="7_cbp6q"]
 [ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="8_26xuy"]
+[ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="15_hiqwa"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_bc84e"]
 tile_data = PackedInt32Array(0, 65548, 1, 65536, 65548, 2, 131072, 65548, 3, 1, 131084, 1, 65537, 131084, 2, 131073, 131084, 3)
@@ -1530,6 +1532,7 @@ pattern_55 = SubResource("TileMapPattern_tj74d")
 pattern_56 = SubResource("TileMapPattern_yy5nj")
 
 [node name="world" type="Node2D" unique_id=803981536]
+script = ExtResource("1_2u3nc")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1059342624]
 texture_filter = 1
@@ -1550,3 +1553,47 @@ script = ExtResource("4_aqk2v")
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("5_dwbse")]
 position = Vector2(1093, 180)
 enemy_resource = ExtResource("6_pkg7o")
+
+[node name="Enemy4" parent="." unique_id=458950875 instance=ExtResource("5_dwbse")]
+position = Vector2(826, 105)
+enemy_resource = ExtResource("6_pkg7o")
+
+[node name="Enemy5" parent="." unique_id=358248586 instance=ExtResource("5_dwbse")]
+position = Vector2(1106, 670)
+enemy_resource = ExtResource("6_pkg7o")
+
+[node name="Enemy6" parent="." unique_id=648043668 instance=ExtResource("5_dwbse")]
+position = Vector2(1143, 453)
+enemy_resource = ExtResource("6_pkg7o")
+
+[node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
+process_mode = 2
+script = ExtResource("15_hiqwa")
+
+[node name="Panel" type="Panel" parent="Menu" unique_id=452461602]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Menu/Panel" unique_id=1815282860]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Panel/CenterContainer" unique_id=1680073333]
+layout_mode = 2
+
+[node name="NewGameBtn" type="Button" parent="Menu/Panel/CenterContainer/VBoxContainer" unique_id=1255548212]
+layout_mode = 2
+text = "New Game"
