@@ -1568,7 +1568,6 @@ enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
-visible = false
 script = ExtResource("15_hiqwa")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]
@@ -1610,16 +1609,25 @@ text = "Settings"
 [node name="SettingsMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1111802906]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_constants/separation = 12
 
 [node name="Volume" type="HBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=594131322]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=365601609]
 layout_mode = 2
+size_flags_horizontal = 4
 text = "Volume"
 
-[node name="HSlider" type="HSlider" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=1236423581]
+[node name="VolumeSlider" type="HSlider" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=1236423581]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 80.0
 
 [node name="CloseSettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=412294111]
 unique_name_in_owner = true

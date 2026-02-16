@@ -14,10 +14,15 @@ config/name="wildjam90_lvl03"
 run/main_scene="uid://c17j50y3jhwau"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
+[audio]
+
+buses/default_bus_layout="uid://cfd8yy36i2qhv"
+
 [autoload]
 
 DialogueManager="*uid://c3rodes2l3gxb"
 DialogueController="*uid://c6w163ewp2oix"
+AudioManager="*uid://dtfor2pafwr38"
 
 [editor_plugins]
 

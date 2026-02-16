@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dtfor2pafwr38"]
+
+[ext_resource type="Script" uid="uid://w087v4pd4sfg" path="res://audio/audio_manager.gd" id="1_drlug"]
+[ext_resource type="AudioStream" uid="uid://pjlem8g533gb" path="res://assets/songs/gymnopedie_3.mp3" id="2_0i2i4"]
+[ext_resource type="AudioStream" uid="uid://drra6idc1da7h" path="res://assets/sfx/validation_sound.wav" id="3_0i2i4"]
+
+[node name="AudioManager" type="Node" unique_id=1630261963]
+process_mode = 3
+script = ExtResource("1_drlug")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1303088583]
+stream = ExtResource("2_0i2i4")
+volume_db = -7.968
+autoplay = true
+bus = &"Music"
+
+[node name="UIClick" type="AudioStreamPlayer" parent="." unique_id=1288709696]
+stream = ExtResource("3_0i2i4")
+volume_db = -11.322

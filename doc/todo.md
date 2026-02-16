@@ -1,0 +1,1 @@
+Bug quand on met pause pendant un dialogue
