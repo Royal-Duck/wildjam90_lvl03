@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://crccc5rc73ryx" path="res://texture/TX Plant.png" id="7_cbp6q"]
 [ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="8_26xuy"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="15_hiqwa"]
+[ext_resource type="StyleBox" uid="uid://ckya1eeoic8n4" path="res://ui/button/btn_style_box_flat.tres" id="17_udxuc"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_bc84e"]
 tile_data = PackedInt32Array(0, 65548, 1, 65536, 65548, 2, 131072, 65548, 3, 1, 131084, 1, 65537, 131084, 2, 131073, 131084, 3)
@@ -1545,7 +1546,6 @@ tile_set = SubResource("TileSet_jtjyu")
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("1_f3sb7")]
 position = Vector2(759, 342)
-health = 2
 
 [node name="Npc" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
 position = Vector2(594, 328)
@@ -1555,11 +1555,11 @@ data = ExtResource("3_tlwt5")
 script = ExtResource("4_aqk2v")
 
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("5_dwbse")]
-position = Vector2(1093, 180)
+position = Vector2(800, -106)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy4" parent="." unique_id=458950875 instance=ExtResource("5_dwbse")]
-position = Vector2(767, 45)
+position = Vector2(185, 442)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy5" parent="." unique_id=358248586 instance=ExtResource("5_dwbse")]
@@ -1567,12 +1567,11 @@ position = Vector2(1106, 670)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy6" parent="." unique_id=648043668 instance=ExtResource("5_dwbse")]
-position = Vector2(1143, 453)
+position = Vector2(1180, 453)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
-visible = false
 script = ExtResource("15_hiqwa")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]
@@ -1581,7 +1580,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.25370002, 0.43, 0.32128167, 1)
+color = Color(0.105882354, 0.27058825, 0.45882353, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/ColorRect" unique_id=1815282860]
 layout_mode = 1
@@ -1604,6 +1603,7 @@ size_flags_horizontal = 4
 [node name="NewGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1255548212]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_styles/normal = ExtResource("17_udxuc")
 text = "New Game"
 
 [node name="SettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1081657312]

@@ -25,6 +25,10 @@ DialogueController="*uid://c6w163ewp2oix"
 AudioManager="*uid://dtfor2pafwr38"
 GameManager="*uid://bwb47nud0ff7p"
 
+[dialogue_manager]
+
+runtime/balloon_path="res://player/balloon/balloon.tscn"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")

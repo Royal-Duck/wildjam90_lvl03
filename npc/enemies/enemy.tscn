@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b46u8ffg76fyp"]
 
 [ext_resource type="Script" uid="uid://dvb5g6dtoxtxy" path="res://npc/enemies/enemy.gd" id="1_e1acu"]
+[ext_resource type="StyleBox" uid="uid://cgv7l1w2rh50j" path="res://player/balloon/balloon_style_box_flat.tres" id="2_05od2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_e1acu"]
 
@@ -10,7 +11,10 @@
 radius = 45.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4cw6c"]
-radius = 233.42023
+radius = 385.0013
+
+[sub_resource type="LabelSettings" id="LabelSettings_e1acu"]
+font_size = 14
 
 [node name="Enemy" type="CharacterBody2D" unique_id=1340809577 groups=["player"]]
 collision_layer = 4
@@ -41,3 +45,26 @@ shape = SubResource("CircleShape2D_05od2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AgroArea" unique_id=1076614525]
 shape = SubResource("CircleShape2D_4cw6c")
+
+[node name="DialogueBubble" type="PanelContainer" parent="." unique_id=84361619]
+offset_left = -127.0
+offset_top = -61.0
+offset_right = -31.0
+offset_bottom = -21.0
+theme_override_styles/panel = ExtResource("2_05od2")
+
+[node name="MarginContainer" type="MarginContainer" parent="DialogueBubble" unique_id=1076621262]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 8
+
+[node name="DialogueLabel" type="Label" parent="DialogueBubble/MarginContainer" unique_id=84873476]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Come here !"
+label_settings = SubResource("LabelSettings_e1acu")
+
+[node name="DialogueTimer" type="Timer" parent="." unique_id=8050529]
+one_shot = true
