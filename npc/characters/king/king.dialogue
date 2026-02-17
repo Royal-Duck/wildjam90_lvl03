@@ -1,18 +1,24 @@
 ~ start
-King: There you are at last. Has the city fallen?
-Player: ...
-King: Every city is an enemy as long as it does not pay.
-Player: ...
-King: And now, they are useful ashes.
-Player: ...
-King: You were defending my throne. This kingdom begins where my maps end.
-Player: ...
-King: At last, you understand.
-King: Peace is a poor man's lie. A king worthy of the name wages war until no one is left to say no.
-Player: ...
-King: Prepare a new levy. At dawn, we burn what is left.
-King: Now leave me.
+# FR: Où en est la contre-offensive?
+King: Where do we stand with the counter-offensive?
+# FR: Nos pertes sont importantes, nous avons perdu la porte nord, notre cavalerie est encerclée et nos espions ne répondent plus. Dois-je sonner la retraite, Mon Roi?
+Player: Heavy losses. The north gate has fallen, our cavalry is surrounded, our spies have gone quiet. Do I order a retreat, my King?
+# FR: Misérables ! Vous n'êtes qu'à peine plus aguerris qu'une meute de paysans !
+King: Wretches! You're little better than a pack of peasants!
+# FR: Lorsqu'on est directement au service de son Roi, on est prêt à mourir pour lui.
+King: Those who serve their King directly are ready to die for him.
+# FR: Rassemblez vos troupes et menez l'assaut.
+King: Rally your men and lead the assault.
+# FR: Mais Seigneur... nous sommes 3 fois moins nombreux, nous avons des blessés et...
+Player: But my Lord... we're outnumbered three to one, we have wounded and...
+# FR: Assez ! Si vous ne survivez pas c'est que vous ne le méritiez pas.
+King: Enough! If you don't survive, you didn't deserve to.
+# FR: Maintenant, obéissez.
+King: Now obey.
+# FR: Il me tourne le dos.
 [#aside] He turns his back to me.
+# FR: Je pose la main sur la garde.
 [#aside] I rest my hand on the hilt.
+# FR: J'achève la guerre.
 [#aside] I end the war.
 => END

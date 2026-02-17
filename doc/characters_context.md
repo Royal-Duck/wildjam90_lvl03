@@ -37,6 +37,9 @@ Notes et éléments de contexte pour chaque rencontre narrative.
 ---
 
 ## King
-- *(À compléter)*
+- Il s'apprêtait à donner un ordre d'assaut suicidaire avant que le Player ne le tue
+- Le Player profite d'un instant où le roi lui tourne le dos pour le poignarder
+- Il doit nous apparaître froid et sans remords
+- Le player est seul avec lui au moment de son meurtre (peut-être que deux gardes quittent la scène avant le moment fatidique)
 
 ---
