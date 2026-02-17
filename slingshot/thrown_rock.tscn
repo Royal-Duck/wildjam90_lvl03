@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://j8fd5vb3te60"]
+
+[ext_resource type="Script" uid="uid://cr2m1ibho7xe7" path="res://slingshot/thrown_rock.gd" id="1_q2iit"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_igel7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_w4oeh"]
+size = Vector2(16, 16)
+
+[node name="thrown_rock" type="CharacterBody2D" unique_id=978956647]
+collision_layer = 16
+collision_mask = 15
+script = ExtResource("1_q2iit")
+
+[node name="coll" type="CollisionShape2D" parent="." unique_id=1126401290]
+shape = SubResource("CircleShape2D_igel7")
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=1225734028]
+texture_filter = 1
+texture = SubResource("PlaceholderTexture2D_w4oeh")
