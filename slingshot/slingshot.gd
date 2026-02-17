@@ -27,4 +27,3 @@ func _process(delta: float) -> void:
 		rock.max_travel = power_time(charge_time)
 		charge_time = 0
 		get_parent().get_parent().add_child(rock)
-

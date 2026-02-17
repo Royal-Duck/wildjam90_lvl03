@@ -1,10 +1,8 @@
 extends Node2D
 
-const FLASHBACK = preload("uid://brat7n62mmmdh")
-
 @onready var go_to_flash_back_test: Area2D = $GoToFlashBackTest
-@onready var menu: CanvasLayer = $Menu
 
+# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	go_to_flash_back_test.body_entered.connect(_on_go_to_flash_back_test_body_entered)
 
@@ -13,9 +11,4 @@ func _on_go_to_flash_back_test_body_entered(body: Node2D) -> void:
 		GameManager.has_seen_start_menu = true
 		GameManager.is_scene_change = true
 		GameManager.is_retry = false
-		get_tree().call_deferred("change_scene_to_packed", FLASHBACK)
-
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("esc"):
-		menu.visible = true
-		get_tree().paused = true
+		get_tree().call_deferred("change_scene_to_file", "res://world.tscn")

@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://brat7n62mmmdh"]
+
+[ext_resource type="Script" uid="uid://du3u5ylrrg67x" path="res://flashback/flashback.gd" id="1_1glmq"]
+[ext_resource type="Script" uid="uid://c6w163ewp2oix" path="res://globals/dialogue_controller.gd" id="1_bfqkw"]
+[ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="2_gl4vx"]
+[ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="3_l26xp"]
+[ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="4_m7aip"]
+[ext_resource type="Resource" uid="uid://bvr5apy0edges" path="res://npc/characters/wounded/wounded.tres" id="5_1glmq"]
+
+[sub_resource type="TileSet" id="TileSet_m7aip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7aip"]
+size = Vector2(85, 84)
+
+[node name="Flashback" type="Node2D" unique_id=1019953145]
+script = ExtResource("1_1glmq")
+
+[node name="Player" parent="." unique_id=2075464257 instance=ExtResource("3_l26xp")]
+position = Vector2(780, 360)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1721406453]
+tile_set = SubResource("TileSet_m7aip")
+
+[node name="DialogueController" type="Node" parent="." unique_id=1074387959]
+script = ExtResource("1_bfqkw")
+
+[node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("4_m7aip")]
+position = Vector2(594, 328)
+data = ExtResource("5_1glmq")
+
+[node name="Menu" type="CanvasLayer" parent="." unique_id=997791905]
+process_mode = 2
+visible = false
+script = ExtResource("2_gl4vx")
+
+[node name="ColorRect" type="ColorRect" parent="Menu" unique_id=137089380]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.25370002, 0.43, 0.32128167, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="Menu/ColorRect" unique_id=171196551]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/ColorRect/CenterContainer" unique_id=1939406513]
+layout_mode = 2
+
+[node name="MainMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=742766025]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="NewGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=307124878]
+unique_name_in_owner = true
+layout_mode = 2
+text = "New Game"
+
+[node name="SettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1308219735]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=17825007]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit game"
+
+[node name="SettingsMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1493741144]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Volume" type="HBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=133448535]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=1588860346]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=577011276]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 80.0
+
+[node name="CloseSettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=368702140]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
+
+[node name="GameOverMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=2133537789]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=1621102562]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Try again"
+
+[node name="GoToFlashBackTest" type="Area2D" parent="." unique_id=1640295840]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GoToFlashBackTest" unique_id=875063046]
+position = Vector2(365, 357)
+shape = SubResource("RectangleShape2D_m7aip")
+
+[node name="ColorRect" type="ColorRect" parent="GoToFlashBackTest" unique_id=670434760]
+offset_left = 321.0
+offset_top = 316.0
+offset_right = 407.0
+offset_bottom = 399.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="GoToFlashBackTest" unique_id=1012329409]
+offset_left = 313.0
+offset_top = 285.0
+offset_right = 414.0
+offset_bottom = 308.0
+text = "Retour à la maison"

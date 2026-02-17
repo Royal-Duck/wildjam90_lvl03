@@ -1531,6 +1531,9 @@ pattern_54 = SubResource("TileMapPattern_ir1d4")
 pattern_55 = SubResource("TileMapPattern_tj74d")
 pattern_56 = SubResource("TileMapPattern_yy5nj")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2u3nc"]
+size = Vector2(85, 84)
+
 [node name="world" type="Node2D" unique_id=803981536]
 script = ExtResource("1_2u3nc")
 
@@ -1541,7 +1544,8 @@ tile_map_data = PackedByteArray("AAAAABAADQABAAEAAAABAAEADQABAAEAAAABAAIADQACAAE
 tile_set = SubResource("TileSet_jtjyu")
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("1_f3sb7")]
-position = Vector2(780, 360)
+position = Vector2(759, 342)
+health = 2
 
 [node name="Npc" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
 position = Vector2(594, 328)
@@ -1555,7 +1559,7 @@ position = Vector2(1093, 180)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy4" parent="." unique_id=458950875 instance=ExtResource("5_dwbse")]
-position = Vector2(826, 105)
+position = Vector2(767, 45)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy5" parent="." unique_id=358248586 instance=ExtResource("5_dwbse")]
@@ -1568,6 +1572,7 @@ enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
+visible = false
 script = ExtResource("15_hiqwa")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]
@@ -1647,3 +1652,27 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = "Try again"
+
+[node name="GoToFlashBackTest" type="Area2D" parent="." unique_id=978051159]
+position = Vector2(86, -6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GoToFlashBackTest" unique_id=1029759424]
+position = Vector2(365, 357)
+shape = SubResource("RectangleShape2D_2u3nc")
+
+[node name="ColorRect" type="ColorRect" parent="GoToFlashBackTest" unique_id=135782845]
+offset_left = 321.0
+offset_top = 316.0
+offset_right = 407.0
+offset_bottom = 399.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="GoToFlashBackTest" unique_id=1679114734]
+offset_left = 280.0
+offset_top = 259.0
+offset_right = 457.0
+offset_bottom = 308.0
+text = "Le portail magique 
+pour aller au flashback"
+metadata/_edit_use_anchors_ = true

@@ -14,13 +14,10 @@ extends CanvasLayer
 
 @onready var volume_slider: HSlider = %VolumeSlider
 
-var game_started = false
-
 func _ready() -> void:
-	get_tree().paused = true
-	visible = true
 	settings_menu.visible = false
 	game_over_menu.visible = false
+	main_menu.visible = true
 	
 	new_game_btn.pressed.connect(_on_new_game_btn_pressed)
 	settings_btn.pressed.connect(_on_settings_menu_btn_pressed)
@@ -34,8 +31,19 @@ func _ready() -> void:
 	volume_slider.value = 80
 	volume_slider.value_changed.connect(_on_volume_changed)
 
+	if not GameManager.has_seen_start_menu:
+		get_tree().paused = true
+		visible = true
+		new_game_btn.text = "New Game"
+	else:
+		get_tree().paused = false
+		visible = false
+
 func _on_new_game_btn_pressed() -> void:
 	AudioManager.play_ui_click()
+	GameManager.has_seen_start_menu = true
+	GameManager.is_scene_change = false
+	GameManager.is_retry = false
 	get_tree().paused = false
 	visible = false
 	new_game_btn.text = "Back to game"
@@ -63,6 +71,10 @@ func game_over() -> void:
 	get_tree().paused = true
 
 func _on_try_again_btn_pressed() -> void:
+	GameManager.has_seen_start_menu = true
+	GameManager.is_scene_change = false
+	GameManager.is_retry = true
+	get_tree().paused = false
 	get_tree().reload_current_scene()
 
 func _on_quit_game_btn_pressed() -> void:
