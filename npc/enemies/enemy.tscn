@@ -9,8 +9,12 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_05od2"]
 radius = 45.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_4cw6c"]
+radius = 233.42023
+
 [node name="Enemy" type="CharacterBody2D" unique_id=1340809577 groups=["player"]]
 collision_layer = 4
+collision_mask = 5
 script = ExtResource("1_e1acu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2036290760]
@@ -25,10 +29,15 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "Un méchant"
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1929380182]
+[node name="AttackArea" type="Area2D" parent="." unique_id=1929380182]
 collision_layer = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=798588805]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=798588805]
 shape = SubResource("CircleShape2D_05od2")
 
 [node name="AttackTimer" type="Timer" parent="." unique_id=883916462]
+
+[node name="AgroArea" type="Area2D" parent="." unique_id=1649068335]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AgroArea" unique_id=1076614525]
+shape = SubResource("CircleShape2D_4cw6c")

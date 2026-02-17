@@ -14,10 +14,15 @@ config/name="wildjam90_lvl03"
 run/main_scene="uid://c17j50y3jhwau"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
+[audio]
+
+buses/default_bus_layout="uid://cfd8yy36i2qhv"
+
 [autoload]
 
 DialogueManager="*uid://c3rodes2l3gxb"
 DialogueController="*uid://c6w163ewp2oix"
+AudioManager="*uid://dtfor2pafwr38"
 
 [editor_plugins]
 
@@ -52,6 +57,11 @@ down={
 interact={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"location":0,"echo":false,"script":null)
+]
+}
+esc={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
 
