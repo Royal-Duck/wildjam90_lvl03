@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
 @export var speed: int = 300
+@export var health: int = 100
 
+@onready var menu: CanvasLayer = $"../Menu"
 @onready var hud: CanvasLayer = $HUD
 @onready var npc_interact_area: Area2D = $NpcInteractArea
 
 var current_npc: Node2D = null
-var health: int = 100
 
 func _ready() -> void:
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
@@ -70,4 +71,4 @@ func take_damage(amount: int) -> void:
 		die()
 
 func die() -> void:
-	get_tree().reload_current_scene()
+	menu.game_over()

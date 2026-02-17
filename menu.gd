@@ -4,9 +4,13 @@ extends CanvasLayer
 
 @onready var settings_menu: VBoxContainer = %SettingsMenu
 @onready var main_menu: VBoxContainer = %MainMenu
+@onready var game_over_menu: VBoxContainer = %GameOverMenu
 
 @onready var settings_btn: Button = %SettingsBtn
 @onready var close_settings_btn: Button = %CloseSettingsBtn
+
+@onready var try_again_btn: Button = %TryAgainBtn
+@onready var quit_game_btn: Button = %QuitGameBtn
 
 @onready var volume_slider: HSlider = %VolumeSlider
 
@@ -16,10 +20,14 @@ func _ready() -> void:
 	get_tree().paused = true
 	visible = true
 	settings_menu.visible = false
+	game_over_menu.visible = false
 	
 	new_game_btn.pressed.connect(_on_new_game_btn_pressed)
 	settings_btn.pressed.connect(_on_settings_menu_btn_pressed)
 	close_settings_btn.pressed.connect(_on_close_settings_btn_pressed)
+
+	try_again_btn.pressed.connect(_on_try_again_btn_pressed)
+	quit_game_btn.pressed.connect(_on_quit_game_btn_pressed)
 
 	volume_slider.min_value = 0
 	volume_slider.max_value = 100
@@ -47,3 +55,15 @@ func _on_close_settings_btn_pressed() -> void:
 
 func _on_volume_changed(value: float) -> void:
 	AudioManager.set_volume(value)
+
+func game_over() -> void:
+	visible = true
+	main_menu.visible = false
+	game_over_menu.visible = true
+	get_tree().paused = true
+
+func _on_try_again_btn_pressed() -> void:
+	get_tree().reload_current_scene()
+
+func _on_quit_game_btn_pressed() -> void:
+	get_tree().quit()

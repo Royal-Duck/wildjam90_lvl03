@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cgss8b3frjjvs"]
 
 [ext_resource type="Script" uid="uid://m7d17ql86j8a" path="res://player/player.gd" id="1_ulp21"]
-[ext_resource type="Script" path="res://player/hud.gd" id="2_3c3w1"]
+[ext_resource type="Script" uid="uid://50gu2afw4l8h" path="res://player/hud.gd" id="2_3c3w1"]
 [ext_resource type="PackedScene" uid="uid://cvooviofnqued" path="res://slingshot/slingshot.tscn" id="3_wnvi2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ehsmr"]

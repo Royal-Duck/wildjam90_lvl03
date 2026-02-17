@@ -1606,6 +1606,11 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Settings"
 
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=888341835]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit game"
+
 [node name="SettingsMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1111802906]
 unique_name_in_owner = true
 layout_mode = 2
@@ -1633,3 +1638,12 @@ value = 80.0
 unique_name_in_owner = true
 layout_mode = 2
 text = "Back"
+
+[node name="GameOverMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1047092522]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=1548098322]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Try again"
