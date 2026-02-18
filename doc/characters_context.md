@@ -32,7 +32,10 @@ Notes et éléments de contexte pour chaque rencontre narrative.
 ---
 
 ## Mother
-- *(À compléter)*
+- On peut comprendre que certains membres de la famille sont morts pendant la guerre (petit frère/sœur, mari)
+- On pourrait l'imaginer particulièrement heureuse et émue de revoir son fils
+- Elle est très proche de son fils (justifiant que ce dernier explose en confession sur le meurtre du roi ?)
+- Comme nous n'avons pas d'intérieur à disposition, son décor doit être évocateur de quelque chose de familier, convivial, rassurant (éléments de décor : rocking-chair, décoration unique sur les murs, couleurs chaudes ?)
 
 ---
 

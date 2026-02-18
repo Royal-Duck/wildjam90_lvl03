@@ -1,11 +1,18 @@
 ~ start
-Mother: My son... you came back.
-Mother: Come here, let me look at you.
+# FR: M... Mon grand?! C'est bien toi?!
+# (se rapproche)
+Mother: M... My boy?! Is it really you?!
+# FR: Tu es vivant! Dieu merci, tu es vivant!
+Mother: You're alive! Thank God, you're alive!
 Player: ...
-Mother: You have the face of a man who has not slept in years.
-Mother: No. Not with those eyes.
-Mother: Tell me, what are you carrying?
-Mother: I can see your lips moving...
-Player: ...
-Mother: At the palace... that day... what did you do?
+# FR: Quel est ce regard?
+Mother: What's that look?
+# (le player pourrait se retourner et la mère venir se mettre face à lui comme pour signifier qu'elle est inquiète et attend une réponse)
+# FR: Je t'en prie, parle-moi...
+Mother: Please, talk to me...
+# FR: Qu'est-ce qui s'est passé?
+Mother: What happened?
+# FR: Maman, J'ai...
+Player: Mother, I...
+# (idéalement, le player s'effondre ou s'agenouille, puis transition sur le flashback)
 => END
