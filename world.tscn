@@ -16,7 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://crccc5rc73ryx" path="res://texture/TX Plant.png" id="7_cbp6q"]
 [ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="8_26xuy"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="15_hiqwa"]
-[ext_resource type="StyleBox" uid="uid://ckya1eeoic8n4" path="res://ui/button/btn_style_box_flat.tres" id="17_udxuc"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_bc84e"]
 tile_data = PackedInt32Array(0, 65548, 1, 65536, 65548, 2, 131072, 65548, 3, 1, 131084, 1, 65537, 131084, 2, 131073, 131084, 3)
@@ -1603,7 +1602,6 @@ size_flags_horizontal = 4
 [node name="NewGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1255548212]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_styles/normal = ExtResource("17_udxuc")
 text = "New Game"
 
 [node name="SettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1081657312]
