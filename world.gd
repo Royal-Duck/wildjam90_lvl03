@@ -18,5 +18,7 @@ func _on_go_to_flash_back_test_body_entered(body: Node2D) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("esc"):
+		if DialogueController.is_dialogue_open:
+			DialogueController.close_current_balloon()
 		menu.visible = true
 		get_tree().paused = true

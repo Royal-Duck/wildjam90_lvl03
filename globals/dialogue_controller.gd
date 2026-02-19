@@ -1,6 +1,7 @@
 extends Node
 
 var is_dialogue_open: bool = false
+var current_balloon: Node = null
 
 
 func start_dialogue(dialogue_path: String) -> void:
@@ -12,8 +13,16 @@ func start_dialogue(dialogue_path: String) -> void:
 		is_dialogue_open = false
 		return
 
+	current_balloon = balloon
 	balloon.tree_exited.connect(_on_balloon_tree_exited, CONNECT_ONE_SHOT)
 
 
+func close_current_balloon() -> void:
+	if current_balloon != null:
+		current_balloon.queue_free()
+		current_balloon = null
+
+
 func _on_balloon_tree_exited() -> void:
+	current_balloon = null
 	is_dialogue_open = false
