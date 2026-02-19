@@ -6,6 +6,7 @@ const FLASHBACK = preload("uid://brat7n62mmmdh")
 @onready var menu: CanvasLayer = $Menu
 
 func _ready() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
 	go_to_flash_back_test.body_entered.connect(_on_go_to_flash_back_test_body_entered)
 
 func _on_go_to_flash_back_test_body_entered(body: Node2D) -> void:

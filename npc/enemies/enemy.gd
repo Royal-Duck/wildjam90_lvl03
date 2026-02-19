@@ -63,6 +63,10 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 	
 func _on_attack_area_body_entered(body: Node2D) -> void:
+	if "damage" in body:
+		take_damage(body.damage)
+		body.queue_free()
+		return
 	if body.is_in_group("player"):
 		player = body
 		body.take_damage(enemy_resource.attack_power)
@@ -93,3 +97,12 @@ func _on_agro_area_body_exited(body: Node2D) -> void:
 
 func _on_dialogue_timer_timeout() -> void:
 	dialogue_bubble.visible = false
+
+
+func take_damage(amount: int) -> void:
+	enemy_resource.take_damage(amount)
+	if enemy_resource.is_dead():
+		die()
+
+func die() -> void:
+	queue_free()

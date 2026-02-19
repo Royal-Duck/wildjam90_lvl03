@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cr2m1ibho7xe7" path="res://slingshot/thrown_rock.gd" id="1_q2iit"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_igel7"]
+radius = 14.0
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_w4oeh"]
 size = Vector2(16, 16)
