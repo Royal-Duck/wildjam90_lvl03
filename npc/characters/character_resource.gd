@@ -4,6 +4,7 @@ class_name Character
 @export var character_name: String = ""
 @export_file("*.png", "*.jpg", "*.jpeg", "*.webp") var sprite_path: String = ""
 @export_file("*.dialogue") var dialogue_path: String = ""
+@export var dialogue_bubble_text: String = ""
 
 func get_sprite_texture() -> Texture2D:
 	if sprite_path.is_empty():

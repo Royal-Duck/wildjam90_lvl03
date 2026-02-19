@@ -5,4 +5,5 @@
 [resource]
 script = ExtResource("1_gxw8b")
 dialogue_path = "uid://dnbvd3ee3rtde"
+dialogue_bubble_text = "My son! You're back!"
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

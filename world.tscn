@@ -13,6 +13,9 @@
 [ext_resource type="Resource" uid="uid://untxwx8vrg7m" path="res://npc/enemies/bandit/bandit.tres" id="6_pkg7o"]
 [ext_resource type="Texture2D" uid="uid://crccc5rc73ryx" path="res://texture/TX Plant.png" id="7_cbp6q"]
 [ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="8_26xuy"]
+[ext_resource type="Resource" uid="uid://dgoqd5tcuyyw2" path="res://npc/characters/widow/widow.tres" id="11_hiqwa"]
+[ext_resource type="Resource" uid="uid://dk4foh3xmvrg8" path="res://npc/characters/deserter/deserter.tres" id="12_2u3nc"]
+[ext_resource type="Resource" uid="uid://cykykmgwiuoxe" path="res://npc/characters/mother/mother.tres" id="13_udxuc"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="15_hiqwa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hiqwa"]
@@ -1695,29 +1698,41 @@ tile_set = SubResource("TileSet_mc2jv")
 tile_set = SubResource("TileSet_o3ebs")
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("1_f3sb7")]
-position = Vector2(759, 342)
+position = Vector2(-165, 645)
 
-[node name="Npc" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
-position = Vector2(594, 328)
+[node name="Wounded" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
+position = Vector2(309, 682)
 data = ExtResource("3_tlwt5")
+
+[node name="Widowed" parent="." unique_id=2019593617 instance=ExtResource("2_fj7yv")]
+position = Vector2(827, 672)
+data = ExtResource("11_hiqwa")
+
+[node name="Deserter" parent="." unique_id=1464701471 instance=ExtResource("2_fj7yv")]
+position = Vector2(1228, 951)
+data = ExtResource("12_2u3nc")
+
+[node name="Npc" parent="." unique_id=1667970125 instance=ExtResource("2_fj7yv")]
+position = Vector2(1496, 1343)
+data = ExtResource("13_udxuc")
 
 [node name="DialogueController" type="Node" parent="." unique_id=1820427701]
 script = ExtResource("4_aqk2v")
 
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("5_dwbse")]
-position = Vector2(800, -106)
+position = Vector2(2279, 1161)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy4" parent="." unique_id=458950875 instance=ExtResource("5_dwbse")]
-position = Vector2(185, 442)
+position = Vector2(2474, 929)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy5" parent="." unique_id=358248586 instance=ExtResource("5_dwbse")]
-position = Vector2(1106, 670)
+position = Vector2(2060, 610)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy6" parent="." unique_id=648043668 instance=ExtResource("5_dwbse")]
-position = Vector2(1180, 453)
+position = Vector2(1990, 423)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]

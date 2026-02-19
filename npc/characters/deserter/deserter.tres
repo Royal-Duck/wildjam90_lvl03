@@ -5,4 +5,5 @@
 [resource]
 script = ExtResource("1_rv5gc")
 character_name = "deserter"
+dialogue_bubble_text = "Don't come any closer."
 metadata/_custom_type_script = "uid://d4esalw7fuwka"
