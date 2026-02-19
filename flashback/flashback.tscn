@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="2_gl4vx"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="3_l26xp"]
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="4_m7aip"]
-[ext_resource type="Resource" uid="uid://bvr5apy0edges" path="res://npc/characters/wounded/wounded.tres" id="5_1glmq"]
+[ext_resource type="Resource" uid="uid://fxp6h0so4u7j" path="res://npc/characters/king/king.tres" id="5_1glmq"]
 
 [sub_resource type="TileSet" id="TileSet_m7aip"]
 
