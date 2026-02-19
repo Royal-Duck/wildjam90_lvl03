@@ -1730,3 +1730,180 @@ offset_bottom = 308.0
 text = "Le portail magique 
 pour aller au flashback"
 metadata/_edit_use_anchors_ = true
+
+[node name="Node" type="Node" parent="." unique_id=1083543252]
+
+[node name="Tree1" type="Sprite2D" parent="Node" unique_id=832494177]
+texture_filter = 1
+position = Vector2(61, -27)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(24, 8, 120, 152)
+
+[node name="Tree2" type="Sprite2D" parent="Node" unique_id=332052828]
+texture_filter = 1
+position = Vector2(61, -27)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(160, 16, 96, 144)
+
+[node name="Tree3" type="Sprite2D" parent="Node" unique_id=841401681]
+texture_filter = 1
+position = Vector2(61, -27)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(288, 24, 88, 128)
+
+[node name="Bush1" type="Sprite2D" parent="Node" unique_id=1737477536]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(32, 192, 32, 32)
+
+[node name="Bush2" type="Sprite2D" parent="Node" unique_id=658605472]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(104, 192, 32, 32)
+
+[node name="Bush3" type="Sprite2D" parent="Node" unique_id=2065448764]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(176, 192, 40, 32)
+
+[node name="Bush4" type="Sprite2D" parent="Node" unique_id=2128157716]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(256, 184, 40, 48)
+
+[node name="Bush5" type="Sprite2D" parent="Node" unique_id=1671236610]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(344, 184, 48, 48)
+
+[node name="Bush6" type="Sprite2D" parent="Node" unique_id=1703729975]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(24, 248, 56, 56)
+
+[node name="Weed1" type="Sprite2D" parent="Node" unique_id=694700211]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(0, 392, 32, 16)
+
+[node name="Weed2" type="Sprite2D" parent="Node" unique_id=1259087061]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(40, 392, 24, 16)
+
+[node name="Weed3" type="Sprite2D" parent="Node" unique_id=2129497686]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(72, 392, 16, 16)
+
+[node name="Weed4" type="Sprite2D" parent="Node" unique_id=162169445]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(96, 392, 24, 16)
+
+[node name="Weed5" type="Sprite2D" parent="Node" unique_id=1395450855]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(8, 424, 16, 16)
+
+[node name="Weed6" type="Sprite2D" parent="Node" unique_id=1210058243]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(40, 424, 16, 16)
+
+[node name="Weed7" type="Sprite2D" parent="Node" unique_id=2073215971]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(72, 424, 16, 16)
+
+[node name="Weed8" type="Sprite2D" parent="Node" unique_id=46560209]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(104, 424, 16, 16)
+
+[node name="Weed9" type="Sprite2D" parent="Node" unique_id=761832976]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(8, 456, 16, 16)
+
+[node name="Weed10" type="Sprite2D" parent="Node" unique_id=112100998]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(40, 456, 16, 16)
+
+[node name="Weed11" type="Sprite2D" parent="Node" unique_id=495346537]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(64, 456, 24, 16)
+
+[node name="Weed12" type="Sprite2D" parent="Node" unique_id=1511616395]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(104, 456, 16, 16)
+
+[node name="Weed13" type="Sprite2D" parent="Node" unique_id=1468700536]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(8, 488, 16, 16)
+
+[node name="Weed14" type="Sprite2D" parent="Node" unique_id=1374434009]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(40, 488, 16, 16)
+
+[node name="Weed15" type="Sprite2D" parent="Node" unique_id=338812252]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(72, 488, 16, 16)
+
+[node name="Flower" type="Sprite2D" parent="Node" unique_id=548093785]
+texture_filter = 1
+position = Vector2(60, 44)
+texture = ExtResource("7_cbp6q")
+region_enabled = true
+region_rect = Rect2(104, 488, 16, 16)
