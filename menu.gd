@@ -38,6 +38,7 @@ func _ready() -> void:
 	else:
 		get_tree().paused = false
 		visible = false
+		new_game_btn.text = "Back to game"
 
 func _on_new_game_btn_pressed() -> void:
 	AudioManager.play_ui_click()
