@@ -5,8 +5,12 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_igel7"]
 radius = 14.0
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_w4oeh"]
-size = Vector2(16, 16)
+[sub_resource type="Gradient" id="Gradient_q2iit"]
+offsets = PackedFloat32Array(0, 0.31724137, 0.46206897, 0.67356324, 0.845977, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.3403393, 0.34033933, 0.3403393, 1, 0, 0, 0, 1, 0.9267044, 0.9267045, 0.9267044, 1, 0.09239707, 0.09239706, 0.09239706, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_igel7"]
+gradient = SubResource("Gradient_q2iit")
 
 [node name="thrown_rock" type="CharacterBody2D" unique_id=978956647]
 collision_layer = 16
@@ -18,4 +22,5 @@ shape = SubResource("CircleShape2D_igel7")
 
 [node name="sprite" type="Sprite2D" parent="." unique_id=1225734028]
 texture_filter = 1
-texture = SubResource("PlaceholderTexture2D_w4oeh")
+scale = Vector2(0.28125, 0.28125)
+texture = SubResource("GradientTexture2D_igel7")

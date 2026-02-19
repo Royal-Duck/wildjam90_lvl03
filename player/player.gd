@@ -45,9 +45,11 @@ func _unhandled_input(event: InputEvent) -> void:
 func _try_interact_with_npc() -> void:
 	if current_npc == null:
 		return
-
 	if not current_npc.is_in_group("npc"):
 		return
+	for e in get_tree().get_nodes_in_group("enemy"):
+		if e.get("follow_player"):
+			return
 
 	current_npc.hide_to_interact_press_e()
 	DialogueController.start_dialogue(current_npc.data.dialogue_path)

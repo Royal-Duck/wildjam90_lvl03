@@ -36,11 +36,11 @@ func _process(delta: float) -> void:
 	$basepoint.global_rotation = angle + PI / 2
 	on_cooldown = clampf(on_cooldown - delta, 0.0, COOLDOWN)
 
-	var charging: bool = Input.is_action_pressed("attack_click") and is_zero_approx(on_cooldown)
+	var charging: bool = Input.is_action_pressed("attack_click") and is_zero_approx(on_cooldown) and not DialogueController.is_dialogue_open
 	if charging:
 		Engine.time_scale = SLOW_SCALE
 		charge_time += delta / Engine.time_scale
-	if Input.is_action_just_released("attack_click") and is_zero_approx(on_cooldown) and not is_zero_approx(charge_time):
+	if Input.is_action_just_released("attack_click") and is_zero_approx(on_cooldown) and not is_zero_approx(charge_time) and not DialogueController.is_dialogue_open:
 		on_cooldown = COOLDOWN
 		var rock = THROWN_ROCK.instantiate()
 		rock.global_position = $basepoint/launcher.global_position
