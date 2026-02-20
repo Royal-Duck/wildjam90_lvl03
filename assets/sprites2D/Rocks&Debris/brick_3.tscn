@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bkmi4ecow6t2c"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_tnpes"]
+
+[node name="Brick3" type="Sprite2D" unique_id=690460538]
+texture_filter = 1
+texture = ExtResource("1_tnpes")
+region_enabled = true
+region_rect = Rect2(288, 480, 32, 32)

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b5b8c8tfkwwc6"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_bfhkf"]
+
+[node name="Broken_Pillar" type="Sprite2D" unique_id=881163569]
+texture_filter = 1
+texture = ExtResource("1_bfhkf")
+region_enabled = true
+region_rect = Rect2(416, 192, 32, 64)

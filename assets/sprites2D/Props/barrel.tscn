@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://buwnxmjr16ua6"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_boika"]
+
+[node name="Barrel" type="Sprite2D" unique_id=817149843]
+texture_filter = 1
+texture = ExtResource("1_boika")
+region_enabled = true
+region_rect = Rect2(160, 152, 32, 40)

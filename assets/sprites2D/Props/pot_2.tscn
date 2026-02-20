@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://e1rxsmpmru4w"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_rbk15"]
+
+[node name="Pot2" type="Sprite2D" unique_id=1893171257]
+texture_filter = 1
+texture = ExtResource("1_rbk15")
+region_enabled = true
+region_rect = Rect2(160, 288, 32, 32)

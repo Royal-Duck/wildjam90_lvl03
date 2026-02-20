@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://h0cjd24limws"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_dpg0h"]
+
+[node name="Stone_Crate" type="Sprite2D" unique_id=1991399317]
+texture_filter = 1
+texture = ExtResource("1_dpg0h")
+region_enabled = true
+region_rect = Rect2(288, 304, 32, 48)

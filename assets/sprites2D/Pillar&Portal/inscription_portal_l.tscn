@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ea65la1k5t8p"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_ih7cw"]
+
+[node name="Inscription_Portal_L" type="Sprite2D" unique_id=1177063461]
+texture_filter = 1
+texture = ExtResource("1_ih7cw")
+region_enabled = true
+region_rect = Rect2(328, 264, 8, 8)

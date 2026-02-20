@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://5rhpu60ml4e1"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_w2lhy"]
+
+[node name="Sign_Right" type="Sprite2D" unique_id=383972529]
+texture_filter = 1
+texture = ExtResource("1_w2lhy")
+region_enabled = true
+region_rect = Rect2(96, 160, 32, 32)

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://btnb47kd56h2l"]
+
+[ext_resource type="Texture2D" uid="uid://fegjbdxqlacv" path="res://texture/TX Struct.png" id="1_nwcdt"]
+
+[node name="Stairs_LeftRight" type="Sprite2D" unique_id=653816871]
+texture_filter = 1
+texture = ExtResource("1_nwcdt")
+region_enabled = true
+region_rect = Rect2(48, 288, 90, 96)

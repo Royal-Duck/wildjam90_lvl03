@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b5ayxe2hdv4yo"]
+
+[ext_resource type="Texture2D" uid="uid://crccc5rc73ryx" path="res://texture/TX Plant.png" id="1_x4lfj"]
+
+[node name="Weed15" type="Sprite2D" unique_id=1771505576]
+texture_filter = 1
+texture = ExtResource("1_x4lfj")
+region_enabled = true
+region_rect = Rect2(72, 488, 16, 16)
