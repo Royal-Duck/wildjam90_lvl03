@@ -1,6 +1,6 @@
 ~ start
 # FR: Où en est la contre-offensive?
-King: Where do we stand with the counter-offensive? //  counter attack plus adapté (attack) veut ausssi dire "poussée" au sens militaire
+King: Where do we stand with the counter-attack?
 # FR: Nos pertes sont importantes, nous avons perdu la porte nord, notre cavalerie est encerclée et nos espions ne répondent plus. Dois-je sonner la retraite, Mon Roi?
 Player: Heavy losses. The north gate has fallen, our cavalry is surrounded, our spies have gone quiet. Do I order a retreat, my King?
 # FR: Misérables ! Vous n'êtes qu'à peine plus aguerris qu'une meute de paysans !
@@ -14,7 +14,7 @@ Player: But my Lord... we're outnumbered three to one, we have wounded and...
 # FR: Assez ! Si vous ne survivez pas c'est que vous ne le méritiez pas.
 King: Enough! If you don't survive, you didn't deserve to.
 # FR: Maintenant, obéissez.
-King: Now obey. // je pense qu'une ponctuation Now, obey! serais plus adapté mais le calme est bien aussi
+King: Now obey.
 # FR: Il me tourne le dos.
 [#aside] He turns his back to me.
 # FR: Je pose la main sur la garde.
