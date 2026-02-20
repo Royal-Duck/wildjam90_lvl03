@@ -28,11 +28,6 @@ shape = SubResource("CircleShape2D_e1acu")
 scale = Vector2(16, 14)
 texture = SubResource("PlaceholderTexture2D_e1acu")
 
-[node name="Label" type="Label" parent="." unique_id=836428596]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Un méchant"
-
 [node name="AttackArea" type="Area2D" parent="." unique_id=1929380182]
 collision_layer = 4
 collision_mask = 17
