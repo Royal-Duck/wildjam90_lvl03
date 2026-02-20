@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://yglcq1n10um2"]
+
+[ext_resource type="Texture2D" uid="uid://d2h5f3y2y5ses" path="res://texture/TX Shadow.png" id="1_71f75"]
+
+[node name="Statue_Shadow" type="Sprite2D" unique_id=1158625661]
+modulate = Color(1, 1, 1, 0.16078432)
+texture = ExtResource("1_71f75")
+region_enabled = true
+region_rect = Rect2(440, 48, 48, 48)

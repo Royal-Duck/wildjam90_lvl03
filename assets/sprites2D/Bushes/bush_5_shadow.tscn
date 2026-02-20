@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bmoe7lta6o5nt"]
+
+[ext_resource type="Texture2D" uid="uid://b27fpj723lhk1" path="res://texture/TX Shadow Plant.png" id="1_gve6d"]
+
+[node name="Bush5_Shadow" type="Sprite2D" unique_id=1134952691]
+modulate = Color(1, 1, 1, 0.16078432)
+texture = ExtResource("1_gve6d")
+region_enabled = true
+region_rect = Rect2(344, 192, 48, 40)
