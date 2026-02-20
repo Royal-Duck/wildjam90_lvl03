@@ -269,6 +269,7 @@ shape = SubResource("CircleShape2D_e1acu")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=566793067]
 sprite_frames = SubResource("SpriteFrames_q5esj")
 animation = &"Idle_Left"
+autoplay = "Idle_Left"
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1929380182]
 collision_layer = 4

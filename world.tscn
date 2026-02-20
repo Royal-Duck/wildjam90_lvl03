@@ -118,7 +118,369 @@ texture_filter = 1
 tile_map_data = PackedByteArray("AAASAPz/AwACAAMAAAASAP3/AwACAAQAAAATAPz/AgANAAQAAAATAP3/AgANAAUAAAAUAPz/AgAOAAQAAAAUAP3/AgAOAAUAAAAVAPz/AwACAAMAAAAVAP3/AwACAAQAAAAWAP3/AwAGAAcAAAAWAPz/AwAGAAYAAAARAPz/AwAGAAYAAAARAP3/AwAGAAcAAAAPAPv/AwAIAAEAAAAOAPv/AwABAAMAAAAOAPz/AwABAAQAAAAZAPv/AwADAAMAAAAZAPz/AwADAAQAAAAYAPv/AwAEAAEAAAAOAPr/AwABAAIAAAAOAPn/AwABAAIAAAAOAPj/AwAJAAIAAAAOAPf/AwABAAIAAAAZAPr/AwADAAIAAAAZAPn/AwADAAIAAAAZAPj/AwADAAIAAAAZAPf/AwAKAAMAAAAOAPb/AwABAAEAAAAPAPX/AwABAAEAAAAZAPb/AwADAAEAAAAYAPX/AwADAAEAAAAPAPb/AwAIAAQAAAAYAPb/AwAEAAQAAAAQAPX/AwAFAAQAAAARAPX/AwAGAAQAAAASAPX/AwAHAAQAAAATAPX/AwAFAAQAAAAUAPX/AwAGAAQAAAAVAPX/AwAFAAQAAAAWAPX/AwANAAEAAAAXAPX/AwAHAAQAAAAYAPz/AwAKAAMAAAA=")
 tile_set = ExtResource("12_q42o5")
 
-[node name="Start_Area_Props" type="Node" parent="." unique_id=1327592387]
+[node name="Trees_Boundaries" type="Node2D" parent="." unique_id=976630611]
+
+[node name="Tree3_Shadow5" parent="Trees_Boundaries" unique_id=1987994859 instance=ExtResource("23_fnoqa")]
+position = Vector2(958, -544)
+
+[node name="Tree13" parent="Trees_Boundaries" unique_id=2087864219 instance=ExtResource("19_yx0jh")]
+position = Vector2(951, -603)
+
+[node name="Tree1_Shadow5" parent="Trees_Boundaries" unique_id=553612317 instance=ExtResource("8_1ew0l")]
+position = Vector2(883, -499)
+
+[node name="Tree14" parent="Trees_Boundaries" unique_id=1331646201 instance=ExtResource("18_my276")]
+position = Vector2(885, -565)
+
+[node name="Tree1_Shadow6" parent="Trees_Boundaries" unique_id=1194349197 instance=ExtResource("8_1ew0l")]
+position = Vector2(1031, -519)
+
+[node name="Tree15" parent="Trees_Boundaries" unique_id=2091875105 instance=ExtResource("18_my276")]
+position = Vector2(1033, -585)
+
+[node name="Tree2_Shadow5" parent="Trees_Boundaries" unique_id=456338014 instance=ExtResource("10_ytpkv")]
+position = Vector2(951, -469)
+
+[node name="Tree16" parent="Trees_Boundaries" unique_id=162008492 instance=ExtResource("17_g1i3r")]
+position = Vector2(950, -530)
+
+[node name="Tree2_Shadow6" parent="Trees_Boundaries" unique_id=769106420 instance=ExtResource("10_ytpkv")]
+position = Vector2(1110, -503)
+
+[node name="Tree17" parent="Trees_Boundaries" unique_id=650952913 instance=ExtResource("17_g1i3r")]
+position = Vector2(1109, -564)
+
+[node name="Tree3_Shadow6" parent="Trees_Boundaries" unique_id=745453977 instance=ExtResource("23_fnoqa")]
+position = Vector2(1037, -457)
+
+[node name="Tree18" parent="Trees_Boundaries" unique_id=1268772123 instance=ExtResource("19_yx0jh")]
+position = Vector2(1030, -516)
+
+[node name="Tree3_Shadow7" parent="Trees_Boundaries" unique_id=1081528534 instance=ExtResource("23_fnoqa")]
+position = Vector2(1048, -373)
+
+[node name="Tree19" parent="Trees_Boundaries" unique_id=1419286028 instance=ExtResource("19_yx0jh")]
+position = Vector2(1041, -432)
+
+[node name="Tree1_Shadow7" parent="Trees_Boundaries" unique_id=1199661730 instance=ExtResource("8_1ew0l")]
+position = Vector2(973, -328)
+
+[node name="Tree20" parent="Trees_Boundaries" unique_id=526142055 instance=ExtResource("18_my276")]
+position = Vector2(975, -394)
+
+[node name="Tree1_Shadow8" parent="Trees_Boundaries" unique_id=732241878 instance=ExtResource("8_1ew0l")]
+position = Vector2(1121, -348)
+
+[node name="Tree21" parent="Trees_Boundaries" unique_id=1969787271 instance=ExtResource("18_my276")]
+position = Vector2(1123, -414)
+
+[node name="Tree2_Shadow7" parent="Trees_Boundaries" unique_id=1717122444 instance=ExtResource("10_ytpkv")]
+position = Vector2(1041, -298)
+
+[node name="Tree22" parent="Trees_Boundaries" unique_id=359697607 instance=ExtResource("17_g1i3r")]
+position = Vector2(1040, -359)
+
+[node name="Tree2_Shadow8" parent="Trees_Boundaries" unique_id=100411279 instance=ExtResource("10_ytpkv")]
+position = Vector2(1200, -332)
+
+[node name="Tree23" parent="Trees_Boundaries" unique_id=219992723 instance=ExtResource("17_g1i3r")]
+position = Vector2(1199, -393)
+
+[node name="Tree3_Shadow8" parent="Trees_Boundaries" unique_id=1061317564 instance=ExtResource("23_fnoqa")]
+position = Vector2(1127, -286)
+
+[node name="Tree24" parent="Trees_Boundaries" unique_id=837619125 instance=ExtResource("19_yx0jh")]
+position = Vector2(1120, -345)
+
+[node name="Tree3_Shadow9" parent="Trees_Boundaries" unique_id=202421758 instance=ExtResource("23_fnoqa")]
+position = Vector2(959, -256)
+
+[node name="Tree25" parent="Trees_Boundaries" unique_id=2144374716 instance=ExtResource("19_yx0jh")]
+position = Vector2(952, -315)
+
+[node name="Tree1_Shadow9" parent="Trees_Boundaries" unique_id=318287054 instance=ExtResource("8_1ew0l")]
+position = Vector2(884, -211)
+
+[node name="Tree26" parent="Trees_Boundaries" unique_id=1278377397 instance=ExtResource("18_my276")]
+position = Vector2(886, -277)
+
+[node name="Tree1_Shadow10" parent="Trees_Boundaries" unique_id=784420898 instance=ExtResource("8_1ew0l")]
+position = Vector2(1032, -231)
+
+[node name="Tree27" parent="Trees_Boundaries" unique_id=1274832288 instance=ExtResource("18_my276")]
+position = Vector2(1034, -297)
+
+[node name="Tree2_Shadow9" parent="Trees_Boundaries" unique_id=195441173 instance=ExtResource("10_ytpkv")]
+position = Vector2(952, -181)
+
+[node name="Tree28" parent="Trees_Boundaries" unique_id=1765497973 instance=ExtResource("17_g1i3r")]
+position = Vector2(951, -242)
+
+[node name="Tree2_Shadow10" parent="Trees_Boundaries" unique_id=242671734 instance=ExtResource("10_ytpkv")]
+position = Vector2(1111, -215)
+
+[node name="Tree29" parent="Trees_Boundaries" unique_id=1728050229 instance=ExtResource("17_g1i3r")]
+position = Vector2(1110, -276)
+
+[node name="Tree3_Shadow10" parent="Trees_Boundaries" unique_id=1713339860 instance=ExtResource("23_fnoqa")]
+position = Vector2(1038, -169)
+
+[node name="Tree30" parent="Trees_Boundaries" unique_id=664609742 instance=ExtResource("19_yx0jh")]
+position = Vector2(1031, -228)
+
+[node name="Tree3_Shadow11" parent="Trees_Boundaries" unique_id=2119176754 instance=ExtResource("23_fnoqa")]
+position = Vector2(1095, -132)
+
+[node name="Tree31" parent="Trees_Boundaries" unique_id=869481010 instance=ExtResource("19_yx0jh")]
+position = Vector2(1088, -191)
+
+[node name="Tree1_Shadow11" parent="Trees_Boundaries" unique_id=1459362710 instance=ExtResource("8_1ew0l")]
+position = Vector2(1020, -87)
+
+[node name="Tree32" parent="Trees_Boundaries" unique_id=1147730580 instance=ExtResource("18_my276")]
+position = Vector2(1022, -153)
+
+[node name="Tree1_Shadow12" parent="Trees_Boundaries" unique_id=625873483 instance=ExtResource("8_1ew0l")]
+position = Vector2(1168, -107)
+
+[node name="Tree33" parent="Trees_Boundaries" unique_id=532342015 instance=ExtResource("18_my276")]
+position = Vector2(1170, -173)
+
+[node name="Tree2_Shadow11" parent="Trees_Boundaries" unique_id=1444676719 instance=ExtResource("10_ytpkv")]
+position = Vector2(1088, -57)
+
+[node name="Tree34" parent="Trees_Boundaries" unique_id=1823890554 instance=ExtResource("17_g1i3r")]
+position = Vector2(1087, -118)
+
+[node name="Tree2_Shadow12" parent="Trees_Boundaries" unique_id=1227341107 instance=ExtResource("10_ytpkv")]
+position = Vector2(1247, -91)
+
+[node name="Tree35" parent="Trees_Boundaries" unique_id=114627138 instance=ExtResource("17_g1i3r")]
+position = Vector2(1246, -152)
+
+[node name="Tree3_Shadow12" parent="Trees_Boundaries" unique_id=107108994 instance=ExtResource("23_fnoqa")]
+position = Vector2(1174, -45)
+
+[node name="Tree36" parent="Trees_Boundaries" unique_id=1465616472 instance=ExtResource("19_yx0jh")]
+position = Vector2(1167, -104)
+
+[node name="Tree3_Shadow" parent="Trees_Boundaries" unique_id=30922727 instance=ExtResource("23_fnoqa")]
+position = Vector2(528, -512)
+
+[node name="Tree3" parent="Trees_Boundaries" unique_id=1937131693 instance=ExtResource("19_yx0jh")]
+position = Vector2(521, -571)
+
+[node name="Tree1_Shadow" parent="Trees_Boundaries" unique_id=1055275142 instance=ExtResource("8_1ew0l")]
+position = Vector2(453, -467)
+
+[node name="Tree1" parent="Trees_Boundaries" unique_id=13504568 instance=ExtResource("18_my276")]
+position = Vector2(455, -533)
+
+[node name="Tree1_Shadow2" parent="Trees_Boundaries" unique_id=1514889958 instance=ExtResource("8_1ew0l")]
+position = Vector2(601, -487)
+
+[node name="Tree4" parent="Trees_Boundaries" unique_id=1961480689 instance=ExtResource("18_my276")]
+position = Vector2(603, -553)
+
+[node name="Tree2_Shadow" parent="Trees_Boundaries" unique_id=483632279 instance=ExtResource("10_ytpkv")]
+position = Vector2(521, -437)
+
+[node name="Tree2" parent="Trees_Boundaries" unique_id=1952419099 instance=ExtResource("17_g1i3r")]
+position = Vector2(520, -498)
+
+[node name="Tree2_Shadow2" parent="Trees_Boundaries" unique_id=911407282 instance=ExtResource("10_ytpkv")]
+position = Vector2(680, -471)
+
+[node name="Tree5" parent="Trees_Boundaries" unique_id=1781859202 instance=ExtResource("17_g1i3r")]
+position = Vector2(679, -532)
+
+[node name="Tree3_Shadow2" parent="Trees_Boundaries" unique_id=82370644 instance=ExtResource("23_fnoqa")]
+position = Vector2(607, -425)
+
+[node name="Tree6" parent="Trees_Boundaries" unique_id=546861980 instance=ExtResource("19_yx0jh")]
+position = Vector2(600, -484)
+
+[node name="Tree3_Shadow3" parent="Trees_Boundaries" unique_id=240117390 instance=ExtResource("23_fnoqa")]
+position = Vector2(769, -448)
+
+[node name="Tree7" parent="Trees_Boundaries" unique_id=828970214 instance=ExtResource("19_yx0jh")]
+position = Vector2(762, -507)
+
+[node name="Tree1_Shadow3" parent="Trees_Boundaries" unique_id=1887905006 instance=ExtResource("8_1ew0l")]
+position = Vector2(694, -403)
+
+[node name="Tree8" parent="Trees_Boundaries" unique_id=1024437246 instance=ExtResource("18_my276")]
+position = Vector2(696, -469)
+
+[node name="Tree1_Shadow4" parent="Trees_Boundaries" unique_id=582588185 instance=ExtResource("8_1ew0l")]
+position = Vector2(842, -423)
+
+[node name="Tree9" parent="Trees_Boundaries" unique_id=1013318784 instance=ExtResource("18_my276")]
+position = Vector2(844, -489)
+
+[node name="Tree2_Shadow3" parent="Trees_Boundaries" unique_id=646032501 instance=ExtResource("10_ytpkv")]
+position = Vector2(762, -373)
+
+[node name="Tree10" parent="Trees_Boundaries" unique_id=384706845 instance=ExtResource("17_g1i3r")]
+position = Vector2(761, -434)
+
+[node name="Tree2_Shadow4" parent="Trees_Boundaries" unique_id=2007314678 instance=ExtResource("10_ytpkv")]
+position = Vector2(921, -407)
+
+[node name="Tree11" parent="Trees_Boundaries" unique_id=29179082 instance=ExtResource("17_g1i3r")]
+position = Vector2(920, -468)
+
+[node name="Tree3_Shadow4" parent="Trees_Boundaries" unique_id=1407980937 instance=ExtResource("23_fnoqa")]
+position = Vector2(848, -361)
+
+[node name="Tree3_Shadow13" parent="Trees_Boundaries" unique_id=105841263 instance=ExtResource("23_fnoqa")]
+position = Vector2(277, -455)
+
+[node name="Tree37" parent="Trees_Boundaries" unique_id=1680699429 instance=ExtResource("19_yx0jh")]
+position = Vector2(270, -514)
+
+[node name="Tree1_Shadow13" parent="Trees_Boundaries" unique_id=554109072 instance=ExtResource("8_1ew0l")]
+position = Vector2(202, -410)
+
+[node name="Tree38" parent="Trees_Boundaries" unique_id=1424050250 instance=ExtResource("18_my276")]
+position = Vector2(204, -476)
+
+[node name="Tree1_Shadow14" parent="Trees_Boundaries" unique_id=1015673502 instance=ExtResource("8_1ew0l")]
+position = Vector2(350, -430)
+
+[node name="Tree39" parent="Trees_Boundaries" unique_id=499532005 instance=ExtResource("18_my276")]
+position = Vector2(352, -496)
+
+[node name="Tree2_Shadow13" parent="Trees_Boundaries" unique_id=1630664792 instance=ExtResource("10_ytpkv")]
+position = Vector2(270, -380)
+
+[node name="Tree40" parent="Trees_Boundaries" unique_id=788360785 instance=ExtResource("17_g1i3r")]
+position = Vector2(269, -441)
+
+[node name="Tree2_Shadow14" parent="Trees_Boundaries" unique_id=2054749117 instance=ExtResource("10_ytpkv")]
+position = Vector2(429, -414)
+
+[node name="Tree41" parent="Trees_Boundaries" unique_id=1382311970 instance=ExtResource("17_g1i3r")]
+position = Vector2(428, -475)
+
+[node name="Tree3_Shadow14" parent="Trees_Boundaries" unique_id=1042700472 instance=ExtResource("23_fnoqa")]
+position = Vector2(356, -368)
+
+[node name="Tree42" parent="Trees_Boundaries" unique_id=2138492990 instance=ExtResource("19_yx0jh")]
+position = Vector2(349, -427)
+
+[node name="Tree3_Shadow15" parent="Trees_Boundaries" unique_id=1372196370 instance=ExtResource("23_fnoqa")]
+position = Vector2(142, -335)
+
+[node name="Tree43" parent="Trees_Boundaries" unique_id=1583139711 instance=ExtResource("19_yx0jh")]
+position = Vector2(135, -394)
+
+[node name="Tree1_Shadow15" parent="Trees_Boundaries" unique_id=709832936 instance=ExtResource("8_1ew0l")]
+position = Vector2(67, -290)
+
+[node name="Tree44" parent="Trees_Boundaries" unique_id=1681842454 instance=ExtResource("18_my276")]
+position = Vector2(69, -356)
+
+[node name="Tree1_Shadow16" parent="Trees_Boundaries" unique_id=1929109407 instance=ExtResource("8_1ew0l")]
+position = Vector2(215, -310)
+
+[node name="Tree45" parent="Trees_Boundaries" unique_id=416307819 instance=ExtResource("18_my276")]
+position = Vector2(217, -376)
+
+[node name="Tree2_Shadow15" parent="Trees_Boundaries" unique_id=403747830 instance=ExtResource("10_ytpkv")]
+position = Vector2(135, -260)
+
+[node name="Tree46" parent="Trees_Boundaries" unique_id=766434290 instance=ExtResource("17_g1i3r")]
+position = Vector2(134, -321)
+
+[node name="Tree2_Shadow16" parent="Trees_Boundaries" unique_id=173028751 instance=ExtResource("10_ytpkv")]
+position = Vector2(294, -294)
+
+[node name="Tree47" parent="Trees_Boundaries" unique_id=374404411 instance=ExtResource("17_g1i3r")]
+position = Vector2(293, -355)
+
+[node name="Tree3_Shadow16" parent="Trees_Boundaries" unique_id=173099068 instance=ExtResource("23_fnoqa")]
+position = Vector2(221, -248)
+
+[node name="Tree48" parent="Trees_Boundaries" unique_id=1958769130 instance=ExtResource("19_yx0jh")]
+position = Vector2(214, -307)
+
+[node name="Tree3_Shadow17" parent="Trees_Boundaries" unique_id=479123210 instance=ExtResource("23_fnoqa")]
+position = Vector2(247, -213)
+
+[node name="Tree49" parent="Trees_Boundaries" unique_id=902531307 instance=ExtResource("19_yx0jh")]
+position = Vector2(240, -272)
+
+[node name="Tree1_Shadow17" parent="Trees_Boundaries" unique_id=2044077607 instance=ExtResource("8_1ew0l")]
+position = Vector2(172, -168)
+
+[node name="Tree50" parent="Trees_Boundaries" unique_id=1985259593 instance=ExtResource("18_my276")]
+position = Vector2(174, -234)
+
+[node name="Tree1_Shadow18" parent="Trees_Boundaries" unique_id=334256681 instance=ExtResource("8_1ew0l")]
+position = Vector2(320, -188)
+
+[node name="Tree51" parent="Trees_Boundaries" unique_id=1485731016 instance=ExtResource("18_my276")]
+position = Vector2(322, -254)
+
+[node name="Tree2_Shadow17" parent="Trees_Boundaries" unique_id=860183114 instance=ExtResource("10_ytpkv")]
+position = Vector2(240, -138)
+
+[node name="Tree52" parent="Trees_Boundaries" unique_id=508583086 instance=ExtResource("17_g1i3r")]
+position = Vector2(239, -199)
+
+[node name="Tree2_Shadow18" parent="Trees_Boundaries" unique_id=1676715438 instance=ExtResource("10_ytpkv")]
+position = Vector2(399, -172)
+
+[node name="Tree53" parent="Trees_Boundaries" unique_id=557445246 instance=ExtResource("17_g1i3r")]
+position = Vector2(398, -233)
+
+[node name="Tree3_Shadow18" parent="Trees_Boundaries" unique_id=729405995 instance=ExtResource("23_fnoqa")]
+position = Vector2(326, -126)
+
+[node name="Tree54" parent="Trees_Boundaries" unique_id=536685752 instance=ExtResource("19_yx0jh")]
+position = Vector2(319, -185)
+
+[node name="Tree3_Shadow19" parent="Trees_Boundaries" unique_id=1942389371 instance=ExtResource("23_fnoqa")]
+position = Vector2(132, -68)
+
+[node name="Tree55" parent="Trees_Boundaries" unique_id=1501524100 instance=ExtResource("19_yx0jh")]
+position = Vector2(125, -127)
+
+[node name="Tree1_Shadow19" parent="Trees_Boundaries" unique_id=2098445839 instance=ExtResource("8_1ew0l")]
+position = Vector2(57, -23)
+
+[node name="Tree56" parent="Trees_Boundaries" unique_id=58511452 instance=ExtResource("18_my276")]
+position = Vector2(59, -89)
+
+[node name="Tree1_Shadow20" parent="Trees_Boundaries" unique_id=1686391192 instance=ExtResource("8_1ew0l")]
+position = Vector2(205, -43)
+
+[node name="Tree57" parent="Trees_Boundaries" unique_id=415527989 instance=ExtResource("18_my276")]
+position = Vector2(207, -109)
+
+[node name="Tree2_Shadow19" parent="Trees_Boundaries" unique_id=1189276192 instance=ExtResource("10_ytpkv")]
+position = Vector2(125, 7)
+
+[node name="Tree58" parent="Trees_Boundaries" unique_id=814983395 instance=ExtResource("17_g1i3r")]
+position = Vector2(124, -54)
+
+[node name="Tree2_Shadow20" parent="Trees_Boundaries" unique_id=1756167758 instance=ExtResource("10_ytpkv")]
+position = Vector2(284, -27)
+
+[node name="Tree59" parent="Trees_Boundaries" unique_id=681311192 instance=ExtResource("17_g1i3r")]
+position = Vector2(283, -88)
+
+[node name="Tree3_Shadow20" parent="Trees_Boundaries" unique_id=1368893360 instance=ExtResource("23_fnoqa")]
+position = Vector2(211, 19)
+
+[node name="Tree60" parent="Trees_Boundaries" unique_id=2037409980 instance=ExtResource("19_yx0jh")]
+position = Vector2(204, -40)
+
+[node name="Tree12" parent="Trees_Boundaries" unique_id=2037491040 instance=ExtResource("19_yx0jh")]
+position = Vector2(841, -420)
+
+[node name="Start_Area_Props" type="Node2D" parent="." unique_id=2008039629]
 
 [node name="Weed20" parent="Start_Area_Props" unique_id=668720295 instance=ExtResource("20_1ew0l")]
 position = Vector2(528, -290)
@@ -184,13 +546,13 @@ position = Vector2(723, -332)
 
 [node name="Crate_Shadow2" type="Sprite2D" parent="Start_Area_Props" unique_id=1336879428]
 modulate = Color(1, 1, 1, 0.16078432)
-position = Vector2(711, -352)
+position = Vector2(716, -351)
 texture = ExtResource("8_nx736")
 region_enabled = true
 region_rect = Rect2(160, 24, 40, 40)
 
 [node name="Crate5" parent="Start_Area_Props" unique_id=347416118 instance=ExtResource("17_yx0jh")]
-position = Vector2(707, -356)
+position = Vector2(712, -355)
 
 [node name="Crate2_Shadow" parent="Start_Area_Props" unique_id=1084283660 instance=ExtResource("23_b7btk")]
 position = Vector2(724, -300)
@@ -326,6 +688,7 @@ enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
+visible = false
 script = ExtResource("15_hiqwa")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]
