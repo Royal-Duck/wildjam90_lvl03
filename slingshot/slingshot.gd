@@ -19,13 +19,12 @@ func _ready() -> void:
 func _exit_tree() -> void:
 	Engine.time_scale = 1.0
 
-# Vitesse / distance : proportionnel au temps de charge, plafonné (plus simple et plus réactif)
 const POWER_PER_SECOND : float = 500.0
-const MAX_POWER : float = 1200.0
+const MAX_POWER : float = 800.0
 const MIN_POWER : float = 150.0
 
 func power_time(time : float) -> float:
-	return clampf(time * POWER_PER_SECOND, MIN_POWER, MAX_POWER)
+	return clampf((-abs(time - 1.0) + 1.0) * POWER_PER_SECOND + MIN_POWER, MIN_POWER, MAX_POWER)
 
 func _process(delta: float) -> void:
 	Engine.time_scale = 1.0
@@ -38,8 +37,13 @@ func _process(delta: float) -> void:
 
 	var charging: bool = Input.is_action_pressed("attack_click") and is_zero_approx(on_cooldown) and not DialogueController.is_dialogue_open
 	if charging:
+		_line.visible = true
 		Engine.time_scale = SLOW_SCALE
 		charge_time += delta / Engine.time_scale
+		# Trait de visée : du lanceur, longueur qui part de 0 et grandit avec la charge (sans MIN_POWER)
+		var start_pt: Vector2 = $basepoint.position + Vector2(0, -8).rotated($basepoint.rotation)
+		var line_dist: float = minf(charge_time * POWER_PER_SECOND, MAX_POWER)
+		_line.points = [start_pt, start_pt + circle_pos.normalized() * power_time(charge_time)] if charge_time > 0 else []
 	if Input.is_action_just_released("attack_click") and is_zero_approx(on_cooldown) and not is_zero_approx(charge_time) and not DialogueController.is_dialogue_open:
 		on_cooldown = COOLDOWN
 		var rock = THROWN_ROCK.instantiate()
@@ -49,8 +53,4 @@ func _process(delta: float) -> void:
 		rock.max_travel = power_time(charge_time)
 		charge_time = 0
 		get_parent().get_parent().add_child(rock)
-
-	# Trait de visée : du lanceur, longueur qui part de 0 et grandit avec la charge (sans MIN_POWER)
-	var start_pt: Vector2 = $basepoint.position + Vector2(0, -8).rotated($basepoint.rotation)
-	var line_dist: float = minf(charge_time * POWER_PER_SECOND, MAX_POWER)
-	_line.points = [start_pt, start_pt + circle_pos.normalized() * line_dist] if charge_time > 0 else []
+		_line.visible = false
