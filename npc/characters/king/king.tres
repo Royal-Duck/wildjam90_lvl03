@@ -6,4 +6,5 @@
 script = ExtResource("1_1t5iq")
 character_name = "king"
 dialogue_path = "uid://yqxaa7t3b4cs"
+dialogue_bubble_text = "General?"
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

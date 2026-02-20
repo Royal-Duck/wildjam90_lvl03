@@ -6,4 +6,5 @@
 script = ExtResource("1_fylrt")
 character_name = "wounded"
 dialogue_path = "uid://bffininu3kk40"
+dialogue_bubble_text = "Is that you commander ?"
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

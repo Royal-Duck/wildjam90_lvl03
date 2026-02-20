@@ -32,6 +32,7 @@ func _ready() -> void:
 	volume_slider.value_changed.connect(_on_volume_changed)
 
 	if not GameManager.has_seen_start_menu:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		get_tree().paused = true
 		visible = true
 		new_game_btn.text = "New Game"
@@ -48,6 +49,7 @@ func _on_new_game_btn_pressed() -> void:
 	get_tree().paused = false
 	visible = false
 	new_game_btn.text = "Back to game"
+	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED_HIDDEN)
 
 func _on_quit_btn_pressed() -> void:
 	get_tree().quit()
@@ -66,6 +68,7 @@ func _on_volume_changed(value: float) -> void:
 	AudioManager.set_volume(value)
 
 func game_over() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
 	visible = true
 	main_menu.visible = false
 	game_over_menu.visible = true
