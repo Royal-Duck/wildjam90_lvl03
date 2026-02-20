@@ -344,6 +344,7 @@ shape = SubResource("CircleShape2D_ehsmr")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1650672051]
 sprite_frames = SubResource("SpriteFrames_w36ex")
 animation = &"Idle_Down"
+autoplay = "Idle_Down"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=70856044]
 zoom = Vector2(1.8, 1.8)
