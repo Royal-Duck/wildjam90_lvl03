@@ -103,6 +103,11 @@ _data = {
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=970876115]
 layer = 100
 script = ExtResource("1_t82ea")
+start_from_title = null
+auto_start = null
+will_block_other_input = null
+next_action = null
+skip_action = null
 
 [node name="Balloon" type="Control" parent="." unique_id=395539854]
 unique_name_in_owner = true
@@ -198,5 +203,6 @@ text = "Response example"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=203736808]
 unique_name_in_owner = true
 
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
