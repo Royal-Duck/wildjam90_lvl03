@@ -42,8 +42,7 @@ func _process(delta: float) -> void:
 		charge_time += delta / Engine.time_scale
 		# Trait de visée : du lanceur, longueur qui part de 0 et grandit avec la charge (sans MIN_POWER)
 		var start_pt: Vector2 = $basepoint.position + Vector2(0, -8).rotated($basepoint.rotation)
-		var line_dist: float = minf(charge_time * POWER_PER_SECOND, MAX_POWER)
-		_line.points = [start_pt, start_pt + circle_pos.normalized() * power_time(charge_time)] if charge_time > 0 else []
+		_line.points = [start_pt, start_pt + circle_pos.normalized() * power_time(charge_time) / 4.5] if charge_time > 0 else []
 	if Input.is_action_just_released("attack_click") and is_zero_approx(on_cooldown) and not is_zero_approx(charge_time) and not DialogueController.is_dialogue_open:
 		on_cooldown = COOLDOWN
 		var rock = THROWN_ROCK.instantiate()
