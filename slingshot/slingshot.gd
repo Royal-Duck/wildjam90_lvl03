@@ -13,7 +13,7 @@ var _line: Line2D
 func _ready() -> void:
 	_line = Line2D.new()
 	_line.width = 2.0
-	_line.default_color = Color(1, 1, 1, 0.6)
+	_line.default_color = Color(0.5, 0.5, 0.5, 0.6)
 	add_child(_line)
 
 func _exit_tree() -> void:
@@ -43,6 +43,11 @@ func _process(delta: float) -> void:
 		# Trait de visée : du lanceur, longueur qui part de 0 et grandit avec la charge (sans MIN_POWER)
 		var start_pt: Vector2 = $basepoint.position + Vector2(0, -8).rotated($basepoint.rotation)
 		_line.points = [start_pt, start_pt + circle_pos.normalized() * power_time(charge_time) / 4.5] if charge_time > 0 else []
+		_line.default_color = Color(1, 1, 1, 0.6)
+		if (0.25 > charge_time || charge_time > 1.75):
+			_line.default_color = Color(0.5, 0.5, 0.5, 0.6)
+		if (0.75 < charge_time && charge_time < 1.25):
+			_line.default_color = Color(1.0, 0.5, 0.5, 0.6)
 	if Input.is_action_just_released("attack_click") and is_zero_approx(on_cooldown) and not is_zero_approx(charge_time) and not DialogueController.is_dialogue_open:
 		on_cooldown = COOLDOWN
 		var rock = THROWN_ROCK.instantiate()
