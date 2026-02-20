@@ -1,15 +1,15 @@
 ~ start
-Deserter: Do not come any closer.
-Deserter: If you are here to arrest me, I no longer have the strength to run.
+# FR: Général?! n'approchez pas!
+Deserter: General?! Don't come any closer!
+# FR: Pour rien au monde je ne reviendrai pas, vous ne pourrez pas m'y forcer.
+Deserter: I wouldn't go back for anything in the world. You can't make me.
+# FR: Les choses que vous nous demandiez de faire, ce que vous avez fait de nous...
+Deserter: The things you had us do. What you made of us...
 Player: ...
-Deserter: Then why is a former high-ranking officer talking to someone like me?
-Deserter: You want to know how I made it out?
-Deserter: Me? I...
-Deserter: You ask that question like you are looking for the right answer.
+# FR: Mais, vous aussi... vous êtes seul?
+Deserter: But you too... you're alone?
 Player: ...
-Deserter: We will not say it, you and I. Not tonight.
-Deserter: I have my hands, a little bread, and tomorrow.
-Deserter: You, you still have the road.
-Deserter: Then walk. And forget my face.
-Player: ...
+Deserter: ...
+# FR: Bonne chance Général
+Deserter: Good luck, General.
 => END
