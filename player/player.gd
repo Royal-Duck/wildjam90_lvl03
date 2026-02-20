@@ -52,6 +52,7 @@ func _try_interact_with_npc() -> void:
 			return
 
 	current_npc.hide_to_interact_press_e()
+	GameManager.player_position = position
 	DialogueController.start_dialogue(current_npc.data.dialogue_path)
 
 
