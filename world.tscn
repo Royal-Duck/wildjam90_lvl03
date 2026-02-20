@@ -297,12 +297,9 @@ position = Vector2(482, -200)
 [node name="Bush5" parent="Start_Area_Props" unique_id=919443000 instance=ExtResource("36_7qk3m")]
 position = Vector2(480, -202)
 
-[node name="Props1" type="TileMapLayer" parent="." unique_id=42872075]
-texture_filter = 1
-tile_set = ExtResource("12_q42o5")
-
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("1_f3sb7")]
 position = Vector2(640, 33)
+collision_mask = 130
 
 [node name="Npc" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
 position = Vector2(594, 328)
@@ -312,28 +309,23 @@ data = ExtResource("10_70uel")
 script = ExtResource("4_aqk2v")
 
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("5_dwbse")]
-visible = false
 position = Vector2(800, -106)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy4" parent="." unique_id=458950875 instance=ExtResource("5_dwbse")]
-visible = false
 position = Vector2(185, 442)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy5" parent="." unique_id=358248586 instance=ExtResource("5_dwbse")]
-visible = false
 position = Vector2(1106, 670)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Enemy6" parent="." unique_id=648043668 instance=ExtResource("5_dwbse")]
-visible = false
 position = Vector2(1180, 453)
 enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
-visible = false
 script = ExtResource("15_hiqwa")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]
