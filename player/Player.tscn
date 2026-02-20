@@ -24,6 +24,7 @@ shape = SubResource("CircleShape2D_ehsmr")
 texture = SubResource("PlaceholderTexture2D_ulp21")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=70856044]
+zoom = Vector2(1.6, 1.6)
 
 [node name="NpcInteractArea" type="Area2D" parent="." unique_id=1009602000]
 collision_mask = 2
