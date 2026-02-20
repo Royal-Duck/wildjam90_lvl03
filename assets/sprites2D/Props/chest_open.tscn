@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://h74qe5l025t1"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_blax5"]
+
+[node name="Chest_Open" type="Sprite2D" unique_id=2093138157]
+texture_filter = 1
+texture = ExtResource("1_blax5")
+region_enabled = true
+region_rect = Rect2(96, 72, 32, 56)

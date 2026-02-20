@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bqacyegx1n83v"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_dxqpt"]
+
+[node name="Tombstone3" type="Sprite2D" unique_id=1176770938]
+texture_filter = 1
+texture = ExtResource("1_dxqpt")
+region_enabled = true
+region_rect = Rect2(288, 248, 32, 32)

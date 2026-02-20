@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://pqppy3odnj6n"]
+
+[ext_resource type="Texture2D" uid="uid://fegjbdxqlacv" path="res://texture/TX Struct.png" id="1_fbemv"]
+
+[node name="StairsOVGW_TopDown_R" type="Sprite2D" unique_id=675473449]
+texture_filter = 1
+texture = ExtResource("1_fbemv")
+region_enabled = true
+region_rect = Rect2(128, 160, 65, 96)

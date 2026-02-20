@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bmwwtli44qtj2"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_3lien"]
+
+[node name="Bench_Front" type="Sprite2D" unique_id=618113900]
+texture_filter = 1
+texture = ExtResource("1_3lien")
+region_enabled = true
+region_rect = Rect2(288, 16, 64, 48)

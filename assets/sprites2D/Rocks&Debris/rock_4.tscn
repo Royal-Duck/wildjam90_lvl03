@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cqfq5o5ift3xp"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_jmcfu"]
+
+[node name="Rock4" type="Sprite2D" unique_id=1368066744]
+texture_filter = 1
+texture = ExtResource("1_jmcfu")
+region_enabled = true
+region_rect = Rect2(96, 480, 32, 32)
