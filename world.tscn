@@ -2141,7 +2141,7 @@ region_rect = Rect2(128, 160, 65, 96)
 position = Vector2(777, 342)
 
 [node name="Npc" parent="." unique_id=1305577290 instance=ExtResource("2_fj7yv")]
-position = Vector2(594, 328)
+position = Vector2(642, 399)
 data = ExtResource("3_tlwt5")
 
 [node name="DialogueController" type="Node" parent="." unique_id=1820427701]
