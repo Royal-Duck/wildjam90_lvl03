@@ -6,8 +6,10 @@ extends CharacterBody2D
 @onready var menu: CanvasLayer = $"../Menu"
 @onready var hud: CanvasLayer = $HUD
 @onready var npc_interact_area: Area2D = $NpcInteractArea
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 var current_npc: Node2D = null
+var last_direction := Vector2.DOWN
 
 func _ready() -> void:
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
@@ -27,11 +29,25 @@ func _physics_process(_delta: float) -> void:
 
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
+		last_direction = direction
 		velocity = direction * speed
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, speed)
 
 	move_and_slide()
+
+	var anim: String
+	var is_moving := velocity.length() > 1.0
+	if last_direction.y > 0:
+		anim = "Walk_Down" if is_moving else "Idle_Down"
+	elif last_direction.y < 0:
+		anim = "Walk_Up" if is_moving else "Idle_Up"
+	elif last_direction.x > 0:
+		anim = "Walk_Right" if is_moving else "Idle_Right"
+	else:
+		anim = "Walk_Left" if is_moving else "Idle_Left"
+	if animated_sprite_2d.animation != anim:
+		animated_sprite_2d.play(anim)
 
 
 func _unhandled_input(event: InputEvent) -> void:
