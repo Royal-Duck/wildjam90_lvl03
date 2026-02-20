@@ -4,6 +4,8 @@ extends CharacterBody2D
 
 @export var stop_distance: int = 30
 
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
 @onready var dialogue_bubble: PanelContainer = $DialogueBubble
 @onready var dialogue_timer: Timer = $DialogueTimer
 @onready var dialogue_label: Label = %DialogueLabel
@@ -17,6 +19,8 @@ extends CharacterBody2D
 const SPEED = 170.0
 
 var follow_player = false
+var last_direction := -1.0 # -1 gauche, 1 droite
+
 var bandit_lines: Array[String] = [
 	"You! Come here!",
 	"I see you!",
@@ -61,7 +65,22 @@ func _physics_process(_delta: float) -> void:
 		velocity = Vector2.ZERO
 
 	move_and_slide()
-	
+
+	if not attack_timer.is_stopped():
+		return
+
+	var is_moving := velocity.length() > 1.0
+	if is_moving:
+		last_direction = 1.0 if velocity.x >= 0 else -1.0
+	var anim: String
+	if last_direction > 0:
+		anim = "Walk_Right" if is_moving else "Idle_Right"
+	else:
+		anim = "Walk_Left" if is_moving else "Idle_Left"
+	if animated_sprite_2d.animation != anim:
+		animated_sprite_2d.play(anim)
+
+
 func _on_attack_area_body_entered(body: Node2D) -> void:
 	if "damage" in body:
 		take_damage(body.damage)
@@ -69,6 +88,7 @@ func _on_attack_area_body_entered(body: Node2D) -> void:
 		return
 	if body.is_in_group("player"):
 		player = body
+		_play_attack_animation()
 		body.take_damage(enemy_resource.attack_power)
 		if attack_timer.is_stopped():
 			attack_timer.start()
@@ -81,7 +101,7 @@ func _on_attack_area_body_exited(body: Node2D) -> void:
 func _on_attack_timer_timeout() -> void:
 	if player == null:
 		return
-
+	_play_attack_animation()
 	player.take_damage(enemy_resource.attack_power)
 	
 func _on_agro_area_body_entered(body: Node2D) -> void:
@@ -98,6 +118,12 @@ func _on_agro_area_body_exited(body: Node2D) -> void:
 func _on_dialogue_timer_timeout() -> void:
 	dialogue_bubble.visible = false
 
+
+func _play_attack_animation() -> void:
+	var to_player := player.global_position - global_position
+	last_direction = 1.0 if to_player.x >= 0 else -1.0
+	var anim := "Attack_Right" if last_direction > 0 else "Attack_Left"
+	animated_sprite_2d.play(anim)
 
 func take_damage(amount: int) -> void:
 	enemy_resource.take_damage(amount)
