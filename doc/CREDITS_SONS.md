@@ -28,6 +28,13 @@ Crédits des sons utilisés dans le jeu (lien, auteur, licence).
 
 ## 2. Tension slingshot
 
+- **Nom du son :** elastic1-002.wav  
+- **Auteur :** fbarriac  
+- **Lien :** https://freesound.org/people/fbarriac/sounds/616801/  
+- **Licence :** Creative Commons 0 (CC0) — pas d'attribution obligatoire, usage commercial autorisé  
+- **Usage dans le jeu :** son joué quand le joueur tend l'élastique du lance-pierres  
+- **Note :** il faudra sûrement couper le tout début pour ne garder que la tension de l'élastique  
+
 ---
 
 ## 3. Projectile slingshot
@@ -114,5 +121,44 @@ Crédits des sons utilisés dans le jeu (lien, auteur, licence).
 - **Lien :** https://pixabay.com/fr/sound-effects/gens-heavy-breath-male-63980/  
 - **Licence :** Licence Pixabay — gratuit, usage commercial autorisé, pas d'attribution obligatoire  
 - **Usage dans le jeu :** à définir  
+
+- **Nom du son :** Pleure veuve (Female_Fake_Crying.mp3)  
+- **Auteur :** Amaiguri  
+- **Lien :** https://freesound.org/people/Amaiguri/sounds/518993/  
+- **Licence :** Creative Commons 0 (CC0) — pas d'attribution obligatoire, usage commercial autorisé  
+- **Usage dans le jeu :** pleurs de la veuve  
+- **Note :** son léger (respiration / sanglots) ; on peut ne prendre qu'une seconde du son  
+
+- **Nom du son :** Pleure veuve (Female crying.wav)  
+- **Auteur :** Luzanne0  
+- **Lien :** https://freesound.org/people/Luzanne0/sounds/445299/  
+- **Licence :** Attribution NonCommercial 3.0 (CC BY-NC) — crédit obligatoire, usage **non commercial** uniquement  
+- **Usage dans le jeu :** pleurs de la veuve  
+- **Note :** son clair et moyennement fort ; on peut découper une seconde dans le son  
+
+---
+
+## 7. Flashback
+
+- **Nom du son :** crunchy bass  
+- **Auteur :** emyers17  
+- **Lien :** https://freesound.org/people/emyers17/sounds/582067/  
+- **Licence :** Creative Commons 0 (CC0) — pas d'attribution obligatoire, usage commercial autorisé  
+- **Usage dans le jeu :** flashback  
+- **Note :** il faudrait sûrement reprendre une partie, l'allonger et la saturer  
+
+- **Nom du son :** Static.wav  
+- **Auteur :** FrankyBoomer  
+- **Lien :** https://freesound.org/people/FrankyBoomer/sounds/261106/  
+- **Licence :** Creative Commons 0 (CC0) — pas d'attribution obligatoire, usage commercial autorisé  
+- **Usage dans le jeu :** flashback  
+- **Note :** il faudrait sûrement reprendre une partie, l'allonger et la saturer ; avantage : parties plus longues  
+
+- **Nom du son :** ELECTRONIC-NOISE-filtered-glitch-wall-of-sound02.wav  
+- **Auteur :** newagesoup  
+- **Lien :** https://freesound.org/people/newagesoup/sounds/342225/  
+- **Licence :** Creative Commons 0 (CC0) — pas d'attribution obligatoire, usage commercial autorisé  
+- **Usage dans le jeu :** flashback  
+- **Note :** il faudrait le découper et l'égaliser ; avantage : il a directement l'effet de saturation qu'on recherche  
 
 ---
