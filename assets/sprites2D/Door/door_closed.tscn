@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://cet7tbj67ayj0"]
-
-[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_agybw"]
-
-[node name="Door_Closed" type="Sprite2D" unique_id=1548251933]
-texture_filter = 1
-texture = ExtResource("1_agybw")
-region_enabled = true
-region_rect = Rect2(24, 96, 48, 64)

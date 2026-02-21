@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://cmltjrlfk6nlt"]
-
-[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_h7o8b"]
-
-[node name="Lantern" type="Sprite2D" unique_id=561440293]
-texture_filter = 1
-texture = ExtResource("1_h7o8b")
-region_enabled = true
-region_rect = Rect2(448, 112, 32, 48)

@@ -259,23 +259,28 @@ radius = 385.0013
 font_size = 14
 
 [node name="Enemy" type="CharacterBody2D" unique_id=1340809577 groups=["enemy"]]
+z_index = 1
+y_sort_enabled = true
 collision_layer = 4
 collision_mask = 5
 script = ExtResource("1_e1acu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2036290760]
+position = Vector2(0, -7.4)
 shape = SubResource("CircleShape2D_e1acu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=566793067]
 sprite_frames = SubResource("SpriteFrames_q5esj")
 animation = &"Idle_Left"
 autoplay = "Idle_Left"
+offset = Vector2(0, -17)
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1929380182]
 collision_layer = 4
 collision_mask = 17
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=798588805]
+position = Vector2(0, -15.12)
 shape = SubResource("CircleShape2D_05od2")
 
 [node name="AttackTimer" type="Timer" parent="." unique_id=883916462]

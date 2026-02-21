@@ -49,6 +49,8 @@ radius = 213.00235
 font_size = 14
 
 [node name="Npc" type="StaticBody2D" unique_id=2019593617 groups=["npc"]]
+z_index = 1
+y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_2xp5l")
 
@@ -56,8 +58,10 @@ script = ExtResource("1_2xp5l")
 sprite_frames = SubResource("SpriteFrames_n4lqr")
 animation = &"Idle"
 autoplay = "Idle"
+offset = Vector2(0, -17)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1884413612]
+position = Vector2(0, -5.995)
 shape = SubResource("CircleShape2D_2xp5l")
 
 [node name="ToInteractPressE" type="Label" parent="." unique_id=1138284165]

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c66n6d3km7lbf"]
+
+[ext_resource type="Texture2D" uid="uid://b27fpj723lhk1" path="res://texture/TX Shadow Plant.png" id="1_h00ax"]
+[ext_resource type="Texture2D" uid="uid://crccc5rc73ryx" path="res://texture/TX Plant.png" id="1_hxik1"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_b7btk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kkgr2"]
+custom_solver_bias = 0.2
+radius = 5.0
+height = 16.0
+
+[node name="Tree_3" type="StaticBody2D" unique_id=1980752]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_b7btk")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=252082115]
+modulate = Color(1, 1, 1, 0.19607843)
+texture = ExtResource("1_h00ax")
+offset = Vector2(3, -22)
+region_enabled = true
+region_rect = Rect2(304, 104, 80, 48)
+
+[node name="Tree" type="Sprite2D" parent="." unique_id=761279343]
+texture = ExtResource("1_hxik1")
+offset = Vector2(-5, -62)
+region_enabled = true
+region_rect = Rect2(288, 24, 88, 128)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=840744150]
+z_index = 1
+position = Vector2(-1, -7)
+shape = SubResource("CapsuleShape2D_kkgr2")

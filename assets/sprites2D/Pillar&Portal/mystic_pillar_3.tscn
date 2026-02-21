@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://grd0u7lvyh37"]
-
-[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_vx3hm"]
-
-[node name="Mystic_Pillar3" type="Sprite2D" unique_id=373604692]
-texture_filter = 1
-texture = ExtResource("1_vx3hm")
-region_enabled = true
-region_rect = Rect2(224, 176, 32, 48)

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cy0dhijxs0mpk"]
+
+[ext_resource type="Texture2D" uid="uid://fegjbdxqlacv" path="res://texture/TX Struct.png" id="1_hvpoa"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_70uel"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_70uel"]
+radius = 3.1382751
+height = 95.7038
+
+[node name="Stairs_Right_Left" type="StaticBody2D" unique_id=85786249]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_70uel")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1184326606]
+texture = ExtResource("1_hvpoa")
+offset = Vector2(0, 48)
+region_enabled = true
+region_rect = Rect2(184, 384, 88, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1315950957]
+z_index = 1
+position = Vector2(0, 22)
+rotation = -1.1257373
+shape = SubResource("CapsuleShape2D_70uel")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1631206002]
+position = Vector2(0, 25)
+polygon = PackedVector2Array(43, 57, -35, 18, -43, 18, -43, 71, -37, 71, -37, 63, 43, 63)

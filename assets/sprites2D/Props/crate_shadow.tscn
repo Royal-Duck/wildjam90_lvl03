@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://cp7uk2iujk8rg"]
-
-[ext_resource type="Texture2D" uid="uid://d2h5f3y2y5ses" path="res://texture/TX Shadow.png" id="1_mslrw"]
-
-[node name="Crate_Shadow" type="Sprite2D" unique_id=158073851]
-modulate = Color(1, 1, 1, 0.16078432)
-texture = ExtResource("1_mslrw")
-region_enabled = true
-region_rect = Rect2(160, 24, 40, 40)

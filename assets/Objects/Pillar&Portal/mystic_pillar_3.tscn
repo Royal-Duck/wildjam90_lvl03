@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bt57kph3vlfqb"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_nppwy"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_btkhf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjvhd"]
+size = Vector2(26, 16)
+
+[node name="Mystic_Pillar_3" type="StaticBody2D" unique_id=1759711713]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_btkhf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1168377460]
+texture = ExtResource("1_nppwy")
+offset = Vector2(4, -20)
+region_enabled = true
+region_rect = Rect2(224, 176, 40, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=846159119]
+z_index = 1
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_tjvhd")

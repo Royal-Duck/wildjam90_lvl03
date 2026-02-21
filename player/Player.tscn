@@ -5,8 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://cljtttfwqvwvp" path="res://texture/Char.png" id="2_83hs8"]
 [ext_resource type="PackedScene" uid="uid://cvooviofnqued" path="res://slingshot/slingshot.tscn" id="3_wnvi2"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ehsmr"]
-radius = 11.045361
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_83hs8"]
+radius = 4.0
+height = 18.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x8kxw"]
 atlas = ExtResource("2_83hs8")
@@ -335,21 +336,28 @@ animations = [{
 radius = 43.289722
 
 [node name="Player" type="CharacterBody2D" unique_id=2075464257 groups=["player"]]
+z_index = 1
+y_sort_enabled = true
 collision_mask = 2
 script = ExtResource("1_ulp21")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=709111943]
-shape = SubResource("CircleShape2D_ehsmr")
+z_index = 1
+position = Vector2(0, -4)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_83hs8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1650672051]
 sprite_frames = SubResource("SpriteFrames_w36ex")
 animation = &"Idle_Down"
 autoplay = "Idle_Down"
+offset = Vector2(-1, -18)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=70856044]
 zoom = Vector2(1.8, 1.8)
 
 [node name="NpcInteractArea" type="Area2D" parent="." unique_id=1009602000]
+position = Vector2(0, -18)
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NpcInteractArea" unique_id=286784661]

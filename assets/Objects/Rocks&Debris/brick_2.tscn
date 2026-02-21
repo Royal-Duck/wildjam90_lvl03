@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ch7xhlj6otdnq"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_l3cfr"]
+
+[node name="Brick2" type="Sprite2D" unique_id=1917715344]
+z_index = 1
+y_sort_enabled = true
+texture_filter = 1
+texture = ExtResource("1_l3cfr")
+offset = Vector2(0, 3)
+region_enabled = true
+region_rect = Rect2(256, 488, 32, 16)

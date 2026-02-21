@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dyaidat7walup"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_x4ent"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hiqwa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_udxuc"]
+size = Vector2(32, 15)
+
+[node name="Chest_Closed" type="StaticBody2D" unique_id=2022916400]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_hiqwa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=120099115]
+texture = ExtResource("1_x4ent")
+offset = Vector2(4, -16)
+region_enabled = true
+region_rect = Rect2(96, 24, 40, 40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=273420742]
+z_index = 1
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_udxuc")

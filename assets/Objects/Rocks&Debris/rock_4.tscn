@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://duwd38rwqws22"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_fw7n1"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_70uel"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_70uel"]
+radius = 3.0
+height = 18.0
+
+[node name="Rock_4" type="StaticBody2D" unique_id=21519910]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_70uel")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=453398549]
+texture = ExtResource("1_fw7n1")
+offset = Vector2(0, -1)
+region_enabled = true
+region_rect = Rect2(96, 480, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=553135361]
+position = Vector2(-1, 2)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_70uel")

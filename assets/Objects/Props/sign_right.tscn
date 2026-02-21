@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://5rhpu60ml4e1"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_arxga"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hiqwa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ljk23"]
+radius = 3.0
+height = 6.0
+
+[node name="Sign_R" type="StaticBody2D" unique_id=1941030934]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_hiqwa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1028767084]
+texture = ExtResource("1_arxga")
+offset = Vector2(1, -15)
+region_enabled = true
+region_rect = Rect2(96, 160, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=750934671]
+z_index = 1
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_ljk23")
