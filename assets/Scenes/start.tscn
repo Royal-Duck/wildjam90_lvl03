@@ -18,381 +18,507 @@ y_sort_enabled = true
 
 [node name="Tree_6" parent="Boundaries_decor" unique_id=1750946455 instance=ExtResource("2_yrab2")]
 position = Vector2(-234, -298)
+collision_layer = 130
 
 [node name="Tree_5" parent="Boundaries_decor" unique_id=2138802008 instance=ExtResource("3_8d1vd")]
 position = Vector2(-343, -338)
+collision_layer = 130
 
 [node name="Tree_3" parent="Boundaries_decor" unique_id=1980752 instance=ExtResource("4_f4wsa")]
 position = Vector2(-299, -284)
+collision_layer = 130
 
 [node name="Tree_2" parent="Boundaries_decor" unique_id=817147808 instance=ExtResource("2_yrab2")]
 position = Vector2(-354, -244)
+collision_layer = 130
 
 [node name="Tree_11" parent="Boundaries_decor" unique_id=1181432983 instance=ExtResource("4_f4wsa")]
 position = Vector2(-62, -371)
+collision_layer = 130
 
 [node name="Tree_1" parent="Boundaries_decor" unique_id=1795746970 instance=ExtResource("3_8d1vd")]
 position = Vector2(-262, -216)
+collision_layer = 130
 
 [node name="Tree_4" parent="Boundaries_decor" unique_id=1252432858 instance=ExtResource("4_f4wsa")]
 position = Vector2(-350, -164)
+collision_layer = 130
 
 [node name="Tree_7" parent="Boundaries_decor" unique_id=34284669 instance=ExtResource("3_8d1vd")]
 position = Vector2(-413, -199)
+collision_layer = 130
 
 [node name="Tree_8" parent="Boundaries_decor" unique_id=1110780880 instance=ExtResource("2_yrab2")]
 position = Vector2(-163, -350)
+collision_layer = 130
 
 [node name="Tree_9" parent="Boundaries_decor" unique_id=2137004340 instance=ExtResource("4_f4wsa")]
 position = Vector2(-107, -331)
+collision_layer = 130
 
 [node name="Tree_10" parent="Boundaries_decor" unique_id=2097298268 instance=ExtResource("3_8d1vd")]
 position = Vector2(-168, -294)
+collision_layer = 130
 
 [node name="Tree_12" parent="Boundaries_decor" unique_id=1224956128 instance=ExtResource("3_8d1vd")]
 position = Vector2(-1, -369)
+collision_layer = 130
 
 [node name="Tree_13" parent="Boundaries_decor" unique_id=1389679274 instance=ExtResource("2_yrab2")]
 position = Vector2(72, -351)
+collision_layer = 130
 
 [node name="Tree_14" parent="Boundaries_decor" unique_id=833491383 instance=ExtResource("4_f4wsa")]
 position = Vector2(139, -341)
+collision_layer = 130
 
 [node name="Tree_15" parent="Boundaries_decor" unique_id=1290668107 instance=ExtResource("3_8d1vd")]
 position = Vector2(208, -345)
+collision_layer = 130
 
 [node name="Tree_16" parent="Boundaries_decor" unique_id=1862408399 instance=ExtResource("2_yrab2")]
 position = Vector2(253, -307)
+collision_layer = 130
 
 [node name="Tree_17" parent="Boundaries_decor" unique_id=1206256093 instance=ExtResource("3_8d1vd")]
 position = Vector2(327, -346)
+collision_layer = 130
 
 [node name="Tree_18" parent="Boundaries_decor" unique_id=210953703 instance=ExtResource("4_f4wsa")]
 position = Vector2(363, -295)
+collision_layer = 130
 
 [node name="Tree_19" parent="Boundaries_decor" unique_id=1964576468 instance=ExtResource("2_yrab2")]
 position = Vector2(308, -266)
+collision_layer = 130
 
 [node name="Tree_20" parent="Boundaries_decor" unique_id=335583130 instance=ExtResource("4_f4wsa")]
 position = Vector2(364, -241)
+collision_layer = 130
 
 [node name="Tree_21" parent="Boundaries_decor" unique_id=1865940044 instance=ExtResource("3_8d1vd")]
 position = Vector2(388, -157)
+collision_layer = 130
 
 [node name="Tree_22" parent="Boundaries_decor" unique_id=1574415212 instance=ExtResource("2_yrab2")]
 position = Vector2(317, -161)
+collision_layer = 130
 
 [node name="Tree_23" parent="Boundaries_decor" unique_id=1892772446 instance=ExtResource("4_f4wsa")]
 position = Vector2(364, -100)
+collision_layer = 130
 
 [node name="Tree_24" parent="Boundaries_decor" unique_id=2134231021 instance=ExtResource("3_8d1vd")]
 position = Vector2(-413, -103)
+collision_layer = 130
 
 [node name="Tree_25" parent="Boundaries_decor" unique_id=1564254131 instance=ExtResource("2_yrab2")]
 position = Vector2(-290, -154)
+collision_layer = 130
 
 [node name="Tree_26" parent="Boundaries_decor" unique_id=735917006 instance=ExtResource("4_f4wsa")]
 position = Vector2(-332, -115)
+collision_layer = 130
 
 [node name="Tree_27" parent="Boundaries_decor" unique_id=1930326426 instance=ExtResource("3_8d1vd")]
 position = Vector2(-371, -39)
+collision_layer = 130
 
 [node name="Tree_28" parent="Boundaries_decor" unique_id=872635420 instance=ExtResource("2_yrab2")]
 position = Vector2(-277, -81)
+collision_layer = 130
 
 [node name="Tree_29" parent="Boundaries_decor" unique_id=461047485 instance=ExtResource("4_f4wsa")]
 position = Vector2(-197, -236)
+collision_layer = 130
 
 [node name="Tree_30" parent="Boundaries_decor" unique_id=745740517 instance=ExtResource("2_yrab2")]
 position = Vector2(-214, -154)
+collision_layer = 130
 
 [node name="Tree_31" parent="Boundaries_decor" unique_id=1338419971 instance=ExtResource("3_8d1vd")]
 position = Vector2(-375, 23)
+collision_layer = 130
 
 [node name="Tree_32" parent="Boundaries_decor" unique_id=1452600220 instance=ExtResource("4_f4wsa")]
 position = Vector2(-299, -20)
+collision_layer = 130
 
 [node name="Tree_33" parent="Boundaries_decor" unique_id=540363237 instance=ExtResource("2_yrab2")]
 position = Vector2(309, -75)
+collision_layer = 130
 
 [node name="Tree_34" parent="Boundaries_decor" unique_id=1198370863 instance=ExtResource("4_f4wsa")]
 position = Vector2(375, -42)
+collision_layer = 130
 
 [node name="Tree_35" parent="Boundaries_decor" unique_id=1995800849 instance=ExtResource("3_8d1vd")]
 position = Vector2(-388, 97)
+collision_layer = 130
 
 [node name="Tree_36" parent="Boundaries_decor" unique_id=1140349206 instance=ExtResource("4_f4wsa")]
 position = Vector2(-304, 45)
+collision_layer = 130
 
 [node name="Tree_37" parent="Boundaries_decor" unique_id=1597694473 instance=ExtResource("2_yrab2")]
 position = Vector2(-318, 130)
+collision_layer = 130
 
 [node name="Tree_38" parent="Boundaries_decor" unique_id=1700607318 instance=ExtResource("4_f4wsa")]
 position = Vector2(-418, 163)
+collision_layer = 130
 
 [node name="Tree_39" parent="Boundaries_decor" unique_id=435227977 instance=ExtResource("3_8d1vd")]
 position = Vector2(-476, 207)
+collision_layer = 130
 
 [node name="Tree_40" parent="Boundaries_decor" unique_id=1352871258 instance=ExtResource("4_f4wsa")]
 position = Vector2(-368, 201)
+collision_layer = 130
 
 [node name="Tree_41" parent="Boundaries_decor" unique_id=1949390705 instance=ExtResource("2_yrab2")]
 position = Vector2(-417, 249)
+collision_layer = 130
 
 [node name="Tree_42" parent="Boundaries_decor" unique_id=1641988700 instance=ExtResource("3_8d1vd")]
 position = Vector2(-298, 205)
+collision_layer = 130
 
 [node name="Tree_43" parent="Boundaries_decor" unique_id=1378193635 instance=ExtResource("4_f4wsa")]
 position = Vector2(-347, 245)
+collision_layer = 130
 
 [node name="Tree_44" parent="Boundaries_decor" unique_id=309036200 instance=ExtResource("3_8d1vd")]
 position = Vector2(-493, 307)
+collision_layer = 130
 
 [node name="Tree_45" parent="Boundaries_decor" unique_id=115744689 instance=ExtResource("4_f4wsa")]
 position = Vector2(-412, 318)
+collision_layer = 130
 
 [node name="Tree_46" parent="Boundaries_decor" unique_id=905929996 instance=ExtResource("2_yrab2")]
 position = Vector2(-343, 320)
+collision_layer = 130
 
 [node name="Tree_47" parent="Boundaries_decor" unique_id=1978711790 instance=ExtResource("3_8d1vd")]
 position = Vector2(-454, 374)
+collision_layer = 130
 
 [node name="Tree_48" parent="Boundaries_decor" unique_id=1138135733 instance=ExtResource("4_f4wsa")]
 position = Vector2(-375, 383)
+collision_layer = 130
 
 [node name="Tree_49" parent="Boundaries_decor" unique_id=1943077379 instance=ExtResource("2_yrab2")]
 position = Vector2(-512, 422)
+collision_layer = 130
 
 [node name="Tree_50" parent="Boundaries_decor" unique_id=781347894 instance=ExtResource("3_8d1vd")]
 position = Vector2(-254, 300)
+collision_layer = 130
 
 [node name="Tree_51" parent="Boundaries_decor" unique_id=2104912592 instance=ExtResource("4_f4wsa")]
 position = Vector2(-350, 661)
+collision_layer = 130
 
 [node name="Tree_52" parent="Boundaries_decor" unique_id=2085606956 instance=ExtResource("3_8d1vd")]
 position = Vector2(-476, 674)
+collision_layer = 130
 
 [node name="Tree_53" parent="Boundaries_decor" unique_id=979590576 instance=ExtResource("2_yrab2")]
 position = Vector2(-406, 727)
+collision_layer = 130
 
 [node name="Tree_54" parent="Boundaries_decor" unique_id=1760623914 instance=ExtResource("3_8d1vd")]
 position = Vector2(-313, 747)
+collision_layer = 130
 
 [node name="Tree_55" parent="Boundaries_decor" unique_id=467658104 instance=ExtResource("2_yrab2")]
 position = Vector2(-373, 801)
+collision_layer = 130
 
 [node name="Tree_56" parent="Boundaries_decor" unique_id=1419725195 instance=ExtResource("4_f4wsa")]
 position = Vector2(-284, 799)
+collision_layer = 130
 
 [node name="Tree_57" parent="Boundaries_decor" unique_id=884296469 instance=ExtResource("3_8d1vd")]
 position = Vector2(-409, 878)
+collision_layer = 130
 
 [node name="Tree_58" parent="Boundaries_decor" unique_id=669425413 instance=ExtResource("2_yrab2")]
 position = Vector2(-317, 871)
+collision_layer = 130
 
 [node name="Tree_59" parent="Boundaries_decor" unique_id=1105905524 instance=ExtResource("4_f4wsa")]
 position = Vector2(-358, 912)
+collision_layer = 130
 
 [node name="Tree_60" parent="Boundaries_decor" unique_id=24545965 instance=ExtResource("2_yrab2")]
 position = Vector2(-404, 954)
+collision_layer = 130
 
 [node name="Tree_61" parent="Boundaries_decor" unique_id=1200260934 instance=ExtResource("3_8d1vd")]
 position = Vector2(-405, 1024)
+collision_layer = 130
 
 [node name="Tree_62" parent="Boundaries_decor" unique_id=1134593286 instance=ExtResource("4_f4wsa")]
 position = Vector2(-315, 971)
+collision_layer = 130
 
 [node name="Tree_63" parent="Boundaries_decor" unique_id=1304463678 instance=ExtResource("3_8d1vd")]
 position = Vector2(-250, 943)
+collision_layer = 130
 
 [node name="Tree_64" parent="Boundaries_decor" unique_id=283434602 instance=ExtResource("4_f4wsa")]
 position = Vector2(-336, 1019)
+collision_layer = 130
 
 [node name="Tree_65" parent="Boundaries_decor" unique_id=1508210163 instance=ExtResource("3_8d1vd")]
 position = Vector2(-263, 1030)
+collision_layer = 130
 
 [node name="Tree_66" parent="Boundaries_decor" unique_id=1923748288 instance=ExtResource("2_yrab2")]
 position = Vector2(-347, 1099)
+collision_layer = 130
 
 [node name="Tree_67" parent="Boundaries_decor" unique_id=257499242 instance=ExtResource("4_f4wsa")]
 position = Vector2(-254, 1107)
+collision_layer = 130
 
 [node name="Tree_68" parent="Boundaries_decor" unique_id=2099274318 instance=ExtResource("3_8d1vd")]
 position = Vector2(-393, 1152)
+collision_layer = 130
 
 [node name="Tree_69" parent="Boundaries_decor" unique_id=222523256 instance=ExtResource("2_yrab2")]
 position = Vector2(-306, 1175)
+collision_layer = 130
 
 [node name="Tree_70" parent="Boundaries_decor" unique_id=1349543034 instance=ExtResource("4_f4wsa")]
 position = Vector2(-243, 1206)
+collision_layer = 130
 
 [node name="Tree_71" parent="Boundaries_decor" unique_id=1731513750 instance=ExtResource("3_8d1vd")]
 position = Vector2(-178, 1120)
+collision_layer = 130
 
 [node name="Tree_72" parent="Boundaries_decor" unique_id=1512053022 instance=ExtResource("2_yrab2")]
 position = Vector2(-99, 1148)
+collision_layer = 130
 
 [node name="Tree_73" parent="Boundaries_decor" unique_id=979104431 instance=ExtResource("4_f4wsa")]
 position = Vector2(-161, 1225)
+collision_layer = 130
 
 [node name="Tree_74" parent="Boundaries_decor" unique_id=1425947564 instance=ExtResource("3_8d1vd")]
 position = Vector2(-59, 1212)
+collision_layer = 130
 
 [node name="Tree_75" parent="Boundaries_decor" unique_id=2025220203 instance=ExtResource("4_f4wsa")]
 position = Vector2(13, 1111)
+collision_layer = 130
 
 [node name="Tree_78" parent="Boundaries_decor" unique_id=1995883688 instance=ExtResource("3_8d1vd")]
 position = Vector2(127, 1170)
+collision_layer = 130
 
 [node name="Tree_76" parent="Boundaries_decor" unique_id=460303040 instance=ExtResource("2_yrab2")]
 position = Vector2(13, 1182)
+collision_layer = 130
 
 [node name="Tree_77" parent="Boundaries_decor" unique_id=102624005 instance=ExtResource("4_f4wsa")]
 position = Vector2(61, 1229)
+collision_layer = 130
 
 [node name="Tree_79" parent="Boundaries_decor" unique_id=1445448758 instance=ExtResource("3_8d1vd")]
 position = Vector2(205, 1207)
+collision_layer = 130
 
 [node name="Tree_80" parent="Boundaries_decor" unique_id=767700790 instance=ExtResource("4_f4wsa")]
 position = Vector2(129, 1217)
+collision_layer = 130
 
 [node name="Tree_81" parent="Boundaries_decor" unique_id=683600559 instance=ExtResource("3_8d1vd")]
 position = Vector2(299, 1142)
+collision_layer = 130
 
 [node name="Tree_82" parent="Boundaries_decor" unique_id=652677811 instance=ExtResource("2_yrab2")]
 position = Vector2(284, 1211)
+collision_layer = 130
 
 [node name="Tree_83" parent="Boundaries_decor" unique_id=1569021354 instance=ExtResource("2_yrab2")]
 position = Vector2(243, 1249)
+collision_layer = 130
 
 [node name="Tree_84" parent="Boundaries_decor" unique_id=1269625531 instance=ExtResource("4_f4wsa")]
 position = Vector2(354, 1196)
+collision_layer = 130
 
 [node name="Tree_85" parent="Boundaries_decor" unique_id=287276556 instance=ExtResource("3_8d1vd")]
 position = Vector2(463, 1141)
+collision_layer = 130
 
 [node name="Tree_86" parent="Boundaries_decor" unique_id=1498324460 instance=ExtResource("3_8d1vd")]
 position = Vector2(410, 1212)
+collision_layer = 130
 
 [node name="Tree_87" parent="Boundaries_decor" unique_id=1384778186 instance=ExtResource("2_yrab2")]
 position = Vector2(515, 1214)
+collision_layer = 130
 
 [node name="Tree_88" parent="Boundaries_decor" unique_id=1028401874 instance=ExtResource("3_8d1vd")]
 position = Vector2(604, 1142)
+collision_layer = 130
 
 [node name="Tree_89" parent="Boundaries_decor" unique_id=532681655 instance=ExtResource("4_f4wsa")]
 position = Vector2(569, 1195)
+collision_layer = 130
 
 [node name="Tree_90" parent="Boundaries_decor" unique_id=1745078789 instance=ExtResource("3_8d1vd")]
 position = Vector2(639, 1220)
+collision_layer = 130
 
 [node name="Tree_91" parent="Boundaries_decor" unique_id=1698252616 instance=ExtResource("3_8d1vd")]
 position = Vector2(820, 1156)
+collision_layer = 130
 
 [node name="Tree_92" parent="Boundaries_decor" unique_id=1433123750 instance=ExtResource("4_f4wsa")]
 position = Vector2(724, 1116)
+collision_layer = 130
 
 [node name="Tree_93" parent="Boundaries_decor" unique_id=139376394 instance=ExtResource("3_8d1vd")]
 position = Vector2(733, 1193)
+collision_layer = 130
 
 [node name="Tree_94" parent="Boundaries_decor" unique_id=250070019 instance=ExtResource("2_yrab2")]
 position = Vector2(789, 1212)
+collision_layer = 130
 
 [node name="Tree_95" parent="Boundaries_decor" unique_id=989445275 instance=ExtResource("3_8d1vd")]
 position = Vector2(1051, 1114)
+collision_layer = 130
 
 [node name="Tree_96" parent="Boundaries_decor" unique_id=1919374221 instance=ExtResource("4_f4wsa")]
 position = Vector2(988, 1150)
+collision_layer = 130
 
 [node name="Tree_97" parent="Boundaries_decor" unique_id=676278469 instance=ExtResource("3_8d1vd")]
 position = Vector2(910, 1183)
+collision_layer = 130
 
 [node name="Tree_98" parent="Boundaries_decor" unique_id=972866319 instance=ExtResource("2_yrab2")]
 position = Vector2(860, 1253)
+collision_layer = 130
 
 [node name="Tree_99" parent="Boundaries_decor" unique_id=210219710 instance=ExtResource("4_f4wsa")]
 position = Vector2(962, 1219)
+collision_layer = 130
 
 [node name="Tree_101" parent="Boundaries_decor" unique_id=1359340034 instance=ExtResource("3_8d1vd")]
 position = Vector2(434, -4)
+collision_layer = 130
 
 [node name="Tree_102" parent="Boundaries_decor" unique_id=1443930641 instance=ExtResource("4_f4wsa")]
 position = Vector2(264, -6)
+collision_layer = 130
 
 [node name="Tree_103" parent="Boundaries_decor" unique_id=659084359 instance=ExtResource("3_8d1vd")]
 position = Vector2(334, 27)
+collision_layer = 130
 
 [node name="Tree_104" parent="Boundaries_decor" unique_id=250475072 instance=ExtResource("2_yrab2")]
 position = Vector2(390, 74)
+collision_layer = 130
 
 [node name="Tree_105" parent="Boundaries_decor" unique_id=1964976788 instance=ExtResource("2_yrab2")]
 position = Vector2(272, 96)
+collision_layer = 130
 
 [node name="Tree_106" parent="Boundaries_decor" unique_id=2102428417 instance=ExtResource("3_8d1vd")]
 position = Vector2(347, 140)
+collision_layer = 130
 
 [node name="Tree_107" parent="Boundaries_decor" unique_id=1589344114 instance=ExtResource("4_f4wsa")]
 position = Vector2(287, 200)
+collision_layer = 130
 
 [node name="Tree_108" parent="Boundaries_decor" unique_id=1237762494 instance=ExtResource("3_8d1vd")]
 position = Vector2(362, 221)
+collision_layer = 130
 
 [node name="Tree_109" parent="Boundaries_decor" unique_id=537080872 instance=ExtResource("2_yrab2")]
 position = Vector2(449, 159)
+collision_layer = 130
 
 [node name="Tree_110" parent="Boundaries_decor" unique_id=1770757923 instance=ExtResource("3_8d1vd")]
 position = Vector2(423, 309)
+collision_layer = 130
 
 [node name="Tree_111" parent="Boundaries_decor" unique_id=1150825536 instance=ExtResource("4_f4wsa")]
 position = Vector2(312, 283)
+collision_layer = 130
 
 [node name="Tree_112" parent="Boundaries_decor" unique_id=1640072434 instance=ExtResource("3_8d1vd")]
 position = Vector2(352, 339)
+collision_layer = 130
 
 [node name="Tree_113" parent="Boundaries_decor" unique_id=1416980358 instance=ExtResource("3_8d1vd")]
 position = Vector2(289, 414)
+collision_layer = 130
 
 [node name="Tree_114" parent="Boundaries_decor" unique_id=562124417 instance=ExtResource("4_f4wsa")]
 position = Vector2(399, 372)
+collision_layer = 130
 
 [node name="Tree_115" parent="Boundaries_decor" unique_id=2052326248 instance=ExtResource("3_8d1vd")]
 position = Vector2(435, 436)
+collision_layer = 130
 
 [node name="Tree_116" parent="Boundaries_decor" unique_id=1792463281 instance=ExtResource("2_yrab2")]
 position = Vector2(352, 464)
+collision_layer = 130
 
 [node name="Tree_117" parent="Boundaries_decor" unique_id=1490940806 instance=ExtResource("3_8d1vd")]
 position = Vector2(306, 527)
+collision_layer = 130
 
 [node name="Tree_118" parent="Boundaries_decor" unique_id=2010372503 instance=ExtResource("4_f4wsa")]
 position = Vector2(405, 499)
+collision_layer = 130
 
 [node name="Tree_119" parent="Boundaries_decor" unique_id=230761212 instance=ExtResource("3_8d1vd")]
 position = Vector2(453, 556)
+collision_layer = 130
 
 [node name="Tree_120" parent="Boundaries_decor" unique_id=715422204 instance=ExtResource("2_yrab2")]
 position = Vector2(366, 587)
+collision_layer = 130
 
 [node name="Tree_121" parent="Boundaries_decor" unique_id=1497761015 instance=ExtResource("3_8d1vd")]
 position = Vector2(437, 649)
+collision_layer = 130
 
 [node name="Tree_122" parent="Boundaries_decor" unique_id=470956921 instance=ExtResource("2_yrab2")]
 position = Vector2(309, 643)
+collision_layer = 130
 
 [node name="Tree_123" parent="Boundaries_decor" unique_id=1830320364 instance=ExtResource("4_f4wsa")]
 position = Vector2(370, 684)
+collision_layer = 130
 
 [node name="Tree_124" parent="Boundaries_decor" unique_id=1970933717 instance=ExtResource("3_8d1vd")]
 position = Vector2(312, 765)
+collision_layer = 130
 
 [node name="Tree_125" parent="Boundaries_decor" unique_id=674018781 instance=ExtResource("2_yrab2")]
 position = Vector2(437, 732)
+collision_layer = 130
 
 [node name="Tree_126" parent="Boundaries_decor" unique_id=594520679 instance=ExtResource("4_f4wsa")]
 position = Vector2(524, 685)
+collision_layer = 130
 
 [node name="Tree_100" parent="Boundaries_decor" unique_id=802267147 instance=ExtResource("3_8d1vd")]
 position = Vector2(1041, 1199)
+collision_layer = 130
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("5_yrab2")]
 position = Vector2(0, 142)
