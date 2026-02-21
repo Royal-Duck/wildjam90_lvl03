@@ -4,7 +4,7 @@ King: Where do we stand with the counter-attack?
 # FR: Nos pertes sont importantes, nous avons perdu la porte nord, notre cavalerie est encerclée et nos espions ne répondent plus. Dois-je sonner la retraite, Mon Roi?
 Player: Heavy losses. The north gate has fallen, our cavalry is surrounded, our spies have gone quiet. Do I order a retreat, my King?
 # FR: Misérables ! Vous n'êtes qu'à peine plus aguerris qu'une meute de paysans !
-King: Wretches! You're little better than a pack of peasants!
+King: Wretches! You're nothing better than a pack of peasants!
 # FR: Lorsqu'on est directement au service de son Roi, on est prêt à mourir pour lui.
 King: Those who serve their King directly are ready to die for him. // those who serve under the king
 # FR: Rassemblez vos troupes et menez l'assaut.
@@ -18,7 +18,7 @@ King: Now obey.
 # FR: Il me tourne le dos.
 [#aside] He turns his back to me.
 # FR: Je pose la main sur la garde.
-[#aside] I rest my hand on the hilt.
+[#aside] I rest my hand on the hilt. / My hand reaches for my sword.
 # FR: J'achève la guerre.
 [#aside] I end the war.
 => END
