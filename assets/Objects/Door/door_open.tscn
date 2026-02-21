@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dcyouwq0ms2q7"]
+
+[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_5f6qo"]
+
+[node name="Door_Open" type="Sprite2D" unique_id=827081366]
+z_index = 1
+y_sort_enabled = true
+texture_filter = 1
+texture = ExtResource("1_5f6qo")
+offset = Vector2(0, 25)
+region_enabled = true
+region_rect = Rect2(24, 160, 48, 64)

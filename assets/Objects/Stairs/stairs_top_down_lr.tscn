@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cwjxccf63qfjp"]
+
+[ext_resource type="Texture2D" uid="uid://fegjbdxqlacv" path="res://texture/TX Struct.png" id="1_mwof7"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_70uel"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kor00"]
+size = Vector2(8, 96)
+
+[node name="Stairs_TopDown_LR" type="StaticBody2D" unique_id=694740595]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_70uel")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=54217076]
+texture = ExtResource("1_mwof7")
+offset = Vector2(0, 48)
+region_enabled = true
+region_rect = Rect2(32, 32, 64, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=890279023]
+z_index = 1
+position = Vector2(-28, 48)
+shape = SubResource("RectangleShape2D_kor00")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1022378165]
+z_index = 1
+position = Vector2(28, 48)
+shape = SubResource("RectangleShape2D_kor00")

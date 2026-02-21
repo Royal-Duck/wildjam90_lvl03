@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://2au0x1mpnive"]
-
-[ext_resource type="Texture2D" uid="uid://d2h5f3y2y5ses" path="res://texture/TX Shadow.png" id="1_lxol3"]
-
-[node name="Pot3_Shadow" type="Sprite2D" unique_id=1450875326]
-modulate = Color(1, 1, 1, 0.16078432)
-texture = ExtResource("1_lxol3")
-region_enabled = true
-region_rect = Rect2(160, 360, 32, 24)

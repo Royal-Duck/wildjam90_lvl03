@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://btjwrt4stfgow"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_5bgg3"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ki2es"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kr044"]
+size = Vector2(35, 23)
+
+[node name="Statue" type="StaticBody2D" unique_id=834362404]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_ki2es")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1982125224]
+texture = ExtResource("1_5bgg3")
+offset = Vector2(0, -13)
+region_enabled = true
+region_rect = Rect2(440, 16, 48, 80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=74546708]
+z_index = 1
+position = Vector2(-0.5, 11.5)
+shape = SubResource("RectangleShape2D_kr044")

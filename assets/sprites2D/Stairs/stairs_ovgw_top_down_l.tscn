@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://c5bc4l1qxk1cq"]
-
-[ext_resource type="Texture2D" uid="uid://fegjbdxqlacv" path="res://texture/TX Struct.png" id="1_hsqib"]
-
-[node name="StairsOVGW_TopDown_L" type="Sprite2D" unique_id=1392985054]
-texture_filter = 1
-texture = ExtResource("1_hsqib")
-region_enabled = true
-region_rect = Rect2(224, 160, 65, 96)

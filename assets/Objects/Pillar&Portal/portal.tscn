@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cjgvn5osvnlox"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_ooaj0"]
+
+[node name="Portal" type="Sprite2D" unique_id=1397357612]
+z_index = 1
+texture = ExtResource("1_ooaj0")
+offset = Vector2(4, 0)
+region_enabled = true
+region_rect = Rect2(352, 264, 104, 80)

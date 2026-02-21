@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dxunmphc63mjs"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_clk85"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_70uel"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_70uel"]
+radius = 18.0
+height = 54.00003
+
+[node name="Broken_Circle" type="StaticBody2D" unique_id=79112469]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_70uel")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1101106662]
+texture = ExtResource("1_clk85")
+offset = Vector2(0, -15)
+region_enabled = true
+region_rect = Rect2(416, 352, 64, 56)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1536981377]
+position = Vector2(0, -6)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_70uel")

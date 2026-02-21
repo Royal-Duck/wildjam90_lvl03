@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cjotjxccpllst"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_s5gx2"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ki2es"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kr044"]
+size = Vector2(30, 16)
+
+[node name="Tombstone_1" type="StaticBody2D" unique_id=1394317539]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_ki2es")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=935558868]
+texture = ExtResource("1_s5gx2")
+offset = Vector2(4, -23)
+region_enabled = true
+region_rect = Rect2(224, 232, 40, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2047441289]
+z_index = 1
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_kr044")

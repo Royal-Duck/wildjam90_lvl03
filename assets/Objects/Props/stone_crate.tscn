@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://h0cjd24limws"]
+
+[ext_resource type="Texture2D" uid="uid://dar0xi1qdad8e" path="res://texture/Extra/TX Props with Shadow.png" id="1_gskr0"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ki2es"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kr044"]
+size = Vector2(32, 23)
+
+[node name="Stone_Crate" type="StaticBody2D" unique_id=1564802352]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 128
+physics_material_override = SubResource("PhysicsMaterial_ki2es")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1149609340]
+texture = ExtResource("1_gskr0")
+offset = Vector2(4, -23)
+region_enabled = true
+region_rect = Rect2(288, 304, 40, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=314542453]
+z_index = 1
+position = Vector2(0, -10.5)
+shape = SubResource("RectangleShape2D_kr044")

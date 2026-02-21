@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://ch7xhlj6otdnq"]
-
-[ext_resource type="Texture2D" uid="uid://byx5qedu60bgg" path="res://texture/TX Props.png" id="1_nwrra"]
-
-[node name="Brick2" type="Sprite2D" unique_id=1917715344]
-texture_filter = 1
-texture = ExtResource("1_nwrra")
-region_enabled = true
-region_rect = Rect2(256, 488, 32, 16)
