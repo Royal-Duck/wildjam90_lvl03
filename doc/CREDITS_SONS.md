@@ -54,7 +54,27 @@ Crédits des sons utilisés dans le jeu (lien, auteur, licence).
 
 ### Roi
 
+- **Nom du son :** Gens - Man death scream  
+- **Source :** Pixabay  
+- **Lien :** https://pixabay.com/fr/sound-effects/gens-man-death-scream-186763/  
+- **Licence :** Licence Pixabay — gratuit, usage commercial autorisé, pas d'attribution obligatoire  
+- **Usage dans le jeu :** gémissement / cri de mort du roi  
+- **Note :** défaut : comme un étranglement sur la fin  
+
+- **Nom du son :** Groans and Screams  
+- **Auteur :** waxsocks  
+- **Lien :** https://freesound.org/people/waxsocks/sounds/255322/  
+- **Licence :** Creative Commons 0 (CC0) — pas d'attribution obligatoire, usage commercial autorisé  
+- **Usage dans le jeu :** gémissement / cri de mort du roi  
+- **Note :** le son intéressant est à deux tiers de la piste  
+
 ### Player
+
+- **Nom du son :** Gens 101 - Quejido aggente 5  
+- **Source :** Pixabay  
+- **Lien :** https://pixabay.com/fr/sound-effects/gens-101-quejidoaggente5-98590/  
+- **Licence :** Licence Pixabay — gratuit, usage commercial autorisé, pas d'attribution obligatoire  
+- **Usage dans le jeu :** gémissement / cri de mort du joueur  
 
 ---
 
@@ -77,11 +97,22 @@ Crédits des sons utilisés dans le jeu (lien, auteur, licence).
 - **Lien :** https://pixabay.com/fr/sound-effects/gens-grunt1-68324/  
 - **Licence :** Licence Pixabay — gratuit, usage commercial autorisé, pas d'attribution obligatoire  
 - **Usage dans le jeu :** son joué quand un personnage subit des dégâts  
+- **Note :** petit impact au tout début, puis grunt — chouette combo  
 
 - **Nom du son :** Gens - Grunt mp3  
 - **Source :** Pixabay  
 - **Lien :** https://pixabay.com/fr/sound-effects/gens-gruntmp3-14723/  
 - **Licence :** Licence Pixabay — gratuit, usage commercial autorisé, pas d'attribution obligatoire  
 - **Usage dans le jeu :** son joué quand un personnage subit des dégâts  
+
+---
+
+## 6. Divers
+
+- **Nom du son :** Respiration colère (Gens - Heavy breath male)  
+- **Source :** Pixabay  
+- **Lien :** https://pixabay.com/fr/sound-effects/gens-heavy-breath-male-63980/  
+- **Licence :** Licence Pixabay — gratuit, usage commercial autorisé, pas d'attribution obligatoire  
+- **Usage dans le jeu :** à définir  
 
 ---
