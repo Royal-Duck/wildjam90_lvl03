@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://b46u8ffg76fyp" path="res://npc/enemies/enemy.tscn" id="5_dwbse"]
 [ext_resource type="Resource" uid="uid://untxwx8vrg7m" path="res://npc/enemies/bandit/bandit.tres" id="6_pkg7o"]
 [ext_resource type="Resource" uid="uid://cykykmgwiuoxe" path="res://npc/characters/mother/mother.tres" id="10_70uel"]
+[ext_resource type="PackedScene" uid="uid://cjion7ckb01in" path="res://assets/Objects/Trees/tree_1.tscn" id="11_ic0uy"]
+[ext_resource type="PackedScene" uid="uid://b6jvknx1quxfi" path="res://assets/Objects/Stairs/stairs_ovgw_top_down_right.tscn" id="12_k3n1d"]
 [ext_resource type="TileSet" uid="uid://djyd7jd3jdyln" path="res://texture/Tileset_Stairs_Walls.tres" id="12_q42o5"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="15_hiqwa"]
 
@@ -210,5 +212,11 @@ color = Color(0, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1594720949]
 libraries/ = SubResource("AnimationLibrary_2u3nc")
+
+[node name="Tree_1" parent="." unique_id=2138802008 instance=ExtResource("11_ic0uy")]
+position = Vector2(223, -356)
+
+[node name="StairsOVGW_TopDown_Right" parent="." unique_id=421689546 instance=ExtResource("12_k3n1d")]
+position = Vector2(280, -245)
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
