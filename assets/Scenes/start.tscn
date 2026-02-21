@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://cjion7ckb01in" path="res://assets/Objects/Trees/tree_1.tscn" id="3_8d1vd"]
 [ext_resource type="PackedScene" uid="uid://c66n6d3km7lbf" path="res://assets/Objects/Trees/tree_3.tscn" id="4_f4wsa"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="5_yrab2"]
-[ext_resource type="PackedScene" uid="uid://b6jvknx1quxfi" path="res://assets/Objects/Stairs/stairs_ovgw_top_down_right.tscn" id="6_8d1vd"]
 
 [node name="Start" type="Node2D" unique_id=2095885132]
 y_sort_enabled = true
@@ -395,12 +394,9 @@ position = Vector2(524, 685)
 [node name="Tree_100" parent="Boundaries_decor" unique_id=802267147 instance=ExtResource("3_8d1vd")]
 position = Vector2(1041, 1199)
 
-[node name="Tree_127" parent="Boundaries_decor" unique_id=1246935140 instance=ExtResource("4_f4wsa")]
-position = Vector2(-57, 78)
-collision_layer = 8
-
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("5_yrab2")]
 position = Vector2(0, 142)
 
-[node name="StairsOVGW_TopDown_Right" parent="." unique_id=421689546 instance=ExtResource("6_8d1vd")]
-position = Vector2(100, -48)
+[node name="Tree_127" parent="." unique_id=1246935140 instance=ExtResource("4_f4wsa")]
+position = Vector2(-57, 78)
+collision_layer = 2
