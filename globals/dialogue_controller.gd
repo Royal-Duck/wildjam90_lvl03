@@ -26,7 +26,6 @@ func close_current_balloon() -> void:
 func _on_balloon_tree_exited() -> void:
 	current_balloon = null
 	is_dialogue_open = false
-	print(path)
 	if not path == "uid://bfe8gcwkmyh61" and not path == "uid://yqxaa7t3b4cs":
 		get_parent().get_child(-1).anim_player.play("fade")
 

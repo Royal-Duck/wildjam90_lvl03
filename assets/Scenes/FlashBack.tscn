@@ -24,6 +24,12 @@
 [ext_resource type="Resource" uid="uid://fxp6h0so4u7j" path="res://npc/characters/king/king.tres" id="21_k008h"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="22_17r33"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_k008h"]
+font_size = 32
+font_color = Color(0.5975949, 0, 0.057539605, 1)
+outline_size = 5
+outline_color = Color(0.59607846, 0, 0.05882353, 1)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_17r33"]
 radius = 51.0
 
@@ -73,6 +79,15 @@ font_size = 20
 [node name="FlashBack" type="Node2D" unique_id=1904033017]
 y_sort_enabled = true
 script = ExtResource("1_17r33")
+
+[node name="TheEndLabel" type="Label" parent="." unique_id=1679273026]
+z_index = 99
+offset_left = 1133.0
+offset_top = -100.0
+offset_right = 1563.0
+offset_bottom = -55.333332
+text = "The war is over"
+label_settings = SubResource("LabelSettings_k008h")
 
 [node name="KingHitBox" type="Area2D" parent="." unique_id=1416156021]
 position = Vector2(3, 0)
@@ -460,7 +475,7 @@ theme_override_constants/separation = 29
 
 [node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1061686934]
 layout_mode = 2
-text = "Thank your for playing!"
+text = "Thank you for playing!"
 label_settings = SubResource("LabelSettings_qlwkl")
 
 [node name="Label2" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1874850600]

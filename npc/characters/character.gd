@@ -25,6 +25,9 @@ func show_to_interact_press_e() -> void:
 func hide_to_interact_press_e() -> void:
 	to_interact_press_e.visible = false
 
+func stop_animation() -> void:
+	animated_sprite_2d.stop()
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		bubble_timer.start()
