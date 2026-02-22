@@ -4,7 +4,8 @@
 
 [node name="Portal" type="Sprite2D" unique_id=1397357612]
 z_index = 1
+y_sort_enabled = true
 texture = ExtResource("1_ooaj0")
-offset = Vector2(4, 0)
+offset = Vector2(4, 32)
 region_enabled = true
 region_rect = Rect2(352, 264, 104, 80)

@@ -35,7 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://8bsrmpkj4bwy" path="res://assets/Objects/Weeds/weed_16.tscn" id="31_pthh2"]
 [ext_resource type="PackedScene" uid="uid://iwirt2wuelu0" path="res://assets/Objects/Props/bench_right.tscn" id="33_vcf7v"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="34_gtecy"]
-[ext_resource type="PackedScene" uid="uid://dcye7adq7e50k" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="34_pi76j"]
+[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="34_pi76j"]
 [ext_resource type="PackedScene" uid="uid://dp8sdatc4nhkg" path="res://assets/Objects/Stairs/stairs_ovgw_top_down_lr.tscn" id="35_gtecy"]
 [ext_resource type="PackedScene" uid="uid://dhr434n7d5h0c" path="res://assets/Objects/Stairs/stairs_ovgw_right_left.tscn" id="35_vcf7v"]
 [ext_resource type="PackedScene" uid="uid://bncwxxyaa1aha" path="res://assets/Objects/Stairs/stairs_ovgw_top_down_left.tscn" id="37_ursdv"]
@@ -50,7 +50,7 @@
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="46_luqbg"]
 [ext_resource type="Resource" uid="uid://cykykmgwiuoxe" path="res://npc/characters/mother/mother.tres" id="47_luyc6"]
 [ext_resource type="Resource" uid="uid://dgoqd5tcuyyw2" path="res://npc/characters/widow/widow.tres" id="48_pxn8f"]
-[ext_resource type="Script" uid="uid://vdeq6fdppvng" path="res://home.gd" id="49_home"]
+[ext_resource type="Script" path="res://home.gd" id="49_home"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_px6ad"]
 atlas = ExtResource("3_pxn8f")
@@ -1213,7 +1213,7 @@ position = Vector2(-287, -20)
 position = Vector2(609, -210)
 
 [node name="Portal" parent="Node2D" unique_id=1397357612 instance=ExtResource("40_amglw")]
-position = Vector2(641, -72)
+position = Vector2(641, -106)
 
 [node name="Weed17" parent="Node2D" unique_id=935677968 instance=ExtResource("20_luyc6")]
 position = Vector2(652, -35)
