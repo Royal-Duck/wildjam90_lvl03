@@ -63,6 +63,7 @@ func _process(delta: float) -> void:
 		if (0.75 < charge_time && charge_time < 1.25):
 			rock.damage *= 2.0
 		rock.global_position = $basepoint/launcher.global_position
+		rock.add_to_group("thrown_rock")
 		rock.direction = circle_pos
 		rock.speed = power_time(charge_time)
 		rock.max_travel = power_time(charge_time)

@@ -6,7 +6,7 @@ Player: Heavy losses. The north gate has fallen, our cavalry is surrounded, our 
 # FR: Misérables ! Vous n'êtes qu'à peine plus aguerris qu'une meute de paysans !
 King: Wretches! You're nothing better than a pack of peasants!
 # FR: Lorsqu'on est directement au service de son Roi, on est prêt à mourir pour lui.
-King: Those who serve their King directly are ready to die for him. // those who serve under the king
+King: Those who serve their King should be ready to die for him.
 # FR: Rassemblez vos troupes et menez l'assaut.
 King: Rally your men and lead the assault.
 # FR: Mais Seigneur... nous sommes 3 fois moins nombreux, nous avons des blessés et...
@@ -15,10 +15,4 @@ Player: But my Lord... we're outnumbered three to one, we have wounded and...
 King: Enough! If you don't survive, you didn't deserve to.
 # FR: Maintenant, obéissez.
 King: Now obey.
-# FR: Il me tourne le dos.
-[#aside] He turns his back to me.
-# FR: Je pose la main sur la garde.
-[#aside] I rest my hand on the hilt. / My hand reaches for my sword.
-# FR: J'achève la guerre.
-[#aside] I end the war.
 => END

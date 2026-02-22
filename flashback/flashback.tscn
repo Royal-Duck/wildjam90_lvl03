@@ -64,89 +64,6 @@ script = ExtResource("1_bfqkw")
 position = Vector2(594, 328)
 data = ExtResource("5_1glmq")
 
-[node name="Menu" type="CanvasLayer" parent="." unique_id=997791905]
-process_mode = 2
-visible = false
-script = ExtResource("2_gl4vx")
-
-[node name="ColorRect" type="ColorRect" parent="Menu" unique_id=137089380]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.25370002, 0.43, 0.32128167, 1)
-
-[node name="CenterContainer" type="CenterContainer" parent="Menu/ColorRect" unique_id=171196551]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="Menu/ColorRect/CenterContainer" unique_id=1939406513]
-layout_mode = 2
-
-[node name="MainMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=742766025]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 4
-
-[node name="NewGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=307124878]
-unique_name_in_owner = true
-layout_mode = 2
-text = "New Game"
-
-[node name="SettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1308219735]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Settings"
-
-[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=17825007]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Quit game"
-
-[node name="SettingsMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1493741144]
-unique_name_in_owner = true
-layout_mode = 2
-theme_override_constants/separation = 12
-
-[node name="Volume" type="HBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=133448535]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=1588860346]
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Volume"
-
-[node name="VolumeSlider" type="HSlider" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=577011276]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-value = 80.0
-
-[node name="CloseSettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=368702140]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Back"
-
-[node name="GameOverMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=2133537789]
-unique_name_in_owner = true
-layout_mode = 2
-
-[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=1621102562]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Try again"
-
 [node name="GoToFlashBackTest" type="Area2D" parent="." unique_id=1640295840]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoToFlashBackTest" unique_id=875063046]
@@ -177,3 +94,109 @@ color = Color(0, 0, 0, 1)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=264428166]
 libraries/ = SubResource("AnimationLibrary_83kiw")
 autoplay = &"fade"
+
+[node name="Menu" type="CanvasLayer" parent="." unique_id=594620430]
+process_mode = 2
+visible = false
+script = ExtResource("2_gl4vx")
+
+[node name="ColorRect" type="ColorRect" parent="Menu" unique_id=414377541]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.105882354, 0.27058825, 0.45882353, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="Menu/ColorRect" unique_id=1366044982]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/ColorRect/CenterContainer" unique_id=226363575]
+layout_mode = 2
+
+[node name="MainMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=418604600]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="NewGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=1716117288]
+unique_name_in_owner = true
+layout_mode = 2
+text = "New Game"
+
+[node name="SettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=2040732019]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=573941100]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit game"
+
+[node name="SettingsMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=2005817796]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Volume" type="HBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=466092924]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=165222106]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=1686044563]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 80.0
+
+[node name="CloseSettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=646954076]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
+
+[node name="GameOverMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1915705621]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=888609173]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Try again"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=108821995]
+layout_mode = 2
+text = "Quit game"
+
+[node name="EndGameMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1888581594]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=212301444]
+layout_mode = 2
+text = "Thank your for playing!"
+
+[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1021253481]
+layout_mode = 2
+text = "Try again"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1266028328]
+layout_mode = 2
+text = "Quit game"
+
+[connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
+[connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/QuitGameBtn" to="Menu" method="_on_quit_game_btn_pressed"]
