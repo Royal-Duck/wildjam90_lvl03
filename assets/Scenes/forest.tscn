@@ -1660,6 +1660,7 @@ libraries/ = SubResource("AnimationLibrary_hqa0d")
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("2_3ixxd")]
 position = Vector2(-885, 33)
+speed = 200
 
 [node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("25_dklfs")]
 position = Vector2(1051, 536)
