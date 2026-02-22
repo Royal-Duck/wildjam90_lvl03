@@ -4,6 +4,7 @@
 [ext_resource type="StyleBox" uid="uid://cgv7l1w2rh50j" path="res://player/balloon/balloon_style_box_flat.tres" id="2_h1nvq"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="3_qj7ag"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="4_8digb"]
+[ext_resource type="AudioStream" uid="uid://50v47ojl5m7y" path="res://assets/effets/TexteVoiceBlip/voice_blip_1.mp3" id="5_h1nvq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -103,11 +104,6 @@ _data = {
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=970876115]
 layer = 100
 script = ExtResource("1_t82ea")
-start_from_title = null
-auto_start = null
-will_block_other_input = null
-next_action = null
-skip_action = null
 
 [node name="Balloon" type="Control" parent="." unique_id=395539854]
 unique_name_in_owner = true
@@ -202,6 +198,7 @@ text = "Response example"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=203736808]
 unique_name_in_owner = true
+stream = ExtResource("5_h1nvq")
 
 [connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]

@@ -145,8 +145,10 @@ func apply_dialogue_line() -> void:
 
 	dialogue_label.show()
 	if not dialogue_line.text.is_empty():
+		AudioManager.start_writing()
 		dialogue_label.type_out()
 		await dialogue_label.finished_typing
+		AudioManager.stop_writing()
 
 	# Wait for next line
 	if dialogue_line.has_tag("voice"):

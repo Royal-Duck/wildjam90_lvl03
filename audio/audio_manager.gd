@@ -7,6 +7,7 @@ extends Node
 @onready var bandit_death: AudioStreamPlayer = $BanditDeath
 @onready var damage: AudioStreamPlayer = $Damage
 @onready var crash: AudioStreamPlayer = $FlashbackCrash
+@onready var writing := $Writing
 
 func _ready() -> void:
 	music_player.finished.connect(music_player.play)
@@ -37,3 +38,9 @@ func play_damage() -> void:
 
 func play_flashback() -> void:
 	crash.play()
+
+func start_writing() -> void:
+	writing.play()
+
+func stop_writing() -> void:
+	writing.stop()
