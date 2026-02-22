@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://k0r4vcvg821f"]
 
-[ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_luqbg"]
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_ndni3"]
 [ext_resource type="TileSet" uid="uid://djyd7jd3jdyln" path="res://texture/Tileset_Stairs_Walls.tres" id="2_el546"]
 [ext_resource type="PackedScene" uid="uid://cmgdrt5q2iqxx" path="res://assets/Scenes/FlashBack.tscn" id="2_luyc6"]
+[ext_resource type="Texture2D" uid="uid://nfj8l2j1qvk0" path="res://assets/characters/hugMother.png" id="3_pxn8f"]
 [ext_resource type="PackedScene" uid="uid://btjwrt4stfgow" path="res://assets/Objects/Props/statue.tscn" id="3_urm5n"]
 [ext_resource type="PackedScene" uid="uid://e1rxsmpmru4w" path="res://assets/Objects/Props/pot_2.tscn" id="4_pi76j"]
 [ext_resource type="PackedScene" uid="uid://dxunmphc63mjs" path="res://assets/Objects/Props/broken_circle.tscn" id="5_vcf7v"]
@@ -50,6 +50,162 @@
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="46_luqbg"]
 [ext_resource type="Resource" uid="uid://cykykmgwiuoxe" path="res://npc/characters/mother/mother.tres" id="47_luyc6"]
 [ext_resource type="Resource" uid="uid://dgoqd5tcuyyw2" path="res://npc/characters/widow/widow.tres" id="48_pxn8f"]
+[ext_resource type="Script" uid="uid://vdeq6fdppvng" path="res://home.gd" id="49_home"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_px6ad"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uffb1"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asc7y"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3pqx"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65487"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6ddq"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6ls5"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5dhg"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xnksd"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pthh2"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uk12o"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10khv"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qn2iu"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38idh"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(192, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yigf8"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(256, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obxyh"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eav5j"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05irg"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66c1p"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(192, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skeaq"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(256, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2moon"]
+atlas = ExtResource("3_pxn8f")
+region = Rect2(0, 256, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3y7cr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_px6ad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uffb1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asc7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3pqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65487")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6ddq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6ls5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5dhg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xnksd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pthh2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uk12o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10khv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qn2iu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38idh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yigf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obxyh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eav5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05irg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66c1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skeaq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2moon")
+}],
+"loop": false,
+"name": &"hug",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_70uel"]
 length = 0.001
@@ -92,8 +248,16 @@ size = Vector2(374, 215)
 
 [node name="Home" type="Node2D" unique_id=1772560829]
 y_sort_enabled = true
-script = ExtResource("1_luqbg")
+script = ExtResource("49_home")
 next_scene = ExtResource("2_luyc6")
+
+[node name="HugAnimation" type="AnimatedSprite2D" parent="." unique_id=517244152]
+z_index = 1
+position = Vector2(418.00003, -362)
+sprite_frames = SubResource("SpriteFrames_3y7cr")
+animation = &"hug"
+frame = 20
+frame_progress = 1.0
 
 [node name="Fade" type="ColorRect" parent="." unique_id=592849214]
 visible = false
@@ -120,7 +284,7 @@ tile_set = ExtResource("2_el546")
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("34_gtecy")]
 z_index = 2
-position = Vector2(-415, 283)
+position = Vector2(431, -176)
 speed = 200
 
 [node name="Node2D" type="Node2D" parent="." unique_id=262982203]
