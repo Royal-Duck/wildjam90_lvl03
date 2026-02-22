@@ -149,12 +149,11 @@ script = ExtResource("1_7ud5v")
 next_scene = ExtResource("2_1swof")
 
 [node name="Fade" type="ColorRect" parent="." unique_id=51205894]
-visible = false
 z_index = 1
-offset_left = -208.0
-offset_top = -128.0
-offset_right = 1495.0
-offset_bottom = 1019.0
+offset_left = 787.0
+offset_top = -253.0
+offset_right = 2490.0
+offset_bottom = 894.0
 mouse_filter = 1
 color = Color(0, 0, 0, 0)
 
