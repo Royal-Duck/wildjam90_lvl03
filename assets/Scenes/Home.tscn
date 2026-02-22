@@ -48,6 +48,7 @@
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="45_qekr5"]
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="46_luqbg"]
 [ext_resource type="Resource" uid="uid://cykykmgwiuoxe" path="res://npc/characters/mother/mother.tres" id="47_luyc6"]
+[ext_resource type="Resource" uid="uid://dgoqd5tcuyyw2" path="res://npc/characters/widow/widow.tres" id="48_pxn8f"]
 
 [sub_resource type="Animation" id="Animation_70uel"]
 length = 0.001
@@ -1202,9 +1203,13 @@ text = "Try again"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Boundaries" unique_id=1020341095]
 z_index = 1
-polygon = PackedVector2Array(-964, -1050, 1143, -1057, 1070, 749, -385, 781, -380, 327, -318, 293, 312, 276, 411, 194, 551, 292, 674, 285, 724, 143, 762, -82, 770, -267, 700, -500, 645, -613, 147, -608, 158, -403, 10, -274, -23, -130, -139, -158, -496, -127, -478, 346, -385, 781, -982, 759)
+polygon = PackedVector2Array(-964, -1050, 1143, -1057, 1070, 749, -385, 781, -380, 327, -318, 293, 312, 276, 411, 194, 551, 292, 674, 285, 724, 143, 762, -82, 770, -267, 700, -500, 645, -613, 147, -608, 158, -403, 10, -274, -23, -130, -139, -163, -487, -162, -478, 346, -385, 781, -982, 759)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries" unique_id=881834029]
 z_index = 1
 position = Vector2(-399, 469.5)
 shape = SubResource("RectangleShape2D_qekr5")
+
+[node name="Npc" parent="Boundaries" unique_id=1293811643 instance=ExtResource("46_luqbg")]
+position = Vector2(-47, -40)
+data = ExtResource("48_pxn8f")
