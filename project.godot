@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="wildjam90_lvl03"
-run/main_scene="uid://c17j50y3jhwau"
+run/main_scene="uid://eyqswu8f1xdi"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
 [audio]

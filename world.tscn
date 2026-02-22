@@ -96,6 +96,7 @@ enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
+visible = false
 script = ExtResource("15_hiqwa")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]

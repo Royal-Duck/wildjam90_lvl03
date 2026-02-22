@@ -1,6 +1,5 @@
 extends Node2D
 
-@onready var go_to_flash_back_test: Area2D = $GoToFlashBackTest
 @onready var menu: CanvasLayer = $Menu
 @onready var anim_player: AnimationPlayer = $AnimationPlayer
 
