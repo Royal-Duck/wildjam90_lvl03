@@ -284,7 +284,7 @@ tile_set = ExtResource("2_el546")
 
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("34_gtecy")]
 z_index = 2
-position = Vector2(431, -176)
+position = Vector2(-412, 316)
 speed = 200
 
 [node name="Node2D" type="Node2D" parent="." unique_id=262982203]
