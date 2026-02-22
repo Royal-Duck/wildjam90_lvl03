@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://cbdph02olj5fd" path="res://assets/effets/Degats/degat_1.mp3" id="6_hlghp"]
 [ext_resource type="AudioStream" uid="uid://b0305bb703jos" path="res://assets/effets/Degats/degat_2.mp3" id="7_6wlj3"]
 [ext_resource type="AudioStream" uid="uid://btg78fq25jkwu" path="res://assets/effets/Degats/degat_3.mp3" id="8_0xv67"]
+[ext_resource type="AudioStream" uid="uid://bogsseoar6gdl" path="res://assets/effets/Flashback/flashback.mp3" id="10_0xv67"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_oyqdx"]
 streams_count = 3
@@ -45,3 +46,6 @@ volume_db = -15.489
 
 [node name="Damage" type="AudioStreamPlayer" parent="." unique_id=983229537]
 stream = SubResource("AudioStreamRandomizer_oyqdx")
+
+[node name="FlashbackCrash" type="AudioStreamPlayer" parent="." unique_id=85522316]
+stream = ExtResource("10_0xv67")

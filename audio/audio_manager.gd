@@ -6,6 +6,7 @@ extends Node
 @onready var slingshot_tension: AudioStreamPlayer = $SlingshotTension
 @onready var bandit_death: AudioStreamPlayer = $BanditDeath
 @onready var damage: AudioStreamPlayer = $Damage
+@onready var crash: AudioStreamPlayer = $FlashbackCrash
 
 func _ready() -> void:
 	music_player.finished.connect(music_player.play)
@@ -33,3 +34,6 @@ func play_bandit_death() -> void:
 
 func play_damage() -> void:
 	damage.play()
+
+func play_flashback() -> void:
+	crash.play()

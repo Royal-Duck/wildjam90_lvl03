@@ -18,4 +18,5 @@ func _on_npc_interact(npc: Node2D) -> void:
 
 
 func _on_animation_player_animation_started(_anim_name: StringName) -> void:
+	AudioManager.play_flashback()
 	$global_shader.visible = true
