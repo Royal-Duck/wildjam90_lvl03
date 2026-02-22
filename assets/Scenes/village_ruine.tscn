@@ -2904,13 +2904,13 @@ enemy_resource = ExtResource("70_iwd5f")
 
 [node name="Enemy11" parent="." unique_id=1519201855 instance=ExtResource("67_vhkom")]
 z_index = 2
-position = Vector2(927, 72)
+position = Vector2(1214, 299)
 collision_mask = 15
 enemy_resource = ExtResource("70_iwd5f")
 
 [node name="Enemy12" parent="." unique_id=581706577 instance=ExtResource("67_vhkom")]
 z_index = 2
-position = Vector2(1473, 60)
+position = Vector2(1450, 83)
 collision_mask = 15
 enemy_resource = ExtResource("70_iwd5f")
 
