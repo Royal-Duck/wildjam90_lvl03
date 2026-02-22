@@ -1,9 +1,47 @@
 [gd_resource type="Resource" script_class="Character" format=3 uid="uid://cykykmgwiuoxe"]
 
 [ext_resource type="Script" uid="uid://d4esalw7fuwka" path="res://npc/characters/character_resource.gd" id="1_gxw8b"]
+[ext_resource type="Texture2D" uid="uid://cdo7ohx7rhoh6" path="res://assets/characters/mother.png" id="2_g585u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvd6g"]
+atlas = ExtResource("2_g585u")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwgs3"]
+atlas = ExtResource("2_g585u")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpem0"]
+atlas = ExtResource("2_g585u")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7tcn"]
+atlas = ExtResource("2_g585u")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ovq0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvd6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwgs3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fpem0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r7tcn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [resource]
 script = ExtResource("1_gxw8b")
 dialogue_path = "uid://dnbvd3ee3rtde"
 dialogue_bubble_text = "My son! You're back!"
+sprite_frames = SubResource("SpriteFrames_2ovq0")
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

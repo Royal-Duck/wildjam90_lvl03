@@ -1,9 +1,47 @@
 [gd_resource type="Resource" script_class="Character" format=3 uid="uid://dk4foh3xmvrg8"]
 
 [ext_resource type="Script" uid="uid://d4esalw7fuwka" path="res://npc/characters/character_resource.gd" id="1_rv5gc"]
+[ext_resource type="Texture2D" uid="uid://ctwtde2ompq65" path="res://assets/characters/deserter.png" id="2_jnksf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnksf"]
+atlas = ExtResource("2_jnksf")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycxqo"]
+atlas = ExtResource("2_jnksf")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ocei"]
+atlas = ExtResource("2_jnksf")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rc41g"]
+atlas = ExtResource("2_jnksf")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ycxqo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jnksf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycxqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ocei")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rc41g")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [resource]
 script = ExtResource("1_rv5gc")
 character_name = "deserter"
 dialogue_bubble_text = "Don't come any closer."
+sprite_frames = SubResource("SpriteFrames_ycxqo")
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

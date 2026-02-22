@@ -1,10 +1,48 @@
 [gd_resource type="Resource" script_class="Character" format=3 uid="uid://dgoqd5tcuyyw2"]
 
 [ext_resource type="Script" uid="uid://d4esalw7fuwka" path="res://npc/characters/character_resource.gd" id="1_ps4nw"]
+[ext_resource type="Texture2D" uid="uid://xq0jkr3sdqlx" path="res://assets/characters/widow.png" id="2_chis3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f2jo"]
+atlas = ExtResource("2_chis3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dcxry"]
+atlas = ExtResource("2_chis3")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17fo2"]
+atlas = ExtResource("2_chis3")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv4ka"]
+atlas = ExtResource("2_chis3")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kisrt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f2jo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dcxry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17fo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hv4ka")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [resource]
 script = ExtResource("1_ps4nw")
 character_name = "widow"
 dialogue_path = "uid://bfe8gcwkmyh61"
 dialogue_bubble_text = "So you made it alive ?"
+sprite_frames = SubResource("SpriteFrames_kisrt")
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

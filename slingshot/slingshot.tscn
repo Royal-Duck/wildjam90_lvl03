@@ -6,8 +6,6 @@
 [node name="slingshot" type="Node2D" unique_id=143331673]
 script = ExtResource("1_x4lac")
 DIST = 45.0
-COOLDOWN = null
-SLOW_SCALE = null
 
 [node name="basepoint" type="Node2D" parent="." unique_id=463687475]
 
