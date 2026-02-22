@@ -9,6 +9,42 @@
 [ext_resource type="PackedScene" uid="uid://c66n6d3km7lbf" path="res://assets/Objects/Trees/tree_3.tscn" id="5_t81nv"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="7_t81nv"]
 
+[sub_resource type="Animation" id="Animation_70uel"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hiqwa"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hqa0d"]
+_data = {
+&"RESET": SubResource("Animation_70uel"),
+&"fade": SubResource("Animation_hiqwa")
+}
+
 [node name="Node2D" type="Node2D" unique_id=510858726]
 y_sort_enabled = true
 script = ExtResource("1_hqa0d")
@@ -987,3 +1023,15 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = "Try again"
+
+[node name="Fade" type="ColorRect" parent="." unique_id=1394664395]
+z_index = 1
+offset_left = -208.0
+offset_top = -128.0
+offset_right = 1495.0
+offset_bottom = 1019.0
+mouse_filter = 1
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1182729557]
+libraries/ = SubResource("AnimationLibrary_hqa0d")
