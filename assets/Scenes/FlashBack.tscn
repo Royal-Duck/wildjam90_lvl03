@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_2gc0u"]
 [ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_17r33"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="2_17r33"]
+[ext_resource type="Script" uid="uid://ce26vpn5feb0y" path="res://npc/characters/king/king_hit_box.gd" id="2_qlwkl"]
 [ext_resource type="PackedScene" uid="uid://vbayy72i2i7d" path="res://assets/Objects/Props/1_arrow.tscn" id="3_qlwkl"]
 [ext_resource type="PackedScene" uid="uid://dap4ogxhar78r" path="res://assets/Objects/Props/2_arrows.tscn" id="4_k008h"]
 [ext_resource type="PackedScene" uid="uid://kqilv87gtmhh" path="res://assets/Objects/Props/3_arrows.tscn" id="5_41j5x"]
@@ -22,6 +23,9 @@
 [ext_resource type="PackedScene" uid="uid://cqj3ywutj2wup" path="res://assets/Objects/Props/weapon_rack_sword.tscn" id="21_1uywt"]
 [ext_resource type="Resource" uid="uid://fxp6h0so4u7j" path="res://npc/characters/king/king.tres" id="21_k008h"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="22_17r33"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_17r33"]
+radius = 51.0
 
 [sub_resource type="Animation" id="Animation_70uel"]
 length = 0.001
@@ -68,6 +72,17 @@ size = Vector2(872.4492, 20)
 y_sort_enabled = true
 script = ExtResource("1_17r33")
 
+[node name="KingHitBox" type="Area2D" parent="." unique_id=1416156021]
+position = Vector2(3, 0)
+collision_layer = 2
+collision_mask = 16
+script = ExtResource("2_qlwkl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KingHitBox" unique_id=146862]
+z_index = 1
+position = Vector2(1361, 0)
+shape = SubResource("CircleShape2D_17r33")
+
 [node name="Fade" type="ColorRect" parent="." unique_id=893455379]
 visible = false
 z_index = 1
@@ -80,10 +95,6 @@ color = Color(0, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1667863912]
 libraries/ = SubResource("AnimationLibrary_qlwkl")
-
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1588910367]
-tile_set = ExtResource("1_2gc0u")
-metadata/_edit_lock_ = true
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1802392220]
 y_sort_enabled = true
@@ -454,6 +465,10 @@ text = "Try again"
 [node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1917675909]
 layout_mode = 2
 text = "Quit game"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1588910367]
+tile_set = ExtResource("1_2gc0u")
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/QuitGameBtn" to="Menu" method="_on_quit_game_btn_pressed"]
