@@ -58,6 +58,10 @@ func _process(delta: float) -> void:
 		AudioManager.play_slingshot_fire()
 		on_cooldown = COOLDOWN
 		var rock = THROWN_ROCK.instantiate()
+		if (0.25 > charge_time || charge_time > 1.75):
+			rock.damage /= 2.0
+		if (0.75 < charge_time && charge_time < 1.25):
+			rock.damage *= 2.0
 		rock.global_position = $basepoint/launcher.global_position
 		rock.direction = circle_pos
 		rock.speed = power_time(charge_time)

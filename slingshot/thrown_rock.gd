@@ -2,7 +2,7 @@ extends CharacterBody2D
 @onready var coll: CollisionShape2D = $coll
 
 @export var speed : float = 500.0
-@export var damage : int = 10
+@export var damage : float = 1.0
 @export var max_travel : int = 1200
 @export var direction : Vector2 = Vector2.ZERO :
 	set(value) :
