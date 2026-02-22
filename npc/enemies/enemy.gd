@@ -131,4 +131,5 @@ func take_damage(amount: int) -> void:
 		die()
 
 func die() -> void:
+	AudioManager.play_bandit_death()
 	queue_free()

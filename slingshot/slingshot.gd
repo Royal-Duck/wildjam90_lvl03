@@ -49,6 +49,7 @@ func _process(delta: float) -> void:
 		if (0.75 < charge_time && charge_time < 1.25):
 			_line.default_color = Color(1.0, 0.5, 0.5, 0.6)
 	if Input.is_action_just_released("attack_click") and is_zero_approx(on_cooldown) and not is_zero_approx(charge_time) and not DialogueController.is_dialogue_open:
+		AudioManager.play_slingshot_fire()
 		on_cooldown = COOLDOWN
 		var rock = THROWN_ROCK.instantiate()
 		rock.global_position = $basepoint/launcher.global_position

@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://c66n6d3km7lbf" path="res://assets/Objects/Trees/tree_3.tscn" id="4_f4wsa"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="5_yrab2"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="6_8d1vd"]
+[ext_resource type="PackedScene" uid="uid://b46u8ffg76fyp" path="res://npc/enemies/enemy.tscn" id="8_ru88n"]
+[ext_resource type="Resource" uid="uid://untxwx8vrg7m" path="res://npc/enemies/bandit/bandit.tres" id="9_nt7sc"]
 
 [sub_resource type="Animation" id="Animation_70uel"]
 length = 0.001
@@ -651,3 +653,15 @@ text = "Try again"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=254973494]
 libraries/ = SubResource("AnimationLibrary_f4wsa")
+
+[node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("8_ru88n")]
+position = Vector2(-52, 775)
+enemy_resource = ExtResource("9_nt7sc")
+
+[node name="Enemy2" parent="." unique_id=877299414 instance=ExtResource("8_ru88n")]
+position = Vector2(30, 812)
+enemy_resource = ExtResource("9_nt7sc")
+
+[node name="Enemy3" parent="." unique_id=1130464199 instance=ExtResource("8_ru88n")]
+position = Vector2(-36, 844)
+enemy_resource = ExtResource("9_nt7sc")

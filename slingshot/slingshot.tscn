@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cvooviofnqued"]
 
 [ext_resource type="Script" uid="uid://d3k7o7oye2igw" path="res://slingshot/slingshot.gd" id="1_x4lac"]
-[ext_resource type="Texture2D" uid="uid://c6qxpxng3l238" path="res://texture/items/slingshot.png" id="2_myjcd"]
+[ext_resource type="Texture2D" uid="uid://btrwwj6s7mwfw" path="res://texture/items/slingshot.png" id="2_myjcd"]
 
 [node name="slingshot" type="Node2D" unique_id=143331673]
 script = ExtResource("1_x4lac")

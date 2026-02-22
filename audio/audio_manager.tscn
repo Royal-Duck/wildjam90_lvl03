@@ -3,6 +3,18 @@
 [ext_resource type="Script" uid="uid://w087v4pd4sfg" path="res://audio/audio_manager.gd" id="1_drlug"]
 [ext_resource type="AudioStream" uid="uid://pjlem8g533gb" path="res://assets/songs/gymnopedie_3.mp3" id="2_0i2i4"]
 [ext_resource type="AudioStream" uid="uid://drra6idc1da7h" path="res://assets/sfx/validation_sound.wav" id="3_0i2i4"]
+[ext_resource type="AudioStream" uid="uid://beuyrgy7pj4e8" path="res://assets/effets/ProjectileSlingShot/slingshot_fire_1.mp3" id="4_mhfhn"]
+[ext_resource type="AudioStream" uid="uid://b7w7qt7pskjjd" path="res://assets/effets/TensionSlingShot/slingshot_tension_1.mp3" id="5_i1k7u"]
+[ext_resource type="AudioStream" uid="uid://b624uafa0ytcd" path="res://assets/effets/Gemissement/Bandit/mort_bandit_1.mp3" id="6_6wlj3"]
+[ext_resource type="AudioStream" uid="uid://cbdph02olj5fd" path="res://assets/effets/Degats/degat_1.mp3" id="6_hlghp"]
+[ext_resource type="AudioStream" uid="uid://b0305bb703jos" path="res://assets/effets/Degats/degat_2.mp3" id="7_6wlj3"]
+[ext_resource type="AudioStream" uid="uid://btg78fq25jkwu" path="res://assets/effets/Degats/degat_3.mp3" id="8_0xv67"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_oyqdx"]
+streams_count = 3
+stream_0/stream = ExtResource("6_hlghp")
+stream_1/stream = ExtResource("7_6wlj3")
+stream_2/stream = ExtResource("8_0xv67")
 
 [node name="AudioManager" type="Node" unique_id=1630261963]
 process_mode = 3
@@ -17,3 +29,19 @@ bus = &"Music"
 [node name="UIClick" type="AudioStreamPlayer" parent="." unique_id=1288709696]
 stream = ExtResource("3_0i2i4")
 volume_db = -11.322
+
+[node name="SlingShotFire" type="AudioStreamPlayer" parent="." unique_id=1992618340]
+stream = ExtResource("4_mhfhn")
+volume_db = -10.432
+
+[node name="SlingshotTension" type="AudioStreamPlayer" parent="." unique_id=115084484]
+stream = ExtResource("5_i1k7u")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1009637866]
+
+[node name="BanditDeath" type="AudioStreamPlayer" parent="." unique_id=1407088011]
+stream = ExtResource("6_6wlj3")
+volume_db = -15.489
+
+[node name="Damage" type="AudioStreamPlayer" parent="." unique_id=983229537]
+stream = SubResource("AudioStreamRandomizer_oyqdx")
