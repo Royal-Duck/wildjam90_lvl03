@@ -5,6 +5,7 @@ extends CanvasLayer
 @onready var settings_menu: VBoxContainer = %SettingsMenu
 @onready var main_menu: VBoxContainer = %MainMenu
 @onready var game_over_menu: VBoxContainer = %GameOverMenu
+@onready var end_game_menu: VBoxContainer = %EndGameMenu
 
 @onready var settings_btn: Button = %SettingsBtn
 @onready var close_settings_btn: Button = %CloseSettingsBtn
@@ -17,6 +18,7 @@ extends CanvasLayer
 func _ready() -> void:
 	settings_menu.visible = false
 	game_over_menu.visible = false
+	end_game_menu.visible = false
 	main_menu.visible = true
 	
 	new_game_btn.pressed.connect(_on_new_game_btn_pressed)
@@ -68,10 +70,18 @@ func _on_volume_changed(value: float) -> void:
 	AudioManager.set_volume(value)
 
 func game_over() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	visible = true
 	main_menu.visible = false
 	game_over_menu.visible = true
+	get_tree().paused = true
+
+func end_game() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	visible = true
+	main_menu.visible = false
+	game_over_menu.visible = false
+	end_game_menu.visible = true
 	get_tree().paused = true
 
 func _on_try_again_btn_pressed() -> void:
@@ -79,7 +89,7 @@ func _on_try_again_btn_pressed() -> void:
 	GameManager.is_scene_change = false
 	GameManager.is_retry = true
 	get_tree().paused = false
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_file("res://assets/Scenes/village_ruine.tscn")
 
 func _on_quit_game_btn_pressed() -> void:
 	get_tree().quit()

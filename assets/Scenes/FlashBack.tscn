@@ -1,0 +1,459 @@
+[gd_scene format=3 uid="uid://cmgdrt5q2iqxx"]
+
+[ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_2gc0u"]
+[ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_17r33"]
+[ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="2_17r33"]
+[ext_resource type="PackedScene" uid="uid://vbayy72i2i7d" path="res://assets/Objects/Props/1_arrow.tscn" id="3_qlwkl"]
+[ext_resource type="PackedScene" uid="uid://dap4ogxhar78r" path="res://assets/Objects/Props/2_arrows.tscn" id="4_k008h"]
+[ext_resource type="PackedScene" uid="uid://kqilv87gtmhh" path="res://assets/Objects/Props/3_arrows.tscn" id="5_41j5x"]
+[ext_resource type="PackedScene" uid="uid://dxwd6byp7ocp8" path="res://assets/Objects/Props/axe.tscn" id="10_1888t"]
+[ext_resource type="PackedScene" uid="uid://dfdrnjg35et2k" path="res://assets/Objects/Props/axe_2.tscn" id="11_r3y2p"]
+[ext_resource type="PackedScene" uid="uid://cy665d5dtlyd1" path="res://assets/Objects/Props/spear.tscn" id="12_cawom"]
+[ext_resource type="PackedScene" uid="uid://cs62tl55sukco" path="res://assets/Objects/Props/spear_2.tscn" id="13_rqu5f"]
+[ext_resource type="PackedScene" uid="uid://jaa1r02brenh" path="res://assets/Objects/Props/sword.tscn" id="14_x7iv8"]
+[ext_resource type="PackedScene" uid="uid://b42vsbhsyoumj" path="res://assets/Objects/Props/sword_2.tscn" id="15_2gc0u"]
+[ext_resource type="Texture2D" uid="uid://bb7phwpyhkkq2" path="res://texture/Extra/king_flashback_background2.png" id="17_cawom"]
+[ext_resource type="PackedScene" uid="uid://cnhewb0sx4oa1" path="res://assets/Objects/Props/weapon_rack_axes.tscn" id="17_cqwog"]
+[ext_resource type="PackedScene" uid="uid://by3kjp7n2rw4c" path="res://assets/Objects/Props/weapon_rack_axe_sword.tscn" id="18_g287f"]
+[ext_resource type="Texture2D" uid="uid://bguev58rnp3j4" path="res://texture/Extra/king_flashback_background1.png" id="18_rqu5f"]
+[ext_resource type="PackedScene" uid="uid://bku4mhl4vcwwb" path="res://assets/Objects/Props/weapon_rack_empty.tscn" id="19_vrbs2"]
+[ext_resource type="PackedScene" uid="uid://cmu4v3tvv5dsa" path="res://assets/Objects/Props/weapon_rack_spears.tscn" id="20_fsy2x"]
+[ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="20_qlwkl"]
+[ext_resource type="PackedScene" uid="uid://cqj3ywutj2wup" path="res://assets/Objects/Props/weapon_rack_sword.tscn" id="21_1uywt"]
+[ext_resource type="Resource" uid="uid://fxp6h0so4u7j" path="res://npc/characters/king/king.tres" id="21_k008h"]
+[ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="22_17r33"]
+
+[sub_resource type="Animation" id="Animation_70uel"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hiqwa"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qlwkl"]
+_data = {
+&"RESET": SubResource("Animation_70uel"),
+&"fade": SubResource("Animation_hiqwa")
+}
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_41j5x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cawom"]
+size = Vector2(872.4492, 20)
+
+[node name="FlashBack" type="Node2D" unique_id=1904033017]
+y_sort_enabled = true
+script = ExtResource("1_17r33")
+
+[node name="Fade" type="ColorRect" parent="." unique_id=893455379]
+visible = false
+z_index = 1
+offset_left = -208.0
+offset_top = -128.0
+offset_right = 1495.0
+offset_bottom = 1019.0
+mouse_filter = 1
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1667863912]
+libraries/ = SubResource("AnimationLibrary_qlwkl")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1588910367]
+tile_set = ExtResource("1_2gc0u")
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1802392220]
+y_sort_enabled = true
+
+[node name="Weapon_Rack_Axes" parent="Node2D" unique_id=1870182374 instance=ExtResource("17_cqwog")]
+position = Vector2(117, -36)
+collision_layer = 10
+
+[node name="Weapon_rack_AxeSword" parent="Node2D" unique_id=1041251333 instance=ExtResource("18_g287f")]
+position = Vector2(139, 32)
+collision_layer = 10
+
+[node name="Weapon_rack_empty" parent="Node2D" unique_id=1261462910 instance=ExtResource("19_vrbs2")]
+position = Vector2(207, -41)
+collision_layer = 10
+
+[node name="Weapon_rack_empty6" parent="Node2D" unique_id=1467931545 instance=ExtResource("19_vrbs2")]
+position = Vector2(312, -56)
+collision_layer = 10
+
+[node name="Weapon_rack_empty5" parent="Node2D" unique_id=1810689648 instance=ExtResource("19_vrbs2")]
+position = Vector2(328.21866, 51.197884)
+collision_layer = 10
+
+[node name="Weapon_rack_empty4" parent="Node2D" unique_id=1228407703 instance=ExtResource("19_vrbs2")]
+position = Vector2(266, -28)
+collision_layer = 10
+
+[node name="Weapon_rack_empty7" parent="Node2D" unique_id=607583632 instance=ExtResource("19_vrbs2")]
+position = Vector2(437, 94)
+collision_layer = 10
+
+[node name="Weapon_rack_empty8" parent="Node2D" unique_id=1277435254 instance=ExtResource("19_vrbs2")]
+position = Vector2(389, -94)
+collision_layer = 10
+
+[node name="Weapon_rack_empty9" parent="Node2D" unique_id=468719585 instance=ExtResource("19_vrbs2")]
+position = Vector2(487, -123)
+collision_layer = 10
+
+[node name="Weapon_rack_empty10" parent="Node2D" unique_id=1938386770 instance=ExtResource("19_vrbs2")]
+position = Vector2(604, -140)
+collision_layer = 10
+
+[node name="Weapon_rack_empty11" parent="Node2D" unique_id=1551816229 instance=ExtResource("19_vrbs2")]
+position = Vector2(697, -170)
+collision_layer = 10
+
+[node name="Weapon_rack_empty12" parent="Node2D" unique_id=129392882 instance=ExtResource("19_vrbs2")]
+position = Vector2(558, 141)
+collision_layer = 10
+
+[node name="Weapon_rack_empty13" parent="Node2D" unique_id=1732701900 instance=ExtResource("19_vrbs2")]
+position = Vector2(622, 107)
+collision_layer = 10
+
+[node name="Weapon_rack_empty19" parent="Node2D" unique_id=1012895454 instance=ExtResource("19_vrbs2")]
+position = Vector2(653, 157)
+collision_layer = 10
+
+[node name="Weapon_rack_empty21" parent="Node2D" unique_id=650330642 instance=ExtResource("19_vrbs2")]
+position = Vector2(837, 163)
+collision_layer = 10
+
+[node name="Weapon_rack_empty22" parent="Node2D" unique_id=1119864446 instance=ExtResource("19_vrbs2")]
+position = Vector2(930, 148)
+collision_layer = 10
+
+[node name="Weapon_rack_empty20" parent="Node2D" unique_id=875309941 instance=ExtResource("19_vrbs2")]
+position = Vector2(744, 176)
+collision_layer = 10
+
+[node name="Weapon_rack_empty14" parent="Node2D" unique_id=536646707 instance=ExtResource("19_vrbs2")]
+position = Vector2(511, 83)
+collision_layer = 10
+
+[node name="Weapon_rack_empty15" parent="Node2D" unique_id=1028661488 instance=ExtResource("19_vrbs2")]
+position = Vector2(576, -102)
+collision_layer = 10
+
+[node name="Weapon_rack_empty16" parent="Node2D" unique_id=1600998710 instance=ExtResource("19_vrbs2")]
+position = Vector2(808, -150)
+collision_layer = 10
+
+[node name="Weapon_rack_empty17" parent="Node2D" unique_id=458687746 instance=ExtResource("19_vrbs2")]
+position = Vector2(898, -131)
+collision_layer = 10
+
+[node name="Weapon_rack_empty23" parent="Node2D" unique_id=1889921455 instance=ExtResource("19_vrbs2")]
+position = Vector2(1020, -92)
+collision_layer = 10
+
+[node name="Weapon_rack_empty18" parent="Node2D" unique_id=2147413610 instance=ExtResource("19_vrbs2")]
+position = Vector2(730, -133)
+collision_layer = 10
+
+[node name="Weapon_rack_empty3" parent="Node2D" unique_id=2045875943 instance=ExtResource("19_vrbs2")]
+position = Vector2(190, 21)
+collision_layer = 10
+
+[node name="Weapon_rack_empty2" parent="Node2D" unique_id=234075890 instance=ExtResource("19_vrbs2")]
+position = Vector2(229, 43)
+collision_layer = 10
+
+[node name="Weapon_Rack_Spears" parent="Node2D" unique_id=361106691 instance=ExtResource("20_fsy2x")]
+position = Vector2(63, -2)
+collision_layer = 10
+
+[node name="Weapon_Rack_Sword" parent="Node2D" unique_id=2080701237 instance=ExtResource("21_1uywt")]
+position = Vector2(170, -19)
+collision_layer = 10
+
+[node name="1Arrow" parent="Node2D" unique_id=1443039282 instance=ExtResource("3_qlwkl")]
+y_sort_enabled = false
+position = Vector2(121, 22)
+
+[node name="2Arrows" parent="Node2D" unique_id=982552903 instance=ExtResource("4_k008h")]
+y_sort_enabled = false
+position = Vector2(43, -16)
+
+[node name="3Arrows" parent="Node2D" unique_id=1088800766 instance=ExtResource("5_41j5x")]
+y_sort_enabled = false
+position = Vector2(136, -37)
+
+[node name="Axe" parent="Node2D" unique_id=427359593 instance=ExtResource("10_1888t")]
+y_sort_enabled = false
+position = Vector2(174.00002, 28.000011)
+rotation = -1.8325958
+
+[node name="Axe4" parent="Node2D" unique_id=541244234 instance=ExtResource("10_1888t")]
+y_sort_enabled = false
+position = Vector2(558.00006, 146.00003)
+rotation = -2.8797934
+
+[node name="Axe3" parent="Node2D" unique_id=1933495470 instance=ExtResource("10_1888t")]
+y_sort_enabled = false
+position = Vector2(371, -84)
+rotation = -1.8325958
+
+[node name="Axe2" parent="Node2D" unique_id=1731980382 instance=ExtResource("11_r3y2p")]
+z_index = 2
+y_sort_enabled = false
+position = Vector2(227, 34)
+
+[node name="Spear" parent="Node2D" unique_id=1859613560 instance=ExtResource("12_cawom")]
+y_sort_enabled = false
+position = Vector2(324.2187, 61.197884)
+rotation = 1.8325958
+
+[node name="Spear2" parent="Node2D" unique_id=1641605662 instance=ExtResource("13_rqu5f")]
+y_sort_enabled = false
+position = Vector2(312, -68)
+
+[node name="Spear3" parent="Node2D" unique_id=1460805189 instance=ExtResource("13_rqu5f")]
+y_sort_enabled = false
+position = Vector2(515, -118)
+rotation = 1.3089969
+
+[node name="Spear4" parent="Node2D" unique_id=146398793 instance=ExtResource("13_rqu5f")]
+y_sort_enabled = false
+position = Vector2(476, -134.00002)
+rotation = -0.7853982
+
+[node name="Sword" parent="Node2D" unique_id=2029822888 instance=ExtResource("14_x7iv8")]
+y_sort_enabled = false
+position = Vector2(286, -20.000015)
+rotation = -4.4505897
+
+[node name="Sword3" parent="Node2D" unique_id=1715874095 instance=ExtResource("15_2gc0u")]
+z_index = 2
+y_sort_enabled = false
+position = Vector2(442, 83.99999)
+rotation = 0.26179937
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Sword2" parent="Node2D" unique_id=1799154489 instance=ExtResource("15_2gc0u")]
+y_sort_enabled = false
+position = Vector2(213.00002, -48.999992)
+rotation = 0.7853982
+
+[node name="Sword4" parent="Node2D" unique_id=1367479144 instance=ExtResource("15_2gc0u")]
+y_sort_enabled = false
+position = Vector2(533, 87.00001)
+rotation = 1.3089969
+
+[node name="Sword6" parent="Node2D" unique_id=621788207 instance=ExtResource("15_2gc0u")]
+z_index = 2
+y_sort_enabled = false
+position = Vector2(552, 130.99998)
+rotation = -0.2617994
+
+[node name="Sword5" parent="Node2D" unique_id=449582111 instance=ExtResource("15_2gc0u")]
+z_index = 2
+y_sort_enabled = false
+position = Vector2(580.99994, -112)
+rotation = 0.2617994
+
+[node name="KingFlashbackBackground2" type="Sprite2D" parent="Node2D" unique_id=85089039]
+position = Vector2(651, -43)
+scale = Vector2(2.188889, 2.1888888)
+texture = ExtResource("17_cawom")
+metadata/_edit_lock_ = true
+
+[node name="KingFlashbackBackground1" type="Sprite2D" parent="Node2D" unique_id=148682452]
+position = Vector2(707, 8)
+scale = Vector2(0.56, 0.56)
+texture = ExtResource("18_rqu5f")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1639635108]
+collision_layer = 10
+physics_material_override = SubResource("PhysicsMaterial_41j5x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1892640100]
+position = Vector2(-71, 0)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D" unique_id=1933712244]
+position = Vector2(930, -306)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D" unique_id=536878540]
+position = Vector2(948, 317)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=24737361]
+position = Vector2(-11, 87)
+rotation = 0.5235988
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=257003976]
+position = Vector2(452.73395, 239.28012)
+rotation = 0.2617994
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1954060667]
+position = Vector2(-17, -74.00001)
+rotation = 2.6179938
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1752079064]
+position = Vector2(1489, 83.00001)
+rotation = 2.0943952
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" unique_id=221717235]
+position = Vector2(1483, -78)
+rotation = 4.1887903
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=429457649]
+position = Vector2(432, -224)
+rotation = 2.8797934
+shape = SubResource("RectangleShape2D_cawom")
+
+[node name="Player" parent="." unique_id=2075464257 instance=ExtResource("2_17r33")]
+position = Vector2(114, 7)
+collision_mask = 14
+metadata/_edit_lock_ = true
+
+[node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("20_qlwkl")]
+position = Vector2(1365, 11)
+data = ExtResource("21_k008h")
+
+[node name="Menu" type="CanvasLayer" parent="." unique_id=1103016759]
+process_mode = 2
+visible = false
+script = ExtResource("22_17r33")
+
+[node name="ColorRect" type="ColorRect" parent="Menu" unique_id=169612634]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.105882354, 0.27058825, 0.45882353, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="Menu/ColorRect" unique_id=1921151857]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/ColorRect/CenterContainer" unique_id=1133034042]
+layout_mode = 2
+
+[node name="MainMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=226431381]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="NewGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=984676776]
+unique_name_in_owner = true
+layout_mode = 2
+text = "New Game"
+
+[node name="SettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=592941322]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/MainMenu" unique_id=485209256]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit game"
+
+[node name="SettingsMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=704383765]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Volume" type="HBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=415730955]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=437949257]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu/Volume" unique_id=1500455131]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 80.0
+
+[node name="CloseSettingsBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/SettingsMenu" unique_id=1812466512]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
+
+[node name="GameOverMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1436937635]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=810402238]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Try again"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=902213241]
+layout_mode = 2
+text = "Quit game"
+
+[node name="EndGameMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1419535791]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1061686934]
+layout_mode = 2
+text = "Thank your for playing!"
+
+[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=54418127]
+layout_mode = 2
+text = "Try again"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1917675909]
+layout_mode = 2
+text = "Quit game"
+
+[connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
+[connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/QuitGameBtn" to="Menu" method="_on_quit_game_btn_pressed"]

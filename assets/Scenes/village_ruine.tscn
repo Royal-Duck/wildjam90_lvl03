@@ -2765,18 +2765,22 @@ shape = SubResource("RectangleShape2D_5exag")
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("67_vhkom")]
 z_index = 2
 position = Vector2(-1460, -120)
+collision_mask = 15
 enemy_resource = ExtResource("70_iwd5f")
 
 [node name="Enemy2" parent="." unique_id=1318956926 instance=ExtResource("67_vhkom")]
 position = Vector2(-1148, -121)
+collision_mask = 15
 enemy_resource = ExtResource("70_iwd5f")
 
 [node name="Enemy3" parent="." unique_id=1872798928 instance=ExtResource("67_vhkom")]
 position = Vector2(-1314, 28)
+collision_mask = 15
 enemy_resource = ExtResource("70_iwd5f")
 
 [node name="Enemy4" parent="." unique_id=1686056273 instance=ExtResource("67_vhkom")]
 position = Vector2(-1308, -229)
+collision_mask = 15
 enemy_resource = ExtResource("70_iwd5f")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=1542271959]
@@ -2861,5 +2865,53 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = "Try again"
+
+[node name="Enemy5" parent="." unique_id=1390930360 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(-67, 195)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
+
+[node name="Enemy6" parent="." unique_id=2140092519 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(-278, -57)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
+
+[node name="Enemy7" parent="." unique_id=600186542 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(105, -14)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
+
+[node name="Enemy8" parent="." unique_id=2041690019 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(-614, 286)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
+
+[node name="Enemy9" parent="." unique_id=1410138880 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(26, 294)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
+
+[node name="Enemy10" parent="." unique_id=344303900 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(258, 155)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
+
+[node name="Enemy11" parent="." unique_id=1519201855 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(1214, 299)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
+
+[node name="Enemy12" parent="." unique_id=581706577 instance=ExtResource("67_vhkom")]
+z_index = 2
+position = Vector2(1450, 83)
+collision_mask = 15
+enemy_resource = ExtResource("70_iwd5f")
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
