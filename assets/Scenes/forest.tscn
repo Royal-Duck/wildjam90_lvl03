@@ -27,6 +27,18 @@
 [ext_resource type="PackedScene" uid="uid://dxunmphc63mjs" path="res://assets/Objects/Props/broken_circle.tscn" id="24_tijot"]
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="25_dklfs"]
 [ext_resource type="Resource" uid="uid://dk4foh3xmvrg8" path="res://npc/characters/deserter/deserter.tres" id="26_plswr"]
+[ext_resource type="PackedScene" uid="uid://ciu7q8hftqrwp" path="res://assets/Objects/Weeds/weed_1.tscn" id="28_5r6qh"]
+[ext_resource type="PackedScene" uid="uid://cn634mmx2p7e3" path="res://assets/Objects/Weeds/weed_2.tscn" id="29_hurko"]
+[ext_resource type="PackedScene" uid="uid://cp14qa554y06e" path="res://assets/Objects/Weeds/weed_7.tscn" id="30_frqd0"]
+[ext_resource type="PackedScene" uid="uid://dpaeuu2hb8plg" path="res://assets/Objects/Weeds/weed_8.tscn" id="31_rv1km"]
+[ext_resource type="PackedScene" uid="uid://cc00l6uu0hcsg" path="res://assets/Objects/Weeds/weed_9.tscn" id="32_gmykx"]
+[ext_resource type="PackedScene" uid="uid://baup4qji60fnw" path="res://assets/Objects/Weeds/weed_12.tscn" id="33_cllfh"]
+[ext_resource type="PackedScene" uid="uid://dc48bij7kwcsn" path="res://assets/Objects/Weeds/weed_14.tscn" id="34_4rlbw"]
+[ext_resource type="PackedScene" uid="uid://b5ayxe2hdv4yo" path="res://assets/Objects/Weeds/weed_15.tscn" id="35_nmyhh"]
+[ext_resource type="PackedScene" uid="uid://b7o1iyku37x7p" path="res://assets/Objects/Weeds/weed_13.tscn" id="36_6uuem"]
+[ext_resource type="PackedScene" uid="uid://cq4pbshgi4ya6" path="res://assets/Objects/Weeds/weed_11.tscn" id="37_gqx32"]
+[ext_resource type="PackedScene" uid="uid://b7kcjwuppp6kr" path="res://assets/Objects/Weeds/weed_3.tscn" id="38_uo5n7"]
+[ext_resource type="PackedScene" uid="uid://2uhbmvlutjwu" path="res://assets/Objects/Weeds/weed_5.tscn" id="39_5264y"]
 
 [sub_resource type="Animation" id="Animation_70uel"]
 length = 0.001
@@ -1755,6 +1767,51 @@ text = "Quit game"
 [node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("25_dklfs")]
 position = Vector2(1051, 536)
 data = ExtResource("26_plswr")
+
+[node name="Weed1" parent="." unique_id=1435015773 instance=ExtResource("28_5r6qh")]
+position = Vector2(-612, 7)
+
+[node name="Weed2" parent="." unique_id=526808882 instance=ExtResource("29_hurko")]
+position = Vector2(-842, -15)
+
+[node name="Weed7" parent="." unique_id=1825177505 instance=ExtResource("30_frqd0")]
+position = Vector2(-474, 482)
+
+[node name="Weed8" parent="." unique_id=1276782029 instance=ExtResource("31_rv1km")]
+position = Vector2(-51, 487)
+
+[node name="Weed9" parent="." unique_id=2102531349 instance=ExtResource("32_gmykx")]
+position = Vector2(-78, 487)
+
+[node name="Weed12" parent="." unique_id=214932767 instance=ExtResource("33_cllfh")]
+position = Vector2(224, 474)
+
+[node name="Weed14" parent="." unique_id=1427833149 instance=ExtResource("34_4rlbw")]
+position = Vector2(495, 971)
+
+[node name="Weed15" parent="." unique_id=1771505576 instance=ExtResource("35_nmyhh")]
+position = Vector2(-142, 969)
+
+[node name="Weed10" parent="." unique_id=491667750 instance=ExtResource("32_gmykx")]
+position = Vector2(1165, 1105)
+
+[node name="Weed11" parent="." unique_id=475966440 instance=ExtResource("30_frqd0")]
+position = Vector2(636, 1)
+
+[node name="Weed13" parent="." unique_id=1417529990 instance=ExtResource("36_6uuem")]
+position = Vector2(101, -101)
+
+[node name="Weed16" parent="." unique_id=950610824 instance=ExtResource("35_nmyhh")]
+position = Vector2(139, -103)
+
+[node name="Weed17" parent="." unique_id=777477087 instance=ExtResource("37_gqx32")]
+position = Vector2(-131, 1)
+
+[node name="Weed3" parent="." unique_id=63495892 instance=ExtResource("38_uo5n7")]
+position = Vector2(976, 480)
+
+[node name="Weed5" parent="." unique_id=129289699 instance=ExtResource("39_5264y")]
+position = Vector2(1286, 498)
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
