@@ -96,7 +96,6 @@ enemy_resource = ExtResource("6_pkg7o")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=920857380]
 process_mode = 2
-visible = false
 script = ExtResource("15_hiqwa")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=66372694]
@@ -176,6 +175,26 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = "Try again"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu" unique_id=123950153]
+layout_mode = 2
+text = "Quit game"
+
+[node name="EndGameMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1404936593]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=779017594]
+layout_mode = 2
+text = "Thank your for playing!"
+
+[node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1383647887]
+layout_mode = 2
+text = "Try again"
+
+[node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=542495485]
+layout_mode = 2
+text = "Quit game"
 
 [node name="GoToFlashBackTest" type="Area2D" parent="." unique_id=978051159]
 z_index = 1
