@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_xtuon"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="2_3ixxd"]
 [ext_resource type="PackedScene" uid="uid://cph5si2ehhfrw" path="res://assets/Objects/Bushes/bush_3.tscn" id="2_e8s71"]
+[ext_resource type="PackedScene" uid="uid://k0r4vcvg821f" path="res://assets/Scenes/Home.tscn" id="2_hqa0d"]
 [ext_resource type="PackedScene" uid="uid://cjion7ckb01in" path="res://assets/Objects/Trees/tree_1.tscn" id="3_hd4ix"]
 [ext_resource type="PackedScene" uid="uid://x4ggm1hyuqih" path="res://assets/Objects/Trees/tree_2.tscn" id="3_ssykx"]
 [ext_resource type="PackedScene" uid="uid://c66n6d3km7lbf" path="res://assets/Objects/Trees/tree_3.tscn" id="5_t81nv"]
@@ -24,6 +25,8 @@
 [ext_resource type="PackedScene" uid="uid://d1eddvemjrnby" path="res://assets/Objects/Rocks&Debris/brick_3.tscn" id="22_dklfs"]
 [ext_resource type="PackedScene" uid="uid://dbr5gmy7fotp2" path="res://assets/Objects/Rocks&Debris/rock_1.tscn" id="23_plswr"]
 [ext_resource type="PackedScene" uid="uid://dxunmphc63mjs" path="res://assets/Objects/Props/broken_circle.tscn" id="24_tijot"]
+[ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="25_dklfs"]
+[ext_resource type="Resource" uid="uid://dk4foh3xmvrg8" path="res://npc/characters/deserter/deserter.tres" id="26_plswr"]
 
 [sub_resource type="Animation" id="Animation_70uel"]
 length = 0.001
@@ -64,6 +67,7 @@ _data = {
 [node name="Node2D" type="Node2D" unique_id=510858726]
 y_sort_enabled = true
 script = ExtResource("1_hqa0d")
+next_scene = ExtResource("2_hqa0d")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1784700649]
 y_sort_enabled = true
@@ -1747,6 +1751,10 @@ text = "Try again"
 [node name="QuitGameBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=30384096]
 layout_mode = 2
 text = "Quit game"
+
+[node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("25_dklfs")]
+position = Vector2(1051, 536)
+data = ExtResource("26_plswr")
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
