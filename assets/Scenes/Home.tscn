@@ -35,7 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://8bsrmpkj4bwy" path="res://assets/Objects/Weeds/weed_16.tscn" id="31_pthh2"]
 [ext_resource type="PackedScene" uid="uid://iwirt2wuelu0" path="res://assets/Objects/Props/bench_right.tscn" id="33_vcf7v"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="34_gtecy"]
-[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="34_pi76j"]
+[ext_resource type="PackedScene" uid="uid://dcye7adq7e50k" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="34_pi76j"]
 [ext_resource type="PackedScene" uid="uid://dp8sdatc4nhkg" path="res://assets/Objects/Stairs/stairs_ovgw_top_down_lr.tscn" id="35_gtecy"]
 [ext_resource type="PackedScene" uid="uid://dhr434n7d5h0c" path="res://assets/Objects/Stairs/stairs_ovgw_right_left.tscn" id="35_vcf7v"]
 [ext_resource type="PackedScene" uid="uid://bncwxxyaa1aha" path="res://assets/Objects/Stairs/stairs_ovgw_top_down_left.tscn" id="37_ursdv"]
@@ -50,7 +50,7 @@
 [ext_resource type="PackedScene" uid="uid://cmaty8mp0psrf" path="res://npc/characters/character.tscn" id="46_luqbg"]
 [ext_resource type="Resource" uid="uid://cykykmgwiuoxe" path="res://npc/characters/mother/mother.tres" id="47_luyc6"]
 [ext_resource type="Resource" uid="uid://dgoqd5tcuyyw2" path="res://npc/characters/widow/widow.tres" id="48_pxn8f"]
-[ext_resource type="Script" path="res://home.gd" id="49_home"]
+[ext_resource type="Script" uid="uid://vdeq6fdppvng" path="res://home.gd" id="49_home"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_px6ad"]
 atlas = ExtResource("3_pxn8f")
@@ -260,12 +260,11 @@ frame = 20
 frame_progress = 1.0
 
 [node name="Fade" type="ColorRect" parent="." unique_id=592849214]
-visible = false
-z_index = 1
-offset_left = -208.0
-offset_top = -128.0
-offset_right = 1495.0
-offset_bottom = 1019.0
+z_index = 10
+offset_left = -418.0
+offset_top = -887.0
+offset_right = 1285.0
+offset_bottom = 260.0
 mouse_filter = 1
 color = Color(0, 0, 0, 0)
 

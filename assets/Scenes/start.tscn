@@ -59,11 +59,11 @@ tile_map_data = PackedByteArray("AADz//P/AAAGAAMAAADz//T/AAAEAAEAAADz//X/AAADAAM
 tile_set = ExtResource("1_djnab")
 
 [node name="Fade" type="ColorRect" parent="." unique_id=411372932]
-z_index = 1
-offset_left = -181.0
-offset_top = 166.0
-offset_right = 1522.0
-offset_bottom = 1313.0
+z_index = 10
+offset_left = 82.0
+offset_top = 185.0
+offset_right = 1785.0
+offset_bottom = 1332.0
 mouse_filter = 1
 color = Color(0, 0, 0, 0)
 
