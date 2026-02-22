@@ -28,5 +28,4 @@ func close_current_balloon() -> void:
 func _on_balloon_tree_exited() -> void:
 	current_balloon = null
 	is_dialogue_open = false
-	if (path == "uid://dnbvd3ee3rtde"):
-		get_parent().get_child(-1).anim_player.play("fade")
+	get_parent().get_child(-1).anim_player.play("fade")
