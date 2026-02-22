@@ -82,6 +82,7 @@ label_settings = SubResource("LabelSettings_wrr4h")
 shape = SubResource("CircleShape2D_70vcc")
 
 [node name="DialogueBubble" type="PanelContainer" parent="." unique_id=1911665489]
+z_index = 2
 offset_left = -54.0
 offset_top = -59.0
 offset_right = -21.0
