@@ -1,4 +1,5 @@
 extends Node2D
+class_name World
 
 @export var next_scene: PackedScene
 

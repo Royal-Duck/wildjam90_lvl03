@@ -69,6 +69,8 @@ func _try_interact_with_npc() -> void:
 
 	current_npc.hide_to_interact_press_e()
 	GameManager.player_position = position
+	if get_tree().current_scene.has_method("_on_npc_interact"):
+		get_tree().current_scene._on_npc_interact(current_npc)
 	DialogueController.start_dialogue(current_npc.data.dialogue_path)
 
 
