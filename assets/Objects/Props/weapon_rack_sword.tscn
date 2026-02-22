@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cqj3ywutj2wup"]
+
+[ext_resource type="Texture2D" uid="uid://d2qj2u15f6088" path="res://texture/TX_NewElements.png" id="1_xjshn"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7vu4m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a16ch"]
+size = Vector2(19, 4)
+
+[node name="Weapon_Rack_Sword" type="StaticBody2D" unique_id=2080701237]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_7vu4m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1314963698]
+texture = ExtResource("1_xjshn")
+offset = Vector2(0, -1)
+region_enabled = true
+region_rect = Rect2(0, 8, 32, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=794356385]
+z_index = 1
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_a16ch")

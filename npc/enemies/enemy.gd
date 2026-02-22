@@ -16,6 +16,8 @@ extends CharacterBody2D
 
 @onready var player: Node2D = get_tree().current_scene.get_node_or_null("Player")
 
+var life_points = 2.0;
+
 const SPEED = 170.0
 
 var follow_player = false
@@ -83,7 +85,10 @@ func _physics_process(_delta: float) -> void:
 
 func _on_attack_area_body_entered(body: Node2D) -> void:
 	if "damage" in body:
-		take_damage(body.damage)
+		life_points -= body.damage
+		if life_points <= 0:
+			AudioManager.play_bandit_death()
+			queue_free()
 		body.queue_free()
 		return
 	if body.is_in_group("player"):
@@ -124,12 +129,3 @@ func _play_attack_animation() -> void:
 	last_direction = 1.0 if to_player.x >= 0 else -1.0
 	var anim := "Attack_Right" if last_direction > 0 else "Attack_Left"
 	animated_sprite_2d.play(anim)
-
-func take_damage(amount: int) -> void:
-	enemy_resource.take_damage(amount)
-	if enemy_resource.is_dead():
-		die()
-
-func die() -> void:
-	AudioManager.play_bandit_death()
-	queue_free()

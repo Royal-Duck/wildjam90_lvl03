@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b38l7sideobqg"]
+
+[ext_resource type="Texture2D" uid="uid://d2qj2u15f6088" path="res://texture/TX_NewElements.png" id="1_v5d4x"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7vu4m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a16ch"]
+size = Vector2(22, 8)
+
+[node name="Dirt_Tombstone_Large" type="StaticBody2D" unique_id=1383449104]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_7vu4m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=640034004]
+texture = ExtResource("1_v5d4x")
+offset = Vector2(0, -4)
+region_enabled = true
+region_rect = Rect2(0, 64, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1187372773]
+z_index = 1
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_a16ch")

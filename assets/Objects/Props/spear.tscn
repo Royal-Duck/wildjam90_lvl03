@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cy665d5dtlyd1"]
+
+[ext_resource type="Texture2D" uid="uid://d2qj2u15f6088" path="res://texture/TX_NewElements.png" id="1_3gsxu"]
+
+[node name="Spear" type="Sprite2D" unique_id=1859613560]
+z_index = 1
+y_sort_enabled = true
+texture = ExtResource("1_3gsxu")
+offset = Vector2(0, 9)
+region_enabled = true
+region_rect = Rect2(104, 144, 16, 32)

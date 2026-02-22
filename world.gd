@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var next_scene: PackedScene
+
 @onready var menu: CanvasLayer = $Menu
 @onready var anim_player: AnimationPlayer = $AnimationPlayer
 
@@ -15,13 +17,10 @@ func _input(event: InputEvent) -> void:
 		menu.visible = true
 		get_tree().paused = true
 
-
-const FLASHBACK = preload("uid://brat7n62mmmdh")
-
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name != "fade":
 		return;
 	GameManager.has_seen_start_menu = true
 	GameManager.is_scene_change = true
 	GameManager.is_retry = false
-	get_tree().call_deferred("change_scene_to_packed", FLASHBACK)
+	get_tree().call_deferred("change_scene_to_packed", next_scene)
