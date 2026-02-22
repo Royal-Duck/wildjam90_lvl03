@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_2gc0u"]
 [ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_17r33"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="2_17r33"]
-[ext_resource type="Script" uid="uid://ce26vpn5feb0y" path="res://npc/characters/king/king_hit_box.gd" id="2_qlwkl"]
+[ext_resource type="Script" path="res://npc/characters/king/king_hit_box.gd" id="2_qlwkl"]
 [ext_resource type="PackedScene" uid="uid://vbayy72i2i7d" path="res://assets/Objects/Props/1_arrow.tscn" id="3_qlwkl"]
 [ext_resource type="PackedScene" uid="uid://dap4ogxhar78r" path="res://assets/Objects/Props/2_arrows.tscn" id="4_k008h"]
 [ext_resource type="PackedScene" uid="uid://kqilv87gtmhh" path="res://assets/Objects/Props/3_arrows.tscn" id="5_41j5x"]
@@ -357,6 +357,7 @@ shape = SubResource("RectangleShape2D_cawom")
 [node name="Player" parent="." unique_id=2075464257 instance=ExtResource("2_17r33")]
 position = Vector2(114, 7)
 collision_mask = 14
+speed = 150
 metadata/_edit_lock_ = true
 
 [node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("20_qlwkl")]
