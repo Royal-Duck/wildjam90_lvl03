@@ -42,6 +42,7 @@ animations = [{
 [resource]
 script = ExtResource("1_rv5gc")
 character_name = "deserter"
+dialogue_path = "uid://bkl701fklvx3g"
 dialogue_bubble_text = "Don't come any closer."
 sprite_frames = SubResource("SpriteFrames_ycxqo")
 metadata/_custom_type_script = "uid://d4esalw7fuwka"
