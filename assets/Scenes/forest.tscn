@@ -1768,10 +1768,6 @@ text = "Try again"
 layout_mode = 2
 text = "Quit game"
 
-[node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("25_dklfs")]
-position = Vector2(1051, 536)
-data = ExtResource("26_plswr")
-
 [node name="Weed1" parent="." unique_id=1435015773 instance=ExtResource("28_5r6qh")]
 position = Vector2(-612, 7)
 
@@ -1816,6 +1812,9 @@ position = Vector2(976, 480)
 
 [node name="Weed5" parent="." unique_id=129289699 instance=ExtResource("39_5264y")]
 position = Vector2(1286, 498)
+
+[node name="Big_Rock" parent="." unique_id=472638867 instance=ExtResource("20_s6tj2")]
+position = Vector2(1028, 540)
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
