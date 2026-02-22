@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_luqbg"]
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_ndni3"]
 [ext_resource type="TileSet" uid="uid://djyd7jd3jdyln" path="res://texture/Tileset_Stairs_Walls.tres" id="2_el546"]
-[ext_resource type="PackedScene" uid="uid://brat7n62mmmdh" path="res://flashback/flashback.tscn" id="2_luyc6"]
+[ext_resource type="PackedScene" uid="uid://cmgdrt5q2iqxx" path="res://assets/Scenes/FlashBack.tscn" id="2_luyc6"]
 [ext_resource type="PackedScene" uid="uid://btjwrt4stfgow" path="res://assets/Objects/Props/statue.tscn" id="3_urm5n"]
 [ext_resource type="PackedScene" uid="uid://e1rxsmpmru4w" path="res://assets/Objects/Props/pot_2.tscn" id="4_pi76j"]
 [ext_resource type="PackedScene" uid="uid://dxunmphc63mjs" path="res://assets/Objects/Props/broken_circle.tscn" id="5_vcf7v"]
@@ -1237,5 +1237,6 @@ text = "Try again"
 layout_mode = 2
 text = "Quit game"
 
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/QuitGameBtn" to="Menu" method="_on_quit_game_btn_pressed"]
