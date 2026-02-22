@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://btg78fq25jkwu" path="res://assets/effets/Degats/degat_3.mp3" id="8_0xv67"]
 [ext_resource type="AudioStream" uid="uid://bogsseoar6gdl" path="res://assets/effets/Flashback/flashback.mp3" id="10_0xv67"]
 [ext_resource type="AudioStream" uid="uid://50v47ojl5m7y" path="res://assets/effets/TexteVoiceBlip/voice_blip_1.mp3" id="11_oyqdx"]
+[ext_resource type="AudioStream" uid="uid://cfvb0n38tqgrg" path="res://assets/effets/Flashback/respiration.mp3" id="11_tmngx"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_oyqdx"]
 streams_count = 3
@@ -50,6 +51,10 @@ stream = SubResource("AudioStreamRandomizer_oyqdx")
 
 [node name="FlashbackCrash" type="AudioStreamPlayer" parent="." unique_id=85522316]
 stream = ExtResource("10_0xv67")
+
+[node name="FlashbackRespiration" type="AudioStreamPlayer" parent="." unique_id=1182895824]
+stream = ExtResource("11_tmngx")
+volume_db = 10.0
 
 [node name="Writing" type="AudioStreamPlayer" parent="." unique_id=1936799280]
 stream = ExtResource("11_oyqdx")
