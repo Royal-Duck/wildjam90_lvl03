@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_2gc0u"]
 [ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_17r33"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="2_17r33"]
-[ext_resource type="Script" path="res://npc/characters/king/king_hit_box.gd" id="2_qlwkl"]
+[ext_resource type="Script" uid="uid://ce26vpn5feb0y" path="res://npc/characters/king/king_hit_box.gd" id="2_qlwkl"]
 [ext_resource type="PackedScene" uid="uid://vbayy72i2i7d" path="res://assets/Objects/Props/1_arrow.tscn" id="3_qlwkl"]
 [ext_resource type="PackedScene" uid="uid://dap4ogxhar78r" path="res://assets/Objects/Props/2_arrows.tscn" id="4_k008h"]
 [ext_resource type="PackedScene" uid="uid://kqilv87gtmhh" path="res://assets/Objects/Props/3_arrows.tscn" id="5_41j5x"]
@@ -67,6 +67,9 @@ _data = {
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cawom"]
 size = Vector2(872.4492, 20)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qlwkl"]
+font_size = 20
 
 [node name="FlashBack" type="Node2D" unique_id=1904033017]
 y_sort_enabled = true
@@ -454,10 +457,16 @@ text = "Quit game"
 [node name="EndGameMenu" type="VBoxContainer" parent="Menu/ColorRect/CenterContainer/MarginContainer" unique_id=1419535791]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_constants/separation = 29
 
 [node name="Label" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1061686934]
 layout_mode = 2
 text = "Thank your for playing!"
+label_settings = SubResource("LabelSettings_qlwkl")
+
+[node name="Label2" type="Label" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=1874850600]
+layout_mode = 2
+text = "We hope you enjoyed the adventure."
 
 [node name="TryAgainBtn" type="Button" parent="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu" unique_id=54418127]
 layout_mode = 2
@@ -472,4 +481,5 @@ tile_set = ExtResource("1_2gc0u")
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
+[connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/TryAgainBtn" to="Menu" method="_on_try_again_btn_pressed"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/QuitGameBtn" to="Menu" method="_on_quit_game_btn_pressed"]
