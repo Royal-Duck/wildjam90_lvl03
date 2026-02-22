@@ -15,3 +15,7 @@ func _on_npc_interact(npc: Node2D) -> void:
 	hug_animation.visible = true
 	hug_animation.frame = 0
 	hug_animation.play("hug")
+
+
+func _on_animation_player_animation_started(_anim_name: StringName) -> void:
+	$global_shader.visible = true

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://nfj8l2j1qvk0" path="res://assets/characters/hugMother.png" id="3_pxn8f"]
 [ext_resource type="PackedScene" uid="uid://btjwrt4stfgow" path="res://assets/Objects/Props/statue.tscn" id="3_urm5n"]
 [ext_resource type="PackedScene" uid="uid://e1rxsmpmru4w" path="res://assets/Objects/Props/pot_2.tscn" id="4_pi76j"]
+[ext_resource type="Shader" uid="uid://c2voxff2nm3qr" path="res://shader/curse.gdshader" id="4_px6ad"]
 [ext_resource type="PackedScene" uid="uid://dxunmphc63mjs" path="res://assets/Objects/Props/broken_circle.tscn" id="5_vcf7v"]
 [ext_resource type="PackedScene" uid="uid://buwnxmjr16ua6" path="res://assets/Objects/Props/barrel.tscn" id="6_gtecy"]
 [ext_resource type="PackedScene" uid="uid://bmwwtli44qtj2" path="res://assets/Objects/Props/bench_front.tscn" id="7_ursdv"]
@@ -207,6 +208,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uffb1"]
+shader = ExtResource("4_px6ad")
+
 [sub_resource type="Animation" id="Animation_70uel"]
 length = 0.001
 tracks/0/type = "value"
@@ -258,6 +262,19 @@ sprite_frames = SubResource("SpriteFrames_3y7cr")
 animation = &"hug"
 frame = 20
 frame_progress = 1.0
+
+[node name="global_shader" type="CanvasLayer" parent="." unique_id=1871267060]
+visible = false
+
+[node name="plane" type="ColorRect" parent="global_shader" unique_id=706613948]
+material = SubResource("ShaderMaterial_uffb1")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="Fade" type="ColorRect" parent="." unique_id=592849214]
 z_index = 10
@@ -1401,5 +1418,6 @@ layout_mode = 2
 text = "Quit game"
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="animation_started" from="AnimationPlayer" to="." method="_on_animation_player_animation_started"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/QuitGameBtn" to="Menu" method="_on_quit_game_btn_pressed"]
