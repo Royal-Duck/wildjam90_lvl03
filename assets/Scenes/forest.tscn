@@ -106,6 +106,22 @@ polygon = PackedVector2Array(-859, 683, -740, 739, -494, 600, -441, 737, -566, 8
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1960639428]
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D3" unique_id=135636793]
+z_index = 2
+polygon = PackedVector2Array(78, 671, 233, 585, 242, 719, 182, 828, 86, 759)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=1876265380]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D4" unique_id=590619323]
+z_index = 2
+polygon = PackedVector2Array(-236, -226, -385, -25, -487, 59, -272, 159, -238, 295, -136, 406, -54, 355, 28, 391, 91, 335, 74, 243, 137, 228, 14, 140, -15, 279, -176, 284, -201, 161, -290, 18, -117, -130, -94, -203)
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="." unique_id=1990922126]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D5" unique_id=1770959982]
+z_index = 2
+polygon = PackedVector2Array(358, -37, 387, -150, 537, -49, 476, 88)
+
 [node name="deco" type="StaticBody2D" parent="." unique_id=500123203]
 y_sort_enabled = true
 collision_layer = 2
