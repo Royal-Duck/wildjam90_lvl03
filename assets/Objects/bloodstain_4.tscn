@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://k2bmymgijfu5"]
+
+[ext_resource type="Texture2D" uid="uid://d2qj2u15f6088" path="res://texture/TX_NewElements.png" id="1_qfjfp"]
+
+[node name="Bloodstain4" type="Sprite2D" unique_id=1377169352]
+z_index = 1
+y_sort_enabled = true
+texture = ExtResource("1_qfjfp")
+offset = Vector2(0, 6)
+region_enabled = true
+region_rect = Rect2(48, 112, 16, 16)
