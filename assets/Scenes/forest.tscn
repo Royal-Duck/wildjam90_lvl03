@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_hqa0d"]
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_xtuon"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="2_3ixxd"]
+[ext_resource type="PackedScene" uid="uid://k0r4vcvg821f" path="res://assets/Scenes/Home.tscn" id="2_hqa0d"]
 [ext_resource type="PackedScene" uid="uid://cjion7ckb01in" path="res://assets/Objects/Trees/tree_1.tscn" id="3_hd4ix"]
 [ext_resource type="PackedScene" uid="uid://x4ggm1hyuqih" path="res://assets/Objects/Trees/tree_2.tscn" id="3_ssykx"]
 [ext_resource type="PackedScene" uid="uid://c66n6d3km7lbf" path="res://assets/Objects/Trees/tree_3.tscn" id="5_t81nv"]
@@ -47,6 +48,7 @@ _data = {
 [node name="Node2D" type="Node2D" unique_id=510858726]
 y_sort_enabled = true
 script = ExtResource("1_hqa0d")
+next_scene = ExtResource("2_hqa0d")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1784700649]
 y_sort_enabled = true
