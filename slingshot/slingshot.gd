@@ -67,6 +67,7 @@ func _process(delta: float) -> void:
 		rock.direction = circle_pos
 		rock.speed = power_time(charge_time)
 		rock.max_travel = power_time(charge_time)
+		rock.z_index = 8
 		charge_time = 0
 		get_parent().get_parent().add_child(rock)
 		_line.visible = false

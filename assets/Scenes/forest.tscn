@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://x4ggm1hyuqih" path="res://assets/Objects/Trees/tree_2.tscn" id="3_ssykx"]
 [ext_resource type="PackedScene" uid="uid://c66n6d3km7lbf" path="res://assets/Objects/Trees/tree_3.tscn" id="5_t81nv"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="7_t81nv"]
-[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="8_s1qbt"]
-[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone_large.tscn" id="9_cx6m2"]
-[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone_no_cross.tscn" id="10_w6qrh"]
+[ext_resource type="PackedScene" uid="uid://dcye7adq7e50k" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="8_s1qbt"]
+[ext_resource type="PackedScene" uid="uid://b38l7sideobqg" path="res://assets/Objects/Tombs/dirt_tombstone_large.tscn" id="9_cx6m2"]
+[ext_resource type="PackedScene" uid="uid://di4rr7rq6s3p5" path="res://assets/Objects/Tombs/dirt_tombstone_no_cross.tscn" id="10_w6qrh"]
 [ext_resource type="PackedScene" uid="uid://btjwrt4stfgow" path="res://assets/Objects/Props/statue.tscn" id="11_2jj5n"]
 [ext_resource type="PackedScene" uid="uid://cekgflsn8gwrj" path="res://assets/Objects/Bushes/bush_1.tscn" id="12_rqd0b"]
 [ext_resource type="PackedScene" uid="uid://dukwq2imx0bku" path="res://assets/Objects/Bushes/bush_2.tscn" id="13_s6tj2"]
@@ -115,7 +115,7 @@ z_index = 2
 polygon = PackedVector2Array(-1272, -699, 1393, -702, 1724, 525, 1344, 511, 1145, 286, 1101, 156, 1011, 112, 874, -67, 1028, -183, 1034, -288, 942, -319, 866, -167, 716, -144, 551, -226, 470, -330, 272, -241, -7, -234, -347, -232, -455, -289, -590, -158, -724, -226, -904, -80, -957, 45, -932, 428, -856, 681, -807, 1053, -568, 1071, -189, 1035, 207, 1175, 489, 1197, 848, 1075, 1092, 1209, 1262, 1197, 1269, 1007, 1344, 511, 1726, 525, 1608, 1509, -1227, 1525)
 
 [node name="Tree_1" parent="deco" unique_id=2138802008 instance=ExtResource("3_hd4ix")]
-position = Vector2(-972, -202)
+position = Vector2(-982, -171)
 collision_layer = 2
 
 [node name="Tree_2" parent="deco" unique_id=1750946455 instance=ExtResource("3_ssykx")]
@@ -1838,7 +1838,7 @@ layout_mode = 2
 text = "Quit game"
 
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("40_frqd0")]
-position = Vector2(1090, 904)
+position = Vector2(1115, 961)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy2" parent="." unique_id=1750531554 instance=ExtResource("40_frqd0")]
