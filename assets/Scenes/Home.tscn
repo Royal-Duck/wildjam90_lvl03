@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_luqbg"]
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_ndni3"]
 [ext_resource type="TileSet" uid="uid://djyd7jd3jdyln" path="res://texture/Tileset_Stairs_Walls.tres" id="2_el546"]
+[ext_resource type="PackedScene" uid="uid://brat7n62mmmdh" path="res://flashback/flashback.tscn" id="2_luyc6"]
 [ext_resource type="PackedScene" uid="uid://btjwrt4stfgow" path="res://assets/Objects/Props/statue.tscn" id="3_urm5n"]
 [ext_resource type="PackedScene" uid="uid://e1rxsmpmru4w" path="res://assets/Objects/Props/pot_2.tscn" id="4_pi76j"]
 [ext_resource type="PackedScene" uid="uid://dxunmphc63mjs" path="res://assets/Objects/Props/broken_circle.tscn" id="5_vcf7v"]
@@ -92,6 +93,7 @@ size = Vector2(374, 215)
 [node name="Home" type="Node2D" unique_id=1772560829]
 y_sort_enabled = true
 script = ExtResource("1_luqbg")
+next_scene = ExtResource("2_luyc6")
 
 [node name="Fade" type="ColorRect" parent="." unique_id=592849214]
 visible = false
