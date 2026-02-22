@@ -20,10 +20,13 @@ func play_ui_click() -> void:
 	ui_click.play(0.006)
 
 func play_slingshot_fire() -> void:
-	slingshot_fire.play()
+	slingshot_fire.play(0.17)
 
 func play_slingshot_tension() -> void:
-	slingshot_tension.play()
+	slingshot_tension.play(0.18)
+	
+func stop_slingshot_tension() -> void:
+	slingshot_tension.stop()
 
 func play_bandit_death() -> void:
 	bandit_death.play()
