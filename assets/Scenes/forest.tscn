@@ -1288,387 +1288,514 @@ collision_layer = 2
 
 [node name="Dirt_Tombstone" parent="deco" unique_id=272685473 instance=ExtResource("8_s1qbt")]
 position = Vector2(-823, 434)
+collision_layer = 15
 
 [node name="Dirt_Tombstone_Large" parent="deco" unique_id=1383449104 instance=ExtResource("9_cx6m2")]
 position = Vector2(-866, 454)
+collision_layer = 15
 
 [node name="Dirt_Tombstone_NoCross" parent="deco" unique_id=654721756 instance=ExtResource("10_w6qrh")]
 position = Vector2(-789, 453)
+collision_layer = 15
 
 [node name="Statue" parent="deco" unique_id=834362404 instance=ExtResource("11_2jj5n")]
 position = Vector2(-63, 464)
+collision_layer = 15
 
 [node name="Bush_1" parent="deco" unique_id=890268053 instance=ExtResource("12_rqd0b")]
 position = Vector2(-471, -154)
+collision_layer = 15
 
 [node name="Bush_63" parent="deco" unique_id=201012387 instance=ExtResource("12_rqd0b")]
 position = Vector2(1099, 865)
+collision_layer = 15
 
 [node name="Bush_61" parent="deco" unique_id=1559267255 instance=ExtResource("12_rqd0b")]
 position = Vector2(-649, 425)
+collision_layer = 15
 
 [node name="Bush_58" parent="deco" unique_id=295709502 instance=ExtResource("12_rqd0b")]
 position = Vector2(796, 795)
+collision_layer = 15
 
 [node name="Bush_49" parent="deco" unique_id=791487227 instance=ExtResource("12_rqd0b")]
 position = Vector2(976, -321)
+collision_layer = 15
 
 [node name="Bush_48" parent="deco" unique_id=1409036922 instance=ExtResource("12_rqd0b")]
 position = Vector2(958, -18)
+collision_layer = 15
 
 [node name="Bush_43" parent="deco" unique_id=1594676076 instance=ExtResource("12_rqd0b")]
 position = Vector2(601, 650)
+collision_layer = 15
 
 [node name="Bush_40" parent="deco" unique_id=2029510557 instance=ExtResource("12_rqd0b")]
 position = Vector2(413, 448)
+collision_layer = 15
 
 [node name="Bush_38" parent="deco" unique_id=883380835 instance=ExtResource("12_rqd0b")]
 position = Vector2(464, -317)
+collision_layer = 15
 
 [node name="Bush_33" parent="deco" unique_id=192950436 instance=ExtResource("12_rqd0b")]
 position = Vector2(-76, -193)
+collision_layer = 15
 
 [node name="Bush_24" parent="deco" unique_id=1061068988 instance=ExtResource("12_rqd0b")]
 position = Vector2(-356, 589)
+collision_layer = 15
 
 [node name="Bush_55" parent="deco" unique_id=2120243326 instance=ExtResource("12_rqd0b")]
 position = Vector2(276, 623)
+collision_layer = 15
 
 [node name="Bush_54" parent="deco" unique_id=146169772 instance=ExtResource("12_rqd0b")]
 position = Vector2(-140, 1039)
+collision_layer = 15
 
 [node name="Bush_53" parent="deco" unique_id=503688258 instance=ExtResource("12_rqd0b")]
 position = Vector2(65, 768)
+collision_layer = 15
 
 [node name="Bush_15" parent="deco" unique_id=188598896 instance=ExtResource("12_rqd0b")]
 position = Vector2(-793, 399)
+collision_layer = 15
 
 [node name="Bush_14" parent="deco" unique_id=963986537 instance=ExtResource("12_rqd0b")]
 position = Vector2(-335, 275)
+collision_layer = 15
 
 [node name="Bush_2" parent="deco" unique_id=737976446 instance=ExtResource("13_s6tj2")]
 position = Vector2(-458, -167)
+collision_layer = 15
 
 [node name="Bush_50" parent="deco" unique_id=705929513 instance=ExtResource("13_s6tj2")]
 position = Vector2(1031, 63)
+collision_layer = 15
 
 [node name="Bush_44" parent="deco" unique_id=836997319 instance=ExtResource("13_s6tj2")]
 position = Vector2(599, 689)
+collision_layer = 15
 
 [node name="Bush_37" parent="deco" unique_id=496821000 instance=ExtResource("13_s6tj2")]
 position = Vector2(119, -274)
+collision_layer = 15
 
 [node name="Bush_30" parent="deco" unique_id=49015473 instance=ExtResource("13_s6tj2")]
 position = Vector2(-148, -79)
+collision_layer = 15
 
 [node name="Bush_27" parent="deco" unique_id=202460700 instance=ExtResource("13_s6tj2")]
 position = Vector2(-57, 385)
+collision_layer = 15
 
 [node name="Bush_25" parent="deco" unique_id=1966260362 instance=ExtResource("13_s6tj2")]
 position = Vector2(-404, 788)
+collision_layer = 15
 
 [node name="Bush_91" parent="deco" unique_id=399119490 instance=ExtResource("13_s6tj2")]
 position = Vector2(-295, 288)
+collision_layer = 15
 
 [node name="Bush_20" parent="deco" unique_id=1359933446 instance=ExtResource("13_s6tj2")]
 position = Vector2(108, 590)
+collision_layer = 15
 
 [node name="Bush_22" parent="deco" unique_id=479806642 instance=ExtResource("13_s6tj2")]
 position = Vector2(126, 243)
+collision_layer = 15
 
 [node name="Bush_21" parent="deco" unique_id=2100745762 instance=ExtResource("13_s6tj2")]
 position = Vector2(-124, 443)
+collision_layer = 15
 
 [node name="Bush_12" parent="deco" unique_id=1828295248 instance=ExtResource("13_s6tj2")]
 position = Vector2(-642, 276)
+collision_layer = 15
 
 [node name="Bush_3" parent="deco" unique_id=842874303 instance=ExtResource("2_e8s71")]
 position = Vector2(-91, 264)
+collision_layer = 15
 
 [node name="Bush_35" parent="deco" unique_id=1212172611 instance=ExtResource("2_e8s71")]
 position = Vector2(-362, 174)
+collision_layer = 15
 
 [node name="Bush_65" parent="deco" unique_id=1592103320 instance=ExtResource("2_e8s71")]
 position = Vector2(905, 837)
+collision_layer = 15
 
 [node name="Bush_59" parent="deco" unique_id=171755036 instance=ExtResource("2_e8s71")]
 position = Vector2(587, 1060)
+collision_layer = 15
 
 [node name="Bush_60" parent="deco" unique_id=344359431 instance=ExtResource("2_e8s71")]
 position = Vector2(244, 1154)
+collision_layer = 15
 
 [node name="Bush_47" parent="deco" unique_id=1292984109 instance=ExtResource("2_e8s71")]
 position = Vector2(711, -186)
+collision_layer = 15
 
 [node name="Bush_42" parent="deco" unique_id=184571636 instance=ExtResource("2_e8s71")]
 position = Vector2(577, 492)
+collision_layer = 15
 
 [node name="Bush_36" parent="deco" unique_id=1020306375 instance=ExtResource("2_e8s71")]
 position = Vector2(576, 311)
+collision_layer = 15
 
 [node name="Bush_29" parent="deco" unique_id=717046489 instance=ExtResource("2_e8s71")]
 position = Vector2(-921, 571)
+collision_layer = 15
 
 [node name="Bush_18" parent="deco" unique_id=1443927653 instance=ExtResource("2_e8s71")]
 position = Vector2(-823, 710)
+collision_layer = 15
 
 [node name="Bush_19" parent="deco" unique_id=1000949926 instance=ExtResource("2_e8s71")]
 position = Vector2(-640, 692)
+collision_layer = 15
 
 [node name="Bush_16" parent="deco" unique_id=214787377 instance=ExtResource("2_e8s71")]
 position = Vector2(-860, 366)
+collision_layer = 15
 
 [node name="Bush_11" parent="deco" unique_id=653030892 instance=ExtResource("2_e8s71")]
 position = Vector2(-462, 135)
+collision_layer = 15
 
 [node name="Bush_4" parent="deco" unique_id=1651288576 instance=ExtResource("15_42sg7")]
 position = Vector2(-849, 203)
+collision_layer = 15
 
 [node name="Bush_64" parent="deco" unique_id=1262924900 instance=ExtResource("15_42sg7")]
 position = Vector2(789, 333)
+collision_layer = 15
 
 [node name="Bush_46" parent="deco" unique_id=395261072 instance=ExtResource("15_42sg7")]
 position = Vector2(530, -10)
+collision_layer = 15
 
 [node name="Bush_45" parent="deco" unique_id=2141224904 instance=ExtResource("15_42sg7")]
 position = Vector2(197, 862)
+collision_layer = 15
 
 [node name="Bush_41" parent="deco" unique_id=1244812075 instance=ExtResource("15_42sg7")]
 position = Vector2(-565, 899)
+collision_layer = 15
 
 [node name="Bush_34" parent="deco" unique_id=614844799 instance=ExtResource("15_42sg7")]
 position = Vector2(203, 276)
+collision_layer = 15
 
 [node name="Bush_56" parent="deco" unique_id=1014777088 instance=ExtResource("15_42sg7")]
 position = Vector2(639, 911)
+collision_layer = 15
 
 [node name="Bush_17" parent="deco" unique_id=214055785 instance=ExtResource("15_42sg7")]
 position = Vector2(-700, 477)
+collision_layer = 15
 
 [node name="Bush_13" parent="deco" unique_id=1574641869 instance=ExtResource("15_42sg7")]
 position = Vector2(-227, 330)
+collision_layer = 15
 
 [node name="Bush_8" parent="deco" unique_id=237094777 instance=ExtResource("15_42sg7")]
 position = Vector2(-698, -38)
+collision_layer = 15
 
 [node name="Bush_62" parent="deco" unique_id=1943233566 instance=ExtResource("15_42sg7")]
 position = Vector2(243, 751)
+collision_layer = 15
 
 [node name="Bush_79" parent="deco" unique_id=343838482 instance=ExtResource("15_42sg7")]
 position = Vector2(1239, 1187)
+collision_layer = 15
 
 [node name="Bush_5" parent="deco" unique_id=1099634953 instance=ExtResource("16_dklfs")]
 position = Vector2(-727, 197)
+collision_layer = 15
 
 [node name="Bush_52" parent="deco" unique_id=183129824 instance=ExtResource("16_dklfs")]
 position = Vector2(-241, 839)
+collision_layer = 15
 
 [node name="Bush_51" parent="deco" unique_id=1611501139 instance=ExtResource("16_dklfs")]
 position = Vector2(636, 825)
+collision_layer = 15
 
 [node name="Bush_39" parent="deco" unique_id=2006037047 instance=ExtResource("16_dklfs")]
 position = Vector2(54, 755)
+collision_layer = 15
 
 [node name="Bush_32" parent="deco" unique_id=567846862 instance=ExtResource("16_dklfs")]
 position = Vector2(355, -11)
+collision_layer = 15
 
 [node name="Bush_28" parent="deco" unique_id=208183982 instance=ExtResource("16_dklfs")]
 position = Vector2(-1, 459)
+collision_layer = 15
 
 [node name="Bush_23" parent="deco" unique_id=501564336 instance=ExtResource("16_dklfs")]
 position = Vector2(-343, 361)
+collision_layer = 15
 
 [node name="Bush_57" parent="deco" unique_id=912618560 instance=ExtResource("16_dklfs")]
 position = Vector2(-792, 871)
+collision_layer = 15
 
 [node name="Bush_10" parent="deco" unique_id=509790254 instance=ExtResource("16_dklfs")]
 position = Vector2(-450, -268)
+collision_layer = 15
 
 [node name="Bush_6" parent="deco" unique_id=1371392575 instance=ExtResource("17_plswr")]
 position = Vector2(-316, -57)
+collision_layer = 15
 
 [node name="Bush_9" parent="deco" unique_id=143286667 instance=ExtResource("17_plswr")]
 position = Vector2(-331, 134)
+collision_layer = 15
 
 [node name="Bush_66" parent="deco" unique_id=1417298956 instance=ExtResource("12_rqd0b")]
 position = Vector2(995, 1180)
+collision_layer = 15
 
 [node name="Bush_105" parent="deco" unique_id=74979169 instance=ExtResource("12_rqd0b")]
 position = Vector2(1369, 1906)
+collision_layer = 15
 
 [node name="Bush_104" parent="deco" unique_id=185864923 instance=ExtResource("12_rqd0b")]
 position = Vector2(878, 584)
+collision_layer = 15
 
 [node name="Bush_107" parent="deco" unique_id=320897655 instance=ExtResource("12_rqd0b")]
 position = Vector2(861, 418)
+collision_layer = 15
 
 [node name="Bush_102" parent="deco" unique_id=475564907 instance=ExtResource("12_rqd0b")]
 position = Vector2(1189, 300)
+collision_layer = 15
 
 [node name="Bush_97" parent="deco" unique_id=800862934 instance=ExtResource("12_rqd0b")]
 position = Vector2(1365, 354)
+collision_layer = 15
 
 [node name="Bush_95" parent="deco" unique_id=1796399758 instance=ExtResource("12_rqd0b")]
 position = Vector2(1261, 412)
+collision_layer = 15
 
 [node name="Bush_92" parent="deco" unique_id=436448532 instance=ExtResource("12_rqd0b")]
 position = Vector2(466, 86)
+collision_layer = 15
 
 [node name="Bush_86" parent="deco" unique_id=14450840 instance=ExtResource("12_rqd0b")]
 position = Vector2(-636, 984)
+collision_layer = 15
 
 [node name="Bush_85" parent="deco" unique_id=1684498446 instance=ExtResource("12_rqd0b")]
 position = Vector2(-707, 498)
+collision_layer = 15
 
 [node name="Bush_84" parent="deco" unique_id=120672890 instance=ExtResource("12_rqd0b")]
 position = Vector2(-161, -71)
+collision_layer = 15
 
 [node name="Bush_83" parent="deco" unique_id=1494326345 instance=ExtResource("12_rqd0b")]
 position = Vector2(7, 472)
+collision_layer = 15
 
 [node name="Bush_82" parent="deco" unique_id=1909546701 instance=ExtResource("12_rqd0b")]
 position = Vector2(-218, 815)
+collision_layer = 15
 
 [node name="Bush_90" parent="deco" unique_id=398309992 instance=ExtResource("12_rqd0b")]
 position = Vector2(-649, 1132)
+collision_layer = 15
 
 [node name="Bush_81" parent="deco" unique_id=1803042825 instance=ExtResource("12_rqd0b")]
 position = Vector2(287, 1174)
+collision_layer = 15
 
 [node name="Bush_80" parent="deco" unique_id=1343472347 instance=ExtResource("12_rqd0b")]
 position = Vector2(1216, 1199)
+collision_layer = 15
 
 [node name="Bush_77" parent="deco" unique_id=1881368651 instance=ExtResource("12_rqd0b")]
 position = Vector2(1195, 830)
+collision_layer = 15
 
 [node name="Bush_76" parent="deco" unique_id=724592033 instance=ExtResource("12_rqd0b")]
 position = Vector2(628, 836)
+collision_layer = 15
 
 [node name="Bush_75" parent="deco" unique_id=479641603 instance=ExtResource("12_rqd0b")]
 position = Vector2(213, 826)
+collision_layer = 15
 
 [node name="Bush_67" parent="deco" unique_id=706599136 instance=ExtResource("13_s6tj2")]
 position = Vector2(848, 1078)
+collision_layer = 15
 
 [node name="Bush_106" parent="deco" unique_id=933451720 instance=ExtResource("13_s6tj2")]
 position = Vector2(1246, 1004)
+collision_layer = 15
 
 [node name="Bush_101" parent="deco" unique_id=1384619984 instance=ExtResource("13_s6tj2")]
 position = Vector2(730, 300)
+collision_layer = 15
 
 [node name="Bush_96" parent="deco" unique_id=2094275032 instance=ExtResource("13_s6tj2")]
 position = Vector2(1142, 216)
+collision_layer = 15
 
 [node name="Bush_72" parent="deco" unique_id=1838270792 instance=ExtResource("13_s6tj2")]
 position = Vector2(268, 1167)
+collision_layer = 15
 
 [node name="Bush_73" parent="deco" unique_id=2025152117 instance=ExtResource("13_s6tj2")]
 position = Vector2(268, 1167)
+collision_layer = 15
 
 [node name="Bush_68" parent="deco" unique_id=720336750 instance=ExtResource("2_e8s71")]
 position = Vector2(833, 1191)
+collision_layer = 15
 
 [node name="Bush_99" parent="deco" unique_id=960307464 instance=ExtResource("2_e8s71")]
 position = Vector2(1007, 776)
+collision_layer = 15
 
 [node name="Bush_89" parent="deco" unique_id=535736419 instance=ExtResource("2_e8s71")]
 position = Vector2(-837, 1035)
+collision_layer = 15
 
 [node name="Bush_69" parent="deco" unique_id=2090574725 instance=ExtResource("15_42sg7")]
 position = Vector2(1009, 1198)
+collision_layer = 15
 
 [node name="Bush_103" parent="deco" unique_id=857218832 instance=ExtResource("15_42sg7")]
 position = Vector2(1259, 289)
+collision_layer = 15
 
 [node name="Bush_94" parent="deco" unique_id=1672980167 instance=ExtResource("15_42sg7")]
 position = Vector2(870, 738)
+collision_layer = 15
 
 [node name="Bush_88" parent="deco" unique_id=521904670 instance=ExtResource("15_42sg7")]
 position = Vector2(-854, 945)
+collision_layer = 15
 
 [node name="Bush_70" parent="deco" unique_id=517686004 instance=ExtResource("16_dklfs")]
 position = Vector2(1163, 1197)
+collision_layer = 15
 
 [node name="Bush_100" parent="deco" unique_id=985314886 instance=ExtResource("16_dklfs")]
 position = Vector2(805, 532)
+collision_layer = 15
 
 [node name="Bush_71" parent="deco" unique_id=864293269 instance=ExtResource("17_plswr")]
 position = Vector2(1024, 1028)
+collision_layer = 15
 
 [node name="Bush_98" parent="deco" unique_id=523555890 instance=ExtResource("17_plswr")]
 position = Vector2(909, 708)
+collision_layer = 15
 
 [node name="Bush_93" parent="deco" unique_id=30572189 instance=ExtResource("17_plswr")]
 position = Vector2(1091, 160)
+collision_layer = 15
 
 [node name="Bush_108" parent="deco" unique_id=2113563063 instance=ExtResource("17_plswr")]
 position = Vector2(854, 447)
+collision_layer = 15
 
 [node name="Bush_87" parent="deco" unique_id=1657902390 instance=ExtResource("17_plswr")]
 position = Vector2(-876, 976)
+collision_layer = 15
 
 [node name="Bush_74" parent="deco" unique_id=1349034394 instance=ExtResource("17_plswr")]
 position = Vector2(976, 918)
+collision_layer = 15
 
 [node name="Bush_78" parent="deco" unique_id=1695303283 instance=ExtResource("17_plswr")]
 position = Vector2(1243, 813)
+collision_layer = 15
 
 [node name="Bush_31" parent="deco" unique_id=1782950638 instance=ExtResource("17_plswr")]
 position = Vector2(255, -238)
+collision_layer = 15
 
 [node name="Bush_26" parent="deco" unique_id=812779314 instance=ExtResource("17_plswr")]
 position = Vector2(75, 387)
+collision_layer = 15
 
 [node name="Bush_7" parent="deco" unique_id=1060090184 instance=ExtResource("17_plswr")]
 position = Vector2(-932, -42)
+collision_layer = 15
 
 [node name="Sign_R" parent="deco" unique_id=1941030934 instance=ExtResource("18_tijot")]
 position = Vector2(-843, -15)
+collision_layer = 15
 
 [node name="Sign_R2" parent="deco" unique_id=578125438 instance=ExtResource("18_tijot")]
 position = Vector2(258, 235)
+collision_layer = 15
 
 [node name="Sign_R3" parent="deco" unique_id=1139517645 instance=ExtResource("18_tijot")]
 position = Vector2(1285, 498)
+collision_layer = 15
 
 [node name="Stone_Lantern" parent="deco" unique_id=2000025325 instance=ExtResource("19_ms4km")]
 position = Vector2(-605, 5)
+collision_layer = 15
 
 [node name="Stone_Lantern3" parent="deco" unique_id=12547 instance=ExtResource("19_ms4km")]
 position = Vector2(-815, 647)
+collision_layer = 15
 
 [node name="Stone_Lantern4" parent="deco" unique_id=727120916 instance=ExtResource("19_ms4km")]
 position = Vector2(-153, 968)
+collision_layer = 15
 
 [node name="Stone_Lantern5" parent="deco" unique_id=1268760546 instance=ExtResource("19_ms4km")]
 position = Vector2(498, 970)
+collision_layer = 15
 
 [node name="Stone_Lantern6" parent="deco" unique_id=512806975 instance=ExtResource("19_ms4km")]
 position = Vector2(1173, 1104)
+collision_layer = 15
 
 [node name="Stone_Lantern7" parent="deco" unique_id=1476500905 instance=ExtResource("19_ms4km")]
 position = Vector2(967, 480)
+collision_layer = 15
 
 [node name="Stone_Lantern10" parent="deco" unique_id=1659246806 instance=ExtResource("19_ms4km")]
 position = Vector2(234, 474)
+collision_layer = 15
 
 [node name="Stone_Lantern8" parent="deco" unique_id=1286724853 instance=ExtResource("19_ms4km")]
 position = Vector2(629, 0)
+collision_layer = 15
 
 [node name="Stone_Lantern9" parent="deco" unique_id=2083295335 instance=ExtResource("19_ms4km")]
 position = Vector2(-123, 0)
+collision_layer = 15
 
 [node name="Stone_Lantern2" parent="deco" unique_id=849920949 instance=ExtResource("19_ms4km")]
 position = Vector2(-475, 482)
+collision_layer = 15
 
 [node name="Big_Rock" parent="deco" unique_id=56748421 instance=ExtResource("20_s6tj2")]
 position = Vector2(-100, 152)
+collision_layer = 15
 
 [node name="Brick1" parent="deco" unique_id=2011713352 instance=ExtResource("21_42sg7")]
 position = Vector2(-138, 134)
 
 [node name="Brick_3" parent="deco" unique_id=1433057038 instance=ExtResource("22_dklfs")]
 position = Vector2(419, 63)
+collision_layer = 138
 
 [node name="Rock1" parent="deco" unique_id=1820856292 instance=ExtResource("23_plswr")]
 position = Vector2(431, 71)
@@ -1678,9 +1805,11 @@ position = Vector2(-85, 117)
 
 [node name="Big_Rock2" parent="deco" unique_id=148283109 instance=ExtResource("20_s6tj2")]
 position = Vector2(990, -289)
+collision_layer = 138
 
 [node name="Broken_Circle" parent="deco" unique_id=79112469 instance=ExtResource("24_tijot")]
 position = Vector2(117, -110)
+collision_layer = 138
 
 [node name="Weed1" parent="deco" unique_id=1435015773 instance=ExtResource("28_5r6qh")]
 position = Vector2(-612, 7)
@@ -1729,9 +1858,10 @@ position = Vector2(1286, 498)
 
 [node name="Big_Rock3" parent="deco" unique_id=472638867 instance=ExtResource("20_s6tj2")]
 position = Vector2(1028, 540)
+collision_layer = 138
 
 [node name="Fade" type="ColorRect" parent="." unique_id=1394664395]
-z_index = 1
+z_index = 2
 offset_left = -476.0
 offset_top = 73.0
 offset_right = 1658.0
