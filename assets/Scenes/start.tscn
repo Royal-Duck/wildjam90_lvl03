@@ -679,8 +679,8 @@ enemy_resource = ExtResource("9_nt7sc")
 position = Vector2(-36, 844)
 enemy_resource = ExtResource("9_nt7sc")
 
-[node name="Npc" parent="." unique_id=2019593617 instance=ExtResource("10_jt2n3")]
-position = Vector2(1011, 904)
+[node name="Wounded" parent="." unique_id=2019593617 instance=ExtResource("10_jt2n3")]
+position = Vector2(1013, 897)
 data = ExtResource("11_7fi8b")
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

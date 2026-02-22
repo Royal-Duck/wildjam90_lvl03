@@ -46,7 +46,8 @@ animations = [{
 radius = 213.00235
 
 [sub_resource type="LabelSettings" id="LabelSettings_10r7b"]
-font_size = 14
+line_spacing = 2.0
+font_size = 9
 
 [node name="Npc" type="StaticBody2D" unique_id=2019593617 groups=["npc"]]
 z_index = 1
@@ -75,23 +76,22 @@ text = "Press E to interact"
 shape = SubResource("CircleShape2D_70vcc")
 
 [node name="DialogueBubble" type="PanelContainer" parent="." unique_id=1911665489]
-offset_left = -127.0
-offset_top = -61.0
-offset_right = -31.0
-offset_bottom = -21.0
+offset_left = -54.0
+offset_top = -59.0
+offset_right = -21.0
+offset_bottom = -42.0
 theme_override_styles/panel = ExtResource("2_254kf")
 
 [node name="MarginContainer" type="MarginContainer" parent="DialogueBubble" unique_id=432575397]
 layout_mode = 2
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 8
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 8
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 2
 
 [node name="DialogueLabel" type="Label" parent="DialogueBubble/MarginContainer" unique_id=2023079728]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Come here !"
 label_settings = SubResource("LabelSettings_10r7b")
 
 [node name="BubbleTimer" type="Timer" parent="." unique_id=1329971226]

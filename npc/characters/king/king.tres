@@ -1,10 +1,48 @@
 [gd_resource type="Resource" script_class="Character" format=3 uid="uid://fxp6h0so4u7j"]
 
 [ext_resource type="Script" uid="uid://d4esalw7fuwka" path="res://npc/characters/character_resource.gd" id="1_1t5iq"]
+[ext_resource type="Texture2D" uid="uid://dinvv4wr3fd0x" path="res://assets/characters/king.png" id="2_6kvy5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpe3n"]
+atlas = ExtResource("2_6kvy5")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8svvs"]
+atlas = ExtResource("2_6kvy5")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxj6g"]
+atlas = ExtResource("2_6kvy5")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svktp"]
+atlas = ExtResource("2_6kvy5")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8uceu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpe3n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8svvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxj6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svktp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [resource]
 script = ExtResource("1_1t5iq")
 character_name = "king"
 dialogue_path = "uid://yqxaa7t3b4cs"
 dialogue_bubble_text = "General?"
+sprite_frames = SubResource("SpriteFrames_8uceu")
 metadata/_custom_type_script = "uid://d4esalw7fuwka"

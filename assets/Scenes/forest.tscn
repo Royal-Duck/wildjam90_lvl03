@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://2ls7r2ydx66"]
 
+[ext_resource type="Script" uid="uid://b8uo4ayxqkwfn" path="res://world.gd" id="1_hqa0d"]
 [ext_resource type="TileSet" uid="uid://cprk207r68gfd" path="res://texture/Tileset_Ground.tres" id="1_xtuon"]
 [ext_resource type="PackedScene" uid="uid://cgss8b3frjjvs" path="res://player/Player.tscn" id="2_3ixxd"]
 [ext_resource type="TileSet" uid="uid://djyd7jd3jdyln" path="res://texture/Tileset_Stairs_Walls.tres" id="2_ssykx"]
@@ -10,6 +11,7 @@
 
 [node name="Node2D" type="Node2D" unique_id=510858726]
 y_sort_enabled = true
+script = ExtResource("1_hqa0d")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1784700649]
 y_sort_enabled = true
