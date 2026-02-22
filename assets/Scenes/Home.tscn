@@ -52,6 +52,8 @@
 [ext_resource type="Resource" uid="uid://cykykmgwiuoxe" path="res://npc/characters/mother/mother.tres" id="47_luyc6"]
 [ext_resource type="Resource" uid="uid://dgoqd5tcuyyw2" path="res://npc/characters/widow/widow.tres" id="48_pxn8f"]
 [ext_resource type="Script" uid="uid://vdeq6fdppvng" path="res://home.gd" id="49_home"]
+[ext_resource type="AudioStream" uid="uid://b2t75frnwlspj" path="res://assets/effets/Divers/pleure_veuve_1.mp3" id="52_uffb1"]
+[ext_resource type="Script" uid="uid://duq7ud7uthkwq" path="res://npc/characters/widow/cries.gd" id="53_asc7y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_px6ad"]
 atlas = ExtResource("3_pxn8f")
@@ -1302,6 +1304,12 @@ data = ExtResource("47_luyc6")
 position = Vector2(-47, -40)
 data = ExtResource("48_pxn8f")
 
+[node name="cries" type="AudioStreamPlayer2D" parent="Npc" unique_id=2107832166]
+stream = ExtResource("52_uffb1")
+autoplay = true
+max_distance = 156.0
+script = ExtResource("53_asc7y")
+
 [node name="Boundaries" type="StaticBody2D" parent="." unique_id=821635121]
 collision_layer = 2
 
@@ -1419,5 +1427,6 @@ text = "Quit game"
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="animation_started" from="AnimationPlayer" to="." method="_on_animation_player_animation_started"]
+[connection signal="finished" from="Npc/cries" to="Npc/cries" method="_on_finished"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/GameOverMenu/QuitGameBtn" to="Menu" method="_on_quit_btn_pressed"]
 [connection signal="pressed" from="Menu/ColorRect/CenterContainer/MarginContainer/EndGameMenu/QuitGameBtn" to="Menu" method="_on_quit_game_btn_pressed"]
