@@ -42,6 +42,9 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2xp5l"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_wrr4h"]
+font_size = 13
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_70vcc"]
 radius = 213.00235
 
@@ -66,9 +69,12 @@ position = Vector2(0, -5.995)
 shape = SubResource("CircleShape2D_2xp5l")
 
 [node name="ToInteractPressE" type="Label" parent="." unique_id=1138284165]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Press E to interact"
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 57.0
+offset_bottom = 26.0
+text = "E to talk"
+label_settings = SubResource("LabelSettings_wrr4h")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1913010803]
 

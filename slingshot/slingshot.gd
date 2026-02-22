@@ -27,7 +27,7 @@ func power_time(time : float) -> float:
 	return clampf((-abs(time - 1.0) + 1.0) * POWER_PER_SECOND + MIN_POWER, MIN_POWER, MAX_POWER)
 	
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("attack_click"):
+	if event.is_action_pressed("attack_click") and not DialogueController.is_dialogue_open:
 		AudioManager.play_slingshot_tension()
 		
 
