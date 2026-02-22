@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://x4ggm1hyuqih" path="res://assets/Objects/Trees/tree_2.tscn" id="3_ssykx"]
 [ext_resource type="PackedScene" uid="uid://c66n6d3km7lbf" path="res://assets/Objects/Trees/tree_3.tscn" id="5_t81nv"]
 [ext_resource type="Script" uid="uid://biwn35p5o17lc" path="res://menu.gd" id="7_t81nv"]
-[ext_resource type="PackedScene" uid="uid://dcye7adq7e50k" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="8_s1qbt"]
-[ext_resource type="PackedScene" uid="uid://b38l7sideobqg" path="res://assets/Objects/Tombs/dirt_tombstone_large.tscn" id="9_cx6m2"]
-[ext_resource type="PackedScene" uid="uid://di4rr7rq6s3p5" path="res://assets/Objects/Tombs/dirt_tombstone_no_cross.tscn" id="10_w6qrh"]
+[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone.tscn" id="8_s1qbt"]
+[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone_large.tscn" id="9_cx6m2"]
+[ext_resource type="PackedScene" path="res://assets/Objects/Tombs/dirt_tombstone_no_cross.tscn" id="10_w6qrh"]
 [ext_resource type="PackedScene" uid="uid://btjwrt4stfgow" path="res://assets/Objects/Props/statue.tscn" id="11_2jj5n"]
 [ext_resource type="PackedScene" uid="uid://cekgflsn8gwrj" path="res://assets/Objects/Bushes/bush_1.tscn" id="12_rqd0b"]
 [ext_resource type="PackedScene" uid="uid://dukwq2imx0bku" path="res://assets/Objects/Bushes/bush_2.tscn" id="13_s6tj2"]
@@ -1734,7 +1734,7 @@ position = Vector2(1028, 540)
 z_index = 1
 offset_left = -476.0
 offset_top = 73.0
-offset_right = 1227.0
+offset_right = 1658.0
 offset_bottom = 1220.0
 mouse_filter = 1
 color = Color(0, 0, 0, 0)
@@ -1752,7 +1752,6 @@ data = ExtResource("26_plswr")
 
 [node name="Menu" type="CanvasLayer" parent="." unique_id=2130348616]
 process_mode = 2
-visible = false
 script = ExtResource("7_t81nv")
 
 [node name="ColorRect" type="ColorRect" parent="Menu" unique_id=257793592]
@@ -1854,15 +1853,15 @@ layout_mode = 2
 text = "Quit game"
 
 [node name="Enemy" parent="." unique_id=1340809577 instance=ExtResource("40_frqd0")]
-position = Vector2(1115, 961)
+position = Vector2(991, 1123)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy2" parent="." unique_id=1750531554 instance=ExtResource("40_frqd0")]
-position = Vector2(1247, 1137)
+position = Vector2(1056, 992)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy3" parent="." unique_id=1465219810 instance=ExtResource("40_frqd0")]
-position = Vector2(1027, 1211)
+position = Vector2(931, 1232)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy4" parent="." unique_id=1901613293 instance=ExtResource("40_frqd0")]
@@ -1870,23 +1869,23 @@ position = Vector2(980, -265)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy5" parent="." unique_id=925977550 instance=ExtResource("40_frqd0")]
-position = Vector2(-214, 48)
+position = Vector2(-39, 4)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy6" parent="." unique_id=909853008 instance=ExtResource("40_frqd0")]
-position = Vector2(-161, 173)
+position = Vector2(28, -134)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy7" parent="." unique_id=1861862778 instance=ExtResource("40_frqd0")]
-position = Vector2(-148, 89)
+position = Vector2(214, -174)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy8" parent="." unique_id=1287810310 instance=ExtResource("40_frqd0")]
-position = Vector2(-553, -169)
+position = Vector2(-354, -162)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy9" parent="." unique_id=632447360 instance=ExtResource("40_frqd0")]
-position = Vector2(-862, 503)
+position = Vector2(-764, 630)
 enemy_resource = ExtResource("41_rv1km")
 
 [node name="Enemy10" parent="." unique_id=1648595958 instance=ExtResource("40_frqd0")]
